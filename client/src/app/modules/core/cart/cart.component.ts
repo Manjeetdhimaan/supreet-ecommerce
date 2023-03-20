@@ -7,6 +7,11 @@ import { Product } from 'src/app/shared/models/product.model';
 import { CartService } from 'src/app/shared/services/cart.service';
 import { ProductService } from 'src/app/shared/services/product.service';
 
+interface PurchaseItems {
+  name: string;
+  quantity: number;
+}
+
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
@@ -16,7 +21,7 @@ export class CartComponent {
   cartItems: CartProduct[] = [];
   serverErrMsg: string;
 
-  constructor(private productService: ProductService, private cartService: CartService) {}
+  constructor(private productService: ProductService, private cartService: CartService) { }
   ngOnInit(): void {
     this._getLocalStorageCart();
   }
@@ -26,7 +31,7 @@ export class CartComponent {
       if (respCart && respCart.items.length > 0) {
         respCart.items.forEach(cartItem => {
           const product = this.productService.getLocalProduct(cartItem.productId);
-          if(product) {
+          if (product) {
             this.cartItems.push({
               product: product,
               quantity: cartItem['quantity']
@@ -56,7 +61,7 @@ export class CartComponent {
   onUpdateQuantity(value: number, product: Product) {
     // product.quantity = value;
     this.cartItems.map(cartItem => {
-      if(cartItem.product._id === product._id) {
+      if (cartItem.product._id === product._id) {
         cartItem.quantity = value
       }
     })
@@ -73,23 +78,23 @@ export class CartComponent {
 
   onCheckOut() {
     let checkoutMsg = 'Hi, I want to purchase ';
-    let purchasableItems = [
-      {
-        name: 'Jocky Men Underwear',
-        quantity: 1
-      }
-    ]
+    const purchasableItems: PurchaseItems[] = []
     this.cartItems.map(cartItem => {
-      console.log(cartItem);
       purchasableItems.push({
         name: cartItem.product.name,
         quantity: cartItem.quantity
       })
     });
     purchasableItems.map(item => {
-      checkoutMsg += 'sku ' + item.name + '(' + item.quantity + ') '
+      checkoutMsg += 'sku ' + item.name + '(' + item.quantity + '), '
     });
+    checkoutMsg = checkoutMsg.trim().slice(0, -1);
     location.href = "https://api.whatsapp.com/send?phone=9878627074&text=" + checkoutMsg;
+  }
+
+  onClearCart() {
+    this.cartItems = [];
+    this.cartService.emptyCart();
   }
 
   subTotal() {
