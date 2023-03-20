@@ -1,9 +1,7 @@
 <main class="main cart">
   <div class="page-content pt-7 pb-10">
       <div class="step-by pr-4 pl-4">
-          <h3 class="title title-simple title-step active"><a href="cart.html">1. Shopping Cart</a></h3>
-          <h3 class="title title-simple title-step"><a href="checkout.html">2. Checkout</a></h3>
-          <h3 class="title title-simple title-step"><a href="order.html">3. Order Complete</a></h3>
+          <h3 class="title title-simple title-step active"><a routerLink="/cart">Shopping Cart</a></h3>
       </div>
       <div class="container mt-7 mb-2">
           <div class="row">
@@ -18,72 +16,32 @@
                               <th>Subtotal</th>
                           </tr>
                       </thead>
-                      <tbody>
-                          <tr>
+                      <tbody *ngIf="cartItems && cartItems.length > 0">
+                          <tr *ngFor="let cartItem of cartItems; let i = index">
                               <td class="product-thumbnail">
                                   <figure>
-                                      <a href="product-simple.html">
-                                          <img src="images/products/product18.jpg" width="100" height="100"
+                                      <a [routerLink]="'/products/' + cartItem.product._id">
+                                          <img [src]="cartItem.product.imageSrc" width="100" height="100"
                                               alt="product">
                                       </a>
                                   </figure>
                               </td>
                               <td class="product-name">
                                   <div class="product-name-section">
-                                      <a href="product-simple.html">Converse Training Shoes</a>
+                                      <a [routerLink]="'/products/' + cartItem.product._id">{{ cartItem.product.name }}</a>
                                   </div>
                               </td>
                               <td class="product-subtotal">
-                                  <span class="amount">$129.99</span>
+                                  <span class="amount">{{ cartItem.product.currentPrice | currency: cartItem.product.currency }}</span>
                               </td>
                               <td class="product-quantity">
-                                  <div class="input-group">
-                                      <button class="quantity-minus d-icon-minus"></button>
-                                      <input class="quantity form-control" type="number" min="1"
-                                          max="1000000">
-                                      <button class="quantity-plus d-icon-plus"></button>
-                                  </div>
+                                <app-input-number [value]="cartItem.quantity" (change)="onUpdateQuantity($event, cartItem.product)"></app-input-number>
                               </td>
                               <td class="product-price">
-                                  <span class="amount">$129.99</span>
+                                  <span class="amount">{{ +cartItem.product.currentPrice * +cartItem.quantity| currency: cartItem.product.currency }}</span>
                               </td>
                               <td class="product-close">
-                                  <a href="#" class="product-remove" title="Remove this product">
-                                      <i class="fas fa-times"></i>
-                                  </a>
-                              </td>
-                          </tr>
-                          <tr>
-                              <td class="product-thumbnail">
-                                  <figure>
-                                      <a href="product-simple.html">
-                                          <img src="images/products/product19.jpg" width="100" height="100"
-                                              alt="product">
-                                      </a>
-                                  </figure>
-
-                              </td>
-                              <td class="product-name">
-                                  <div class="product-name-section">
-                                      <a href="product-simple.html">Women Beautiful Headgear</a>
-                                  </div>
-                              </td>
-                              <td class="product-subtotal">
-                                  <span class="amount">$98.00</span>
-                              </td>
-                              <td class="product-quantity">
-                                  <div class="input-group">
-                                      <button class="quantity-minus d-icon-minus"></button>
-                                      <input class="quantity form-control" type="number" min="1"
-                                          max="1000000">
-                                      <button class="quantity-plus d-icon-plus"></button>
-                                  </div>
-                              </td>
-                              <td class="product-price">
-                                  <span class="amount">$98.00</span>
-                              </td>
-                              <td class="product-close">
-                                  <a href="#" class="product-remove" title="Remove this product">
+                                  <a (click)="onDeleteItemFromCart(cartItem.product._id, i)" class="product-remove" title="Remove this product">
                                       <i class="fas fa-times"></i>
                                   </a>
                               </td>
@@ -116,7 +74,7 @@
                                       <h4 class="summary-subtitle">Subtotal</h4>
                                   </td>
                                   <td>
-                                      <p class="summary-subtotal-price">$426.99</p>
+                                      <p class="summary-subtotal-price">{{ subTotal() | currency }}</p>
                                   </td>
                               </tr>
                               <tr class="sumnary-shipping shipping-row-last">
@@ -152,40 +110,17 @@
                                   </td>
                               </tr>
                           </table>
-                          <div class="shipping-address">
-                              <label>Shipping to <strong>CA.</strong></label>
-                              <div class="select-box">
-                                  <select name="country" class="form-control">
-                                      <option value="us" selected>United States (US)</option>
-                                      <option value="uk"> United Kingdom</option>
-                                      <option value="fr">France</option>
-                                      <option value="aus">Austria</option>
-                                  </select>
-                              </div>
-                              <div class="select-box">
-                                  <select name="country" class="form-control">
-                                      <option value="us" selected>California</option>
-                                      <option value="uk">Alaska</option>
-                                      <option value="fr">Delaware</option>
-                                      <option value="aus">Hawaii</option>
-                                  </select>
-                              </div>
-                              <input type="text" class="form-control" name="code" placeholder="Town / City" />
-                              <input type="text" class="form-control" name="code" placeholder="ZIP" />
-                              <a href="#" class="btn btn-md btn-dark btn-rounded btn-outline">Update
-                                  totals</a>
-                          </div>
                           <table class="total">
                               <tr class="summary-subtotal">
                                   <td>
                                       <h4 class="summary-subtitle">Total</h4>
                                   </td>
                                   <td>
-                                      <p class="summary-total-price ls-s">$426.99</p>
+                                      <p class="summary-total-price ls-s">{{ subTotal() | currency }}</p>
                                   </td>
                               </tr>
                           </table>
-                          <a href="checkout.html" class="btn btn-dark btn-rounded btn-checkout">Proceed to
+                          <a (click)="onCheckOut()" class="btn btn-dark btn-rounded btn-checkout">Proceed to
                               checkout</a>
                       </div>
                   </div>

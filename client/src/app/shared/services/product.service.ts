@@ -17,12 +17,12 @@ export class ProductService {
   products: Product[] = [
     {
       _id: 'p1',
-      name: 'Jocky Men Underwear',
+      name: 'Jocky Men Underwear 2',
       label: '',
       richDescription: '',
-      description: '',
+      description: 'Nice underwear',
       imageSrc: 'assets/images/demos/demo2/products/1.jpg',
-      images: [],
+      images: ['assets/images/demos/demo2/products/2.jpg', 'assets/images/demos/demo2/products/3.jpg'],
       colors: [''],
       weight: [''],
       brand: 'Jocky',
@@ -72,7 +72,7 @@ export class ProductService {
       reviews: []
     },
     {
-      _id: 'p1',
+      _id: 'p3',
       name: 'Jocky Men Underwear',
       label: '',
       richDescription: '',
@@ -100,7 +100,7 @@ export class ProductService {
       reviews: []
     },
     {
-      _id: 'p1',
+      _id: 'p4',
       name: 'Jocky Men Underwear',
       label: '',
       richDescription: '',
@@ -128,7 +128,7 @@ export class ProductService {
       reviews: []
     },
     {
-      _id: 'p1',
+      _id: 'p5',
       name: 'Jocky Men Underwear',
       label: 'new',
       richDescription: '',
@@ -156,7 +156,7 @@ export class ProductService {
       reviews: []
     },
     {
-      _id: 'p1',
+      _id: 'p6',
       name: 'Jocky Men Underwear',
       label: 'new',
       richDescription: '',
@@ -184,7 +184,7 @@ export class ProductService {
       reviews: []
     },
     {
-      _id: 'p1',
+      _id: 'p7',
       name: 'Jocky Men Underwear',
       label: '',
       richDescription: '',
@@ -212,7 +212,7 @@ export class ProductService {
       reviews: []
     },
     {
-      _id: 'p1',
+      _id: 'p8',
       name: 'Jocky Men Underwear',
       label: 'new',
       richDescription: '',
@@ -283,7 +283,7 @@ export class ProductService {
   }
 
   //
-  getLoaclProduct(productId: string) {
+  getLocalProduct(productId: string) {
     return this.products.find(product => product._id === productId);
   }
 }
