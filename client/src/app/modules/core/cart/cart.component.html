@@ -17,7 +17,7 @@
               </tr>
             </thead>
             <tbody *ngIf="cartItems && cartItems.length > 0">
-              <tr *ngFor="let cartItem of cartItems; let i = index">
+              <tr *ngFor="let cartItem of cartItems; let i = index" class="animate__animated animate__bounceIn snackbar">
                 <td class="product-thumbnail">
                   <figure>
                     <a [routerLink]="'/products/' + cartItem.product._id">
@@ -57,15 +57,8 @@
             <button *ngIf="cartItems && cartItems.length > 0" type="button"
               class="btn btn-outline btn-dark btn-md btn-rounded" (click)="onClearCart()">Clear Cart</button>
           </div>
-          <div class="cart-coupon-box mb-8">
-            <h4 class="title coupon-title text-uppercase ls-m">Coupon Discount</h4>
-            <input type="text" name="coupon_code" class="input-text form-control text-grey ls-m mb-4" id="coupon_code"
-              value="" placeholder="Enter coupon code here...">
-            <button type="submit" class="btn btn-md btn-dark btn-rounded btn-outline">Apply
-              Coupon</button>
-          </div>
         </div>
-        <aside class="col-lg-4 sticky-sidebar-wrapper">
+        <aside class="col-lg-4 sticky-sidebar-wrapper" *ngIf="cartItems && cartItems.length > 0">
           <div class="sticky-sidebar" data-sticky-options="{'bottom': 20}">
             <div class="summary mb-4">
               <h3 class="summary-title text-left">Cart Totals</h3>

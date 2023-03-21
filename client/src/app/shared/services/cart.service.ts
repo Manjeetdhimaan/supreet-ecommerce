@@ -28,18 +28,15 @@ export class CartService {
     const catrItemExitsIndex = cart.items.findIndex(item => item.productId === cartItem.productId);
     if (catrItemExitsIndex >= 0) {
       if (updateQuantity) {
-
         cart.items[catrItemExitsIndex].quantity = cartItem.quantity;
       }
       else {
         let newQuantity = cartItem.quantity;
-
         newQuantity = cart.items[catrItemExitsIndex].quantity + newQuantity;
         cart.items[catrItemExitsIndex].quantity = newQuantity;
       }
     }
     else {
-      console.log(cartItem)
       cart.items.push(cartItem);
     }
     const cartJson = JSON.stringify(cart);

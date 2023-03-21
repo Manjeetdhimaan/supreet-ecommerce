@@ -6,6 +6,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,9 @@ const routes: Routes = [
   },
   {
     path: 'cart', component: CartComponent, data: { title: 'Cart' }
+  },
+  {
+    path: 'about', component: AboutComponent, data: { title: 'About us' }
   }
 ]
 
@@ -20,7 +24,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     HomeComponent,
-    CartComponent
+    CartComponent,
+    AboutComponent
   ],
   imports: [
     CommonModule,

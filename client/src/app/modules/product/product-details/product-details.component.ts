@@ -1,31 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
+import { OwlOptions } from 'ngx-owl-carousel-o';
+import { Product } from 'src/app/shared/models/product.model';
 
 import { CartService } from 'src/app/shared/services/cart.service';
 import { ProductService } from 'src/app/shared/services/product.service';
-
-const data = [
-  {
-    srcUrl: 'assets/images/demos/demo2/product/product-1-580x652.jpg',
-    previewUrl: 'assets/images/demos/demo2/product/product-1-580x652.jpg'
-  },
-  {
-    srcUrl: 'assets/images/demos/demo2/product/product-2-580x652.jpg',
-    previewUrl: 'assets/images/demos/demo2/product/product-2-580x652.jpg'
-  },
-  {
-    srcUrl: 'assets/images/demos/demo2/product/product-3-580x652.jpg',
-    previewUrl: 'assets/images/demos/demo2/product/product-3-580x652.jpg'
-  },
-  {
-    srcUrl: 'assets/images/demos/demo2/product/product-3-580x652.jpg',
-    previewUrl: 'assets/images/demos/demo2/product/product-3-580x652.jpg'
-  },
-  {
-    srcUrl: 'assets/images/demos/demo2/product/product-4-580x652.jpg',
-    previewUrl: 'assets/images/demos/demo2/product/product-4-580x652.jpg'
-  }
-];
 
 export interface GalleryImageData {
   srcUrl: string;
@@ -40,15 +19,39 @@ export interface GalleryImageData {
 export class ProductDetailsComponent implements OnInit {
   imageData: GalleryImageData[] = [];
   product: any;
+  products: Product[];
   quantity: number = 1;
   isAddedToCart = false;
+  isSnackbarShown = false;
+  customOptionsRelated: OwlOptions = {
+    items: 4,
+    nav: false,
+    dots: true,
+    loop: false,
+    margin: 20,
+    responsive: {
+      0: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      992: {
+        items: 4,
+        dots: false,
+        nav: true
+      }
+    }
+  }
 
-  constructor(private activatedRoute: ActivatedRoute, private productService: ProductService, private cartService: CartService ) { }
+  constructor(private activatedRoute: ActivatedRoute, private productService: ProductService, private cartService: CartService, private router: Router ) { }
 
   ngOnInit() {
+    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
     this.activatedRoute.params.subscribe((params: Params) => {
       if (params['id']) {
         this.product = this.productService.getLocalProduct(params['id']);
+        this.products = this.productService.products;
         this.imageData.push({
           srcUrl: this.product.imageSrc,
           previewUrl: this.product.imageSrc
@@ -68,10 +71,7 @@ export class ProductDetailsComponent implements OnInit {
       productId: productId,
       quantity: this.quantity
     }
-    this.isAddedToCart = true;
-    setTimeout(() => {
-      this.isAddedToCart = false;
-    }, 3000);
+    this.isSnackbarShown = true;
     this.cartService.setCartToLocalStorage(cartItem);
   }
 

@@ -10,6 +10,8 @@ import { CartService } from 'src/app/shared/services/cart.service';
 export class ProductComponent {
   @Input() product: Product;
   ratings: number = 5;
+  isSnackbarShown = false;
+  @Input() isToAddSnackbar = true;
 
   constructor( private cartService: CartService ) {}
 
@@ -22,6 +24,7 @@ export class ProductComponent {
       productId: productId,
       quantity: 1
     }
+    this.isSnackbarShown = true;
     this.cartService.setCartToLocalStorage(cartItem);
   }
 

@@ -11,11 +11,12 @@
                     <div class="banner banner-fixed intro-slide1 content-center content-middle"
                       style="background-color: #444342;">
                       <figure>
-                        <img src="assets/images/demos/demo2/slides/1.jpg" alt="intro-banner" width="1180" height="600"
-                          style="background-color: #444342;" />
+                        <img src="assets/images/demos/demo2/slides/1.jpg" class="animate__animated animate__pulse"
+                          alt="intro-banner" width="1180" height="600" style="background-color: #444342;" />
                       </figure>
                       <div class="banner-content">
-                        <h4 class="banner-subtitle font-weight-semi-bold text-white ls-normal lh-1 mb-0 text-uppercase text-left">
+                        <h4
+                          class="banner-subtitle font-weight-semi-bold text-white ls-normal lh-1 mb-0 text-uppercase text-left">
                           Men’s wear</h4>
                         <h2 class="banner-title text-uppercase text-white">
                           Collection</h2>
@@ -49,59 +50,12 @@
                 </ng-container>
               </owl-carousel-o>
             </div>
-
-            <!-- <div class="owl-carousel owl-theme row owl-dot-inner owl-dot-white intro-slider animation-slider cols-1 gutter-no"
-              data-owl-options="{
-                      'nav': false,
-                      'dots': true,
-                      'loop': true,
-                      'items': 1,
-                      'autoplay': false
-                  }">
-              <div class="banner banner-fixed intro-slide1 content-center content-middle"
-                style="background-color: #444342;">
-                <figure>
-                  <img src="assets/images/demos/demo2/slides/1.jpg" alt="intro-banner" width="1180" height="600"
-                    style="background-color: #444342;" />
-                </figure>
-                <div class="banner-content">
-                  <h4
-                    class="banner-subtitle font-weight-semi-bold text-white ls-normal lh-1 mb-0 text-uppercase text-left">
-                    Men’s wear</h4>
-                  <h2 class="banner-title text-uppercase text-white">
-                    Collection</h2>
-                  <h5 class="font-weight-normal text-white lh-1 ls-normal text-right mb-1">
-                    Start at <span class="text-secondary font-weight-bold">$19.99</span>
-                  </h5>
-                </div>
-              </div>
-
-              <div class="intro-slide2 banner banner-fixed">
-                <figure>
-                  <img src="assets/images/demos/demo2/slides/2.jpg" alt="banner" width="1180" height="600"
-                    style="background-color: #686868" />
-                </figure>
-                <div class="banner-content y-50">
-                  <h4 class="banner-subtitle font-weight-normal lh-1 ls-m">
-                    Lifestyle collection</h4>
-                  <h3 class="banner-title ls-l text-white text-uppercase font-weight-bold lh-1">
-                    For Women’s</h3>
-                  <h5 class="font-weight-normal text-white text-uppercase lh-1 ls-m mb-1">
-                    sale Up to <span class="text-secondary font-weight-bold">30% Off</span>
-                  </h5>
-                  <p class="font-weight-normal ls-s mb-7">
-                    Get Free Shipping on all orders over $99.00</p>
-                  <a href="demo2-shop.html" class="btn btn-white btn-rounded">Shop
-                    now</a>
-                </div>
-              </div>
-            </div> -->
           </div>
 
           <div class="col-md-6 mb-4">
             <div class="banner banner-fixed overlay-zoom intro-banner intro-banner1 content-middle">
               <figure>
-                <img src="assets/images/demos/demo2/banners/1.jpg" width="580" height="249" alt="banner"
+                <img src="assets/images/demos/demo2/banners/1.jpg" animation="fadeInUp" delay="100" duration="500" offset="110" triggerOnce="false" width="580" height="249" alt="banner"
                   style="background-color: #eca5a9;" />
               </figure>
               <div class="banner-content">
@@ -139,7 +93,6 @@
 
       <section class="mt-10 pt-3 mb-6">
         <h2 class="title title-simple title-center ls-m">Best Selling</h2>
-
         <div class="product-wrapper row">
           <div class="col-lg-3 col-md-4 col-6 mb-4" *ngFor="let product of products">
             <app-product [product]="product"></app-product>
@@ -148,59 +101,56 @@
       </section>
 
       <section class="pt-md-2 pb-md-6 category-section">
-                        <h2 class="title title-simple ls-m">Top Categories</h2>
-                        <div class="row grid">
-                            <div class="grid-item col-md-6 height-x2">
-                                <div class="banner banner-fixed content-middle content-center overlay-dark">
-                                    <a href="demo2-shop.html">
-                                        <figure>
-                                            <img src="images/demos/demo2/category/1.jpg" alt="category" width="585"
-                                                height="397" style="background-color: #eef0f1;" />
-                                        </figure>
-                                    </a>
-                                    <div class="banner-content text-center w-100 h-100 d-flex flex-column">
-                                        <h3 class="banner-title text-uppercase ls-s mb-0">Padded Clothes</h3>
-                                        <h4
-                                            class="banner-subtitle flex-1 font-weight-normal text-capitalize text-body ls-md lh-1 mb-0">
-                                            Collection</h4>
-                                        <div class="btn-group">
-                                            <a href="demo2-shop.html"
-                                                class="btn btn-white btn-rounded font-weight-semi-bold">Women’s</a>
-                                            <a href="demo2-shop.html"
-                                                class="btn btn-white btn-rounded font-weight-semi-bold">Men's</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item col-sm-6 height-x1">
-                                <div class="category category-light category-absolute overlay-dark">
-                                    <a href="demo2-shop.html">
-                                        <figure class="category-media">
-                                            <img src="images/demos/demo2/category/2.jpg" alt="category" width="585"
-                                                height="205" style="background-color: #c8ced4;" />
-                                        </figure>
-                                    </a>
-                                    <div class="category-content">
-                                        <h4 class="category-name"><a href="demo2-shop.html">Women’s T-Shirt</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item col-sm-6 height-x1">
-                                <div class="category category-light category-absolute overlay-dark">
-                                    <a href="demo2-shop.html">
-                                        <figure class="category-media">
-                                            <img src="images/demos/demo2/category/3.jpg" alt="category" width="585"
-                                                height="397" style="background-color: #ebedef;" />
-                                        </figure>
-                                    </a>
-                                    <div class="category-content">
-                                        <h4 class="category-name"><a href="demo2-shop.html">Sports & Outdoors</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-1 grid-space"></div>
-                        </div>
-                    </section>
+        <h2 class="title title-simple ls-m">Top Categories</h2>
+        <div class="row grid">
+          <div class="grid-item col-md-6 height-x2">
+            <div class="banner banner-fixed content-middle content-center overlay-dark">
+              <a href="demo2-shop.html">
+                <figure>
+                  <img src="images/demos/demo2/category/1.jpg" alt="category" width="585" height="397"
+                    style="background-color: #eef0f1;" />
+                </figure>
+              </a>
+              <div class="banner-content text-center w-100 h-100 d-flex flex-column">
+                <h3 class="banner-title text-uppercase ls-s mb-0">Padded Clothes</h3>
+                <h4 class="banner-subtitle flex-1 font-weight-normal text-capitalize text-body ls-md lh-1 mb-0">
+                  Collection</h4>
+                <div class="btn-group">
+                  <a href="demo2-shop.html" class="btn btn-white btn-rounded font-weight-semi-bold">Women’s</a>
+                  <a href="demo2-shop.html" class="btn btn-white btn-rounded font-weight-semi-bold">Men's</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item col-sm-6 height-x1">
+            <div class="category category-light category-absolute overlay-dark">
+              <a href="demo2-shop.html">
+                <figure class="category-media">
+                  <img src="images/demos/demo2/category/2.jpg" alt="category" width="585" height="205"
+                    style="background-color: #c8ced4;" />
+                </figure>
+              </a>
+              <div class="category-content">
+                <h4 class="category-name"><a href="demo2-shop.html">Women’s T-Shirt</a></h4>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item col-sm-6 height-x1">
+            <div class="category category-light category-absolute overlay-dark">
+              <a href="demo2-shop.html">
+                <figure class="category-media">
+                  <img src="images/demos/demo2/category/3.jpg" alt="category" width="585" height="397"
+                    style="background-color: #ebedef;" />
+                </figure>
+              </a>
+              <div class="category-content">
+                <h4 class="category-name"><a href="demo2-shop.html">Sports & Outdoors</a></h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-1 grid-space"></div>
+        </div>
+      </section>
 
       <section class="banner banner-sale mt-10 mb-10"
         style="background-image: url(assets/images/demos/demo2/banners/3.jpg); background-color: #1f272b;">

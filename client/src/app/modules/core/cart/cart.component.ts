@@ -62,7 +62,7 @@ export class CartComponent {
     // product.quantity = value;
     this.cartItems.map(cartItem => {
       if (cartItem.product._id === product._id) {
-        cartItem.quantity = value
+        cartItem.quantity = +value
       }
     })
     this.cartService.setCartToLocalStorage({
@@ -102,5 +102,4 @@ export class CartComponent {
       return acc + (+item.product.currentPrice * item.quantity);
     }, 0));
   }
-
 }
