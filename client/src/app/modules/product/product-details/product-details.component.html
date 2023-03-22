@@ -1,10 +1,10 @@
 <main class="main mt-6 single-product">
   <div class="page-content mb-10 pb-6">
-    <div class="container">
-      <app-snackbar [name]="product.name" [isShown]="isSnackbarShown"></app-snackbar>
+    <div class="container" *ngIf="product">
+      <app-snackbar *ngIf="product" [name]="product.name" [isShown]="isSnackbarShown"></app-snackbar>
       <div class="product product-single row mb-2 animate__animated animate__bounceInDown">
         <div class="col-md-6" style="margin: auto;">
-          <app-product-gallery [imageData]="imageData"></app-product-gallery>
+          <app-product-gallery *ngIf="product" [imageData]="imageData"></app-product-gallery>
         </div>
         <div class="col-md-4" style="margin: auto;">
           <div class="product-details">
@@ -122,17 +122,18 @@
           </div>
           <div class="tab-pane" id="product-tab-additional">
             <ul class="list-none">
-              <li><label>Color:</label>
+              <li><label>Available color<span *ngIf="product.colors.length>0">s</span>:</label>
                 <p>
-                  <span *ngFor="let color of product.colors; let i = index">{{ color }}<span
-                      *ngIf="i < product.colors.length - 1">, </span>
+                  <span *ngFor="let color of product.colors; let i = index">
+                    <div [style]="'background-color:' +color +'; width: 30px; height: 30px; display: inline-block; margin-right: 3px'" ></div>
+                    <!-- <span *ngIf="i < product.colors.length - 1">, </span> -->
                   </span>
                 </p>
               </li>
               <li><label>Size:</label>
                 <p>
                   <span *ngFor="let size of product.sizes;
-                    let i = index" style="margin-right: 3px;">{{ size }}<span *ngIf="i < product.sizes.length - 1">,
+                    let i = index" style="margin-right: 3px;" style="text-transform: capitalize">{{ size }}<span *ngIf="i < product.sizes.length - 1">,
                     </span>
                   </span>
                 </p>

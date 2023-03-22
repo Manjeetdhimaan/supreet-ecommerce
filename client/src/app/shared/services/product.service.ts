@@ -21,10 +21,10 @@ export class ProductService {
       label: '',
       richDescription: '',
       description: 'Nice underwear',
-      imageSrc: 'assets/images/demos/demo2/products/1.jpg',
+      image: 'assets/images/demos/demo2/products/1.jpg',
       images: ['assets/images/demos/demo2/products/2.jpg', 'assets/images/demos/demo2/products/3.jpg'],
       colors: ['Black', 'Blue', 'Green'],
-      weights: [''],
+      weight: '',
       washIntructions: ['Normal Wash At 40c', 'Do not dry clean', 'Do not bleach', 'Line dry in shade'],
       sizes: ['Extra Large', 'Large', 'Medium'],
       features: ['Fabric Details : Cotton', 'Made from Super Combed Cotton rib fabric', 'USA Originals back panel placement print', 'Square shape neckline with contrast binding and piping', 'To be worn as loungewear, innerwear and sportswear- for all purpose use'],
@@ -41,7 +41,7 @@ export class ProductService {
         _id: 'c1',
         name: 'innerwear',
         icon: 'cloths',
-        imgSrc: 'assets/img/collection/collection10.webp',
+        image: 'assets/img/collection/collection10.webp',
         checked: false
       },
       reviews: []
@@ -52,10 +52,10 @@ export class ProductService {
       label: '',
       richDescription: '',
       description: '',
-      imageSrc: 'assets/images/demos/demo2/products/2.jpg',
+      image: 'assets/images/demos/demo2/products/2.jpg',
       images: [],
       colors: ['Black', 'Blue', 'Green'],
-      weights: [''],
+      weight: '',
       washIntructions: ['Normal Wash At 40c', 'Do not dry clean', 'Do not bleach', 'Line dry in shade'],
       sizes: ['Extra Large', 'Large', 'Medium'],
       features: ['Fabric Details : Cotton', 'Made from Super Combed Cotton rib fabric', 'USA Originals back panel placement print', 'Square shape neckline with contrast binding and piping', 'To be worn as loungewear, innerwear and sportswear- for all purpose use'],
@@ -72,7 +72,7 @@ export class ProductService {
         _id: 'c1',
         name: 'innerwear',
         icon: 'cloths',
-        imgSrc: 'assets/img/collection/collection10.webp',
+        image: 'assets/img/collection/collection10.webp',
         checked: false
       },
       reviews: []
@@ -83,10 +83,10 @@ export class ProductService {
       label: '',
       richDescription: '',
       description: '',
-      imageSrc: 'assets/images/demos/demo2/products/3.jpg',
+      image: 'assets/images/demos/demo2/products/3.jpg',
       images: [],
       colors: ['Black', 'Blue', 'Green'],
-      weights: [''],
+      weight: '',
       washIntructions: ['Normal Wash At 40c', 'Do not dry clean', 'Do not bleach', 'Line dry in shade'],
       sizes: ['Extra Large', 'Large', 'Medium'],
       features: ['Fabric Details : Cotton', 'Made from Super Combed Cotton rib fabric', 'USA Originals back panel placement print', 'Square shape neckline with contrast binding and piping', 'To be worn as loungewear, innerwear and sportswear- for all purpose use'],
@@ -103,7 +103,7 @@ export class ProductService {
         _id: 'c1',
         name: 'innerwear',
         icon: 'cloths',
-        imgSrc: 'assets/img/collection/collection10.webp',
+        image: 'assets/img/collection/collection10.webp',
         checked: false
       },
       reviews: []
@@ -114,10 +114,10 @@ export class ProductService {
       label: '',
       richDescription: '',
       description: '',
-      imageSrc: 'assets/images/demos/demo2/products/4.jpg',
+      image: 'assets/images/demos/demo2/products/4.jpg',
       images: [],
       colors: ['Black', 'Blue', 'Green'],
-      weights: [''],
+      weight: '',
       washIntructions: ['Normal Wash At 40c', 'Do not dry clean', 'Do not bleach', 'Line dry in shade'],
       sizes: ['Extra Large', 'Large', 'Medium'],
       features: ['Fabric Details : Cotton', 'Made from Super Combed Cotton rib fabric', 'USA Originals back panel placement print', 'Square shape neckline with contrast binding and piping', 'To be worn as loungewear, innerwear and sportswear- for all purpose use'],
@@ -134,7 +134,7 @@ export class ProductService {
         _id: 'c1',
         name: 'innerwear',
         icon: 'cloths',
-        imgSrc: 'assets/img/collection/collection10.webp',
+        image: 'assets/img/collection/collection10.webp',
         checked: false
       },
       reviews: []
@@ -145,10 +145,10 @@ export class ProductService {
       label: 'new',
       richDescription: '',
       description: '',
-      imageSrc: 'assets/images/demos/demo2/products/5.jpg',
+      image: 'assets/images/demos/demo2/products/5.jpg',
       images: [],
       colors: ['Black', 'Blue', 'Green'],
-      weights: [''],
+      weight: '',
       washIntructions: ['Normal Wash At 40c', 'Do not dry clean', 'Do not bleach', 'Line dry in shade'],
       sizes: ['Extra Large', 'Large', 'Medium'],
       features: ['Fabric Details : Cotton', 'Made from Super Combed Cotton rib fabric', 'USA Originals back panel placement print', 'Square shape neckline with contrast binding and piping', 'To be worn as loungewear, innerwear and sportswear- for all purpose use'],
@@ -165,7 +165,7 @@ export class ProductService {
         _id: 'c1',
         name: 'innerwear',
         icon: 'cloths',
-        imgSrc: 'assets/img/collection/collection10.webp',
+        image: 'assets/img/collection/collection10.webp',
         checked: false
       },
       reviews: []
@@ -176,10 +176,10 @@ export class ProductService {
       label: 'new',
       richDescription: '',
       description: '',
-      imageSrc: 'assets/images/demos/demo2/products/6.jpg',
+      image: 'assets/images/demos/demo2/products/6.jpg',
       images: [],
       colors: ['Black', 'Blue', 'Green'],
-      weights: [''],
+      weight: '',
       washIntructions: ['Normal Wash At 40c', 'Do not dry clean', 'Do not bleach', 'Line dry in shade'],
       sizes: ['Extra Large', 'Large', 'Medium'],
       features: ['Fabric Details : Cotton', 'Made from Super Combed Cotton rib fabric', 'USA Originals back panel placement print', 'Square shape neckline with contrast binding and piping', 'To be worn as loungewear, innerwear and sportswear- for all purpose use'],
@@ -196,7 +196,7 @@ export class ProductService {
         _id: 'c1',
         name: 'innerwear',
         icon: 'cloths',
-        imgSrc: 'assets/img/collection/collection10.webp',
+        image: 'assets/img/collection/collection10.webp',
         checked: false
       },
       reviews: []
@@ -207,10 +207,10 @@ export class ProductService {
       label: '',
       richDescription: '',
       description: '',
-      imageSrc: 'assets/images/demos/demo2/products/7.jpg',
+      image: 'assets/images/demos/demo2/products/7.jpg',
       images: [],
       colors: ['Black', 'Blue', 'Green'],
-      weights: [''],
+      weight: '',
       washIntructions: ['Normal Wash At 40c', 'Do not dry clean', 'Do not bleach', 'Line dry in shade'],
       sizes: ['Extra Large', 'Large', 'Medium'],
       features: ['Fabric Details : Cotton', 'Made from Super Combed Cotton rib fabric', 'USA Originals back panel placement print', 'Square shape neckline with contrast binding and piping', 'To be worn as loungewear, innerwear and sportswear- for all purpose use'],
@@ -227,7 +227,7 @@ export class ProductService {
         _id: 'c1',
         name: 'innerwear',
         icon: 'cloths',
-        imgSrc: 'assets/img/collection/collection10.webp',
+        image: 'assets/img/collection/collection10.webp',
         checked: false
       },
       reviews: []
@@ -238,10 +238,10 @@ export class ProductService {
       label: 'new',
       richDescription: '',
       description: '',
-      imageSrc: 'assets/images/demos/demo2/products/8.jpg',
+      image: 'assets/images/demos/demo2/products/8.jpg',
       images: [],
       colors: ['Black', 'Blue', 'Green'],
-      weights: [''],
+      weight: '',
       washIntructions: ['Normal Wash At 40c', 'Do not dry clean', 'Do not bleach', 'Line dry in shade'],
       sizes: ['Extra Large', 'Large', 'Medium'],
       features: ['Fabric Details : Cotton', 'Made from Super Combed Cotton rib fabric', 'USA Originals back panel placement print', 'Square shape neckline with contrast binding and piping', 'To be worn as loungewear, innerwear and sportswear- for all purpose use'],
@@ -258,7 +258,7 @@ export class ProductService {
         _id: 'c1',
         name: 'innerwear',
         icon: 'cloths',
-        imgSrc: 'assets/img/collection/collection10.webp',
+        image: 'assets/img/collection/collection10.webp',
         checked: false
       },
       reviews: []
@@ -267,8 +267,8 @@ export class ProductService {
 
   constructor(private http: HttpClient) { }
 
-  getProducts(categoriesFilter?: string[], productsIds?: string[]): Observable<ProductsResponse> {
-    let params = new HttpParams()
+  getProducts(categoriesFilter?: string, productsIds?: string[], searchStr?: string): Observable<ProductsResponse> {
+    // let params = new HttpParams();
     if(categoriesFilter) {
       // params = params.append('categories', categoriesFilter.join(','))
       // or below approach //
@@ -276,6 +276,9 @@ export class ProductService {
     }
     if(productsIds) {
       return this.http.get<ProductsResponse>(`${this.productBaseUrl}/get-products?productsIds=${productsIds}`);
+    }
+    if(searchStr) {
+      return this.http.get<ProductsResponse>(`${this.productBaseUrl}/get-products?search=${searchStr}`);
     }
     // return this.http.get<ProductsResponse>(`${this.productBaseUrl}/get-products`, {params: params});
     return this.http.get<ProductsResponse>(`${this.productBaseUrl}/get-products`);
@@ -306,7 +309,7 @@ export class ProductService {
       .pipe(map((objectValue: any) => objectValue.productsCount));
   }
 
-  //
+  // local products // just for testing
   getLocalProduct(productId: string) {
     return this.products.find(product => product._id === productId);
   }

@@ -1,7 +1,10 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
 import { OwlOptions } from 'ngx-owl-carousel-o/public_api';
 
 import { Product } from 'src/app/shared/models/product.model';
+import { ProductsResponse } from 'src/app/shared/models/responses.model';
 import { ProductService } from 'src/app/shared/services/product.service';
 
 @Component({
@@ -25,27 +28,6 @@ export class HomeComponent {
     autoplayHoverPause: true,
     navSpeed: 5000,
     nav: false
-  }
-
-  customOptionsFeatures: OwlOptions = {
-    items: 4,
-    nav: false,
-    dots: true,
-    loop: false,
-    margin: 20,
-    responsive: {
-      0: {
-        items: 2
-      },
-      768: {
-        items: 3
-      },
-      992: {
-        items: 4,
-        dots: false,
-        nav: true
-      }
-    }
   }
 
   customOptionsShipping: OwlOptions = {
@@ -94,10 +76,72 @@ export class HomeComponent {
     }
   }
 
-  products: Product[];
+  products: Product[] = [];
+  isLoadingProducts = false;
+  isLoadingCategories = false;
+  isCategoryPage = false;
+  serverErrMsg: string;
 
-  constructor( private productService: ProductService ) {
-    this.products = this.productService.products;
+  constructor( private productService: ProductService, private activatedRoute: ActivatedRoute ) {
+    this._getProducts();
+  }
+
+  private _getProducts(categoriesFilter?: any) {
+    this.isLoadingProducts = true;
+    this.activatedRoute.queryParams.subscribe((queryParams: Params) => {
+      if(queryParams['categories']) {
+        categoriesFilter = queryParams['categories'];
+        // getting products with filters
+        this.productService.getProducts(categoriesFilter).subscribe((res: ProductsResponse) => {
+          // marking filter value as checked when after refreshing or loading page
+          // this.categories.map(category => {
+          //     category.checked = (categoriesFilter.indexOf(category._id) > -1);
+          // })
+          if (!res['products']) {
+            this.products = [];
+          }
+          else {
+            this.products = res['products'];
+          }
+          this.isLoadingProducts = false;
+          this.isLoadingCategories = false;
+          this.serverErrMsg = '';
+        }, err => {
+          this.isLoadingProducts = false;
+          this.isLoadingCategories = false;
+          this._errorHandler(err);
+        })
+      }
+      else {
+        // getting products without filters
+        this.productService.getProducts(categoriesFilter).subscribe((res: ProductsResponse) => {
+          if (!res['products']) {
+            this.products = [];
+          }
+          else {
+            this.products = res['products'];
+          }
+          this.isLoadingProducts = false;
+          this.isLoadingCategories = false;
+          this.serverErrMsg = '';
+        }, err => {
+          this.isLoadingProducts = false;
+          this.isLoadingCategories = false;
+          this._errorHandler(err);
+        })
+      }
+    })
+  }
+
+  private _errorHandler(err: HttpErrorResponse) {
+    if (err.error['message']) {
+      if (err.error['message'] === 'No Products found' && err.status === 404) {
+        this.products = [];
+      }
+      this.serverErrMsg = err.error['message'];
+    } else {
+      this.serverErrMsg = 'An error occured. Please try again!';
+    }
   }
 
 }

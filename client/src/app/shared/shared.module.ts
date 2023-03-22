@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { LightboxModule } from 'ng-gallery/lightbox';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 import { GalleryModule } from 'ng-gallery';
 import { ProductComponent } from './components/reusuable-components/product/product.component';
 import { CategoryComponent } from './components/reusuable-components/category/category.component';
@@ -10,6 +11,7 @@ import { InputNumberComponent } from './components/ui-components/input-number/in
 import { ProductGalleryComponent } from './components/ui-components/product-gallery/product-gallery.component';
 import { SnackbarComponent } from './components/ui-components/snackbar/snackbar.component';
 import { AnimateDirective } from './directives/animate.directive';
+import { FeaturedProductsComponent } from './components/reusuable-components/featured-products/featured-products.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { AnimateDirective } from './directives/animate.directive';
     InputNumberComponent,
     ProductGalleryComponent,
     SnackbarComponent,
-    AnimateDirective
+    AnimateDirective,
+    FeaturedProductsComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +29,8 @@ import { AnimateDirective } from './directives/animate.directive';
     GalleryModule.withConfig({
       thumbView: 'contain',
     }),
-    LightboxModule
+    LightboxModule,
+    CarouselModule
   ],
   exports: [
     ProductComponent,
@@ -34,7 +38,8 @@ import { AnimateDirective } from './directives/animate.directive';
     InputNumberComponent,
     ProductGalleryComponent,
     SnackbarComponent,
-    AnimateDirective
+    AnimateDirective,
+    FeaturedProductsComponent
   ]
 })
 export class SharedModule { }

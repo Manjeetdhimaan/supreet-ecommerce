@@ -3,7 +3,7 @@ export class Category {
     public _id: string,
     public name: string,
     public icon: string,
-    public imgSrc: string,
+    public image: string,
     public checked: boolean
     ) {}
 }

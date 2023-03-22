@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { take } from 'rxjs';
 
 import { CartProduct } from 'src/app/shared/models/cart.model';
+import { Category } from 'src/app/shared/models/category.model';
 import { Product } from 'src/app/shared/models/product.model';
 import { CartService } from 'src/app/shared/services/cart.service';
 import { ProductService } from 'src/app/shared/services/product.service';
@@ -19,6 +20,7 @@ interface PurchaseItems {
 })
 export class CartComponent {
   cartItems: CartProduct[] = [];
+  categories: Category[] = [];
   serverErrMsg: string;
 
   constructor(private productService: ProductService, private cartService: CartService) { }
@@ -30,21 +32,21 @@ export class CartComponent {
     this.cartService.cart$.pipe(take(1)).subscribe(respCart => {
       if (respCart && respCart.items.length > 0) {
         respCart.items.forEach(cartItem => {
-          const product = this.productService.getLocalProduct(cartItem.productId);
-          if (product) {
-            this.cartItems.push({
-              product: product,
-              quantity: cartItem['quantity']
-            });
-          }
-          // this.productService.getProduct(cartItem.productId).subscribe(res => {
+          // const product = this.productService.getLocalProduct(cartItem.productId);
+          // if (product) {
           //   this.cartItems.push({
-          //     product: res['product'],
+          //     product: product,
           //     quantity: cartItem['quantity']
           //   });
-          // }, err => {
-          //   this._errorHandler(err);
-          // });
+          // }
+          this.productService.getProduct(cartItem.productId).subscribe(res => {
+            this.cartItems.push({
+              product: res['product'],
+              quantity: cartItem['quantity']
+            });
+          }, err => {
+            this._errorHandler(err);
+          });
         })
       }
     });
@@ -86,7 +88,7 @@ export class CartComponent {
       })
     });
     purchasableItems.map(item => {
-      checkoutMsg += 'sku ' + item.name + '(' + item.quantity + '), '
+      checkoutMsg += 'sku ' + '"' + item.name + '"' + '(' + item.quantity + '), '
     });
     checkoutMsg = checkoutMsg.trim().slice(0, -1);
     location.href = "https://api.whatsapp.com/send?phone=9878627074&text=" + checkoutMsg;

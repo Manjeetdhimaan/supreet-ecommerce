@@ -167,16 +167,7 @@
         </div>
       </section>
 
-      <section class="pt-7 pb-1">
-        <h2 class="title title-simple ls-m">Our Featured</h2>
-        <owl-carousel-o [options]="customOptionsFeatures" class="owl-theme row owl-nav-full ">
-          <ng-container>
-            <ng-template carouselSlide *ngFor="let product of products">
-              <app-product [product]="product"></app-product>
-            </ng-template>
-          </ng-container>
-        </owl-carousel-o>
-      </section>
+      <app-featured-products></app-featured-products>
 
       <section class="service-list mt-10">
         <owl-carousel-o [options]="customOptionsShipping" class="owl-theme row">

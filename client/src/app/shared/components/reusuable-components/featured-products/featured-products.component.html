@@ -1,0 +1,10 @@
+<section class="pt-7 pb-1">
+  <h2 class="title title-simple ls-m row">Our Featured</h2>
+  <owl-carousel-o [options]="customOptionsFeatures" class="col-lg-3 col-md-4 col-6">
+    <ng-container>
+      <ng-template carouselSlide *ngFor="let product of products">
+        <app-product [product]="product"></app-product>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+</section>

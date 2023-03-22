@@ -1,7 +1,9 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Product } from 'src/app/shared/models/product.model';
+import { ProductResponse } from 'src/app/shared/models/responses.model';
 
 import { CartService } from 'src/app/shared/services/cart.service';
 import { ProductService } from 'src/app/shared/services/product.service';
@@ -18,11 +20,14 @@ export interface GalleryImageData {
 })
 export class ProductDetailsComponent implements OnInit {
   imageData: GalleryImageData[] = [];
-  product: any;
+  product: Product;
   products: Product[];
   quantity: number = 1;
   isAddedToCart = false;
   isSnackbarShown = false;
+  isLoading = false;
+  isLoadingCart = false;
+  serverErrMsg: string;
   customOptionsRelated: OwlOptions = {
     items: 4,
     nav: false,
@@ -50,20 +55,42 @@ export class ProductDetailsComponent implements OnInit {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
     this.activatedRoute.params.subscribe((params: Params) => {
       if (params['id']) {
-        this.product = this.productService.getLocalProduct(params['id']);
+        this._getProduct(params['id']);
         this.products = this.productService.products;
-        this.imageData.push({
-          srcUrl: this.product.imageSrc,
-          previewUrl: this.product.imageSrc
-        })
-        this.product.images.map((imageUrl: string) => {
-          this.imageData.push({
-            srcUrl: imageUrl,
-            previewUrl: imageUrl
-          })
-        })
       }
     })
+  }
+
+  private _getProduct(id: string) {
+    this.serverErrMsg = '';
+    this.isLoading = true;
+    this.productService.getProduct(id).subscribe((res: ProductResponse) => {
+      this.product = res['product'];
+      this.imageData.push({
+        srcUrl: this.product.image,
+        previewUrl: this.product.image
+      })
+      this.product.images.map((imageUrl: string) => {
+        this.imageData.push({
+          srcUrl: imageUrl,
+          previewUrl: imageUrl
+        })
+      })
+      this.serverErrMsg = '';
+      this.isLoading = false;
+    }, err => {
+      this.isLoading = false;
+      this._errorHandler(err);
+      console.log(err)
+    });
+  }
+
+  private _errorHandler(err: HttpErrorResponse) {
+    if (err.error['message']) {
+      this.serverErrMsg = err.error['message'];
+    } else {
+      this.serverErrMsg = 'An error occured. Please try again!';
+    }
   }
 
   onAddtoCart(productId: string) {
