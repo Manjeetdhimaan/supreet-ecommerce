@@ -22,9 +22,9 @@
     </div>
   </figure>
   <div class="product-details">
-    <!-- <div class="product-cat">
-      <a>{{ product.category.name }}</a>
-    </div> -->
+    <div class="product-cat" *ngIf="product.categories && product.categories.length > 0">
+      <a>{{ product.categories[product.categories.length - 1] }}</a>
+    </div>
     <h3 class="product-name">
       <a [routerLink]="'/products/' + product._id" (click)="scrollTop()">{{ product.name }}</a>
     </h3>
@@ -42,4 +42,4 @@
   </div>
 </div>
 
-<app-snackbar [name]="product.name" [isShown]="isSnackbarShown" *ngIf="isToAddSnackbar"></app-snackbar>
+<app-snackbar [name]="product.name" [isShown]="isSnackbarShown" *ngIf="isToAddSnackbar && product"></app-snackbar>

@@ -9,6 +9,7 @@ export class Product {
     public description: string,
     public image: string,
     public images: string[],
+    public categories: string[],
     public colors: string[],
     public weight: string,
     public sizes: string[],

@@ -49,9 +49,10 @@ export class ProductDetailsComponent implements OnInit {
     }
   }
 
-  constructor(private activatedRoute: ActivatedRoute, private productService: ProductService, private cartService: CartService, private router: Router ) { }
+  constructor(private activatedRoute: ActivatedRoute, private productService: ProductService, private cartService: CartService, private router: Router) { }
 
   ngOnInit() {
+    this.isLoading = true;
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
     this.activatedRoute.params.subscribe((params: Params) => {
       if (params['id']) {
@@ -63,7 +64,6 @@ export class ProductDetailsComponent implements OnInit {
 
   private _getProduct(id: string) {
     this.serverErrMsg = '';
-    this.isLoading = true;
     this.productService.getProduct(id).subscribe((res: ProductResponse) => {
       this.product = res['product'];
       this.imageData.push({
@@ -81,7 +81,6 @@ export class ProductDetailsComponent implements OnInit {
     }, err => {
       this.isLoading = false;
       this._errorHandler(err);
-      console.log(err)
     });
   }
 

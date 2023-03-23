@@ -13,12 +13,13 @@
             </div>
             <div class="widget widget-collapsible">
               <h3 class="widget-title">Size</h3>
-              <ul class="widget-body filter-items">
-                <li><a>Extra Large</a></li>
-                <li><a>Large</a></li>
-                <li><a>Medium</a></li>
-                <li><a>Small</a></li>
-              </ul>
+              <!-- <ul class="widget-body filter-items">
+                <li *ngFor="let category of categories" (click)="sizeFilter(category.value)"><a>{{ category.value }}</a></li>
+              </ul> -->
+              <div class="widget-body filter-items" *ngFor="let category of categories">
+                <input type="checkbox" [(ngModel)]="category.checked" [id]="category.value" (ngModelChange)="sizeFilter(category.value)">
+                <label [for]="category.value" style="text-transform: capitalize;">{{category.value}}</label>
+              </div>
             </div>
             <div class="widget widget-collapsible">
               <h3 class="widget-title">Color</h3>
@@ -71,12 +72,14 @@
             </ngx-skeleton-loader>
           </div>
         </div>
+        <h3 *ngIf="products.length <= 0 && !isLoadingProducts && !serverErrMsg">No Products found in this category</h3>
+        <h3 *ngIf="serverErrMsg">{{serverErrMsg}}</h3>
         <div class="row cols-2 cols-sm-3 product-wrapper">
           <div class="product-wrap" *ngFor="let product of products">
             <app-product [product]="product"></app-product>
           </div>
         </div>
-        <nav class="toolbox toolbox-pagination">
+        <nav class="toolbox toolbox-pagination" *ngIf="products.length > 0">
           <p class="show-info">Showing <span>12 of 56</span> Products</p>
           <ul class="pagination">
             <li class="page-item disabled">

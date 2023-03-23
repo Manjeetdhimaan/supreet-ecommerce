@@ -3,7 +3,7 @@
   <owl-carousel-o [options]="customOptionsFeatures" class="col-lg-3 col-md-4 col-6">
     <ng-container>
       <ng-template carouselSlide *ngFor="let product of products">
-        <app-product [product]="product"></app-product>
+        <app-product [product]="product" [isToAddSnackbar]="false"></app-product>
       </ng-template>
     </ng-container>
   </owl-carousel-o>

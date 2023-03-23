@@ -7,6 +7,7 @@ import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CollectionComponent } from './collection/collection.component';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -27,7 +28,8 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     SharedModule,
     CarouselModule,
-    NgxSkeletonLoaderModule.forRoot({ animation: 'progress' })
+    NgxSkeletonLoaderModule.forRoot({ animation: 'progress' }),
+    FormsModule
   ]
 })
 export class ProductModule { }

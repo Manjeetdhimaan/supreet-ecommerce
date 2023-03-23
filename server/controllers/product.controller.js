@@ -5,10 +5,46 @@ const Category = mongoose.model('Category');
 
 module.exports.getProducts = (req, res, next) => {
     try {
+        // const filters = req.query;
+        // const filteredUsers = data.filter(user => {
+        //     let isValid = true;
+        //     for (key in filters) {
+        //       console.log(key, user[key], filters[key]);
+        //       isValid = isValid && user[key] == filters[key];
+        //     }
+        //     return isValid;
+        //   });
         let filter = {};
-        if (req.query.categories) {
+        if (req.query.sizes) {
             filter = {
-                "categories" : { $regex : new RegExp(req.query.categories, "i") }
+                "sizes" : { $regex : new RegExp(req.query.sizes, "i") }
+            }
+        }
+        if (req.query.categories) {
+            console.log(req.query.categories)
+            const parsedQuery = JSON.parse(req.query.categories);
+            filter = {
+                "$and": [{
+                    categories: {
+                            $regex: new RegExp(parsedQuery.categories ? parsedQuery.categories : parsedQuery, "i")
+                        }
+                    },
+                    {
+                        sizes: {
+                            $regex: new RegExp(parsedQuery.sizes, "i")
+                        }
+                    },
+                    {
+                        colors: {
+                            $regex: new RegExp(parsedQuery.colors, "i")
+                        }
+                    }
+                ]
+            }
+        }
+        if (req.query.colors) {
+            filter = {
+                "colors" : { $regex : new RegExp(req.query.colors, "i") }
             }
         }
         if (req.query.productsIds) {
@@ -31,7 +67,7 @@ module.exports.getProducts = (req, res, next) => {
                         }
                     },
                     {
-                        'category': {
+                        'categories': {
                             $regex: new RegExp(req.query.search, "i")
                         }
                     },
@@ -41,7 +77,7 @@ module.exports.getProducts = (req, res, next) => {
             //     $search: req.query.search
             // }}
         }
-        Product.find(filter).select('name price image currency categories').sort({
+        Product.find(filter).select('name price image currency categories currentPrice mrpPrice sizes colors').sort({
             _id: -1
         }).limit(30).then(products => {
             if (!products || products.length < 1) {

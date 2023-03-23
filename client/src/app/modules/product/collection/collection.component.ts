@@ -18,42 +18,102 @@ export class CollectionComponent implements OnInit {
   isLoadingCategories = false;
   isCategoryPage = false;
   serverErrMsg: string;
+  collectionName: string;
+  categories: any[] = [
+    {
+      value: 'extra large',
+      checked: false
+    },
+    {
+      value: 'large',
+      checked: false
+    },
+    {
+      value: 'medium',
+      checked: false
+    },
+    {
+      value: 'small',
+      checked: false
+    },
+  ];
+
 
   constructor(private productService: ProductService, private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
-    this.products = this.productService.products;
     this.activatedRoute.params.subscribe((params: Params) => {
       if (params['name']) {
-        // this._getProduct(params['id']);
+        this.collectionName = params['name']
         this._getProducts(params['name']);
-        this.products = this.productService.products;
       }
     })
   }
 
-  private _getProducts(categoriesFilter?: any) {
+  sizeFilter(sizeFilter: string) {
+    this.isLoadingCategories = true;
+    const selectedCategories = this.categories.filter(category => category.checked).map(category => category.value);
+    this.router.navigate([`/products/collections/${this.collectionName}`], {
+      queryParams: { sizes: selectedCategories, colors: '#F15212' }
+    });
+
+    // this.isLoadingCategories = true;
+    // // const selectedCategories = this.categories.filter(category => category.checked).map(category => category._id);
+    // const selectedCategories = filter;
+    // this.router.navigate([`/products/collections/${this.collectionName}`], {queryParams: {sizes: selectedCategories}});
+    // // this._getProducts();
+  }
+
+  private _getProducts(filters?: any) {
     this.isLoadingProducts = true;
-    // getting products with filters
-    this.productService.getProducts(categoriesFilter).subscribe((res: ProductsResponse) => {
-      // marking filter value as checked when after refreshing or loading page
-      // this.categories.map(category => {
-      //     category.checked = (categoriesFilter.indexOf(category._id) > -1);
-      // })
-      if (!res['products']) {
-        this.products = [];
+    this.activatedRoute.queryParams.subscribe((queryParams: Params) => {
+      if (queryParams['sizes'] || queryParams['colors']) {
+        console.log(queryParams)
+        filters = Object.assign({}, { categories: filters, sizes: queryParams['sizes'], colors: queryParams['colors'] })
+        // getting products with filters
+        this.productService.getProducts(filters).subscribe((res: ProductsResponse) => {
+          // marking filter value as checked when after refreshing or loading page
+          // this.products.map(product => {
+          //   this.categories = this.categories.concat(product.sizes);
+          // })
+          if (!res['products']) {
+            this.products = [];
+          }
+          else {
+            this.products = res['products'];
+          }
+          this.isLoadingProducts = false;
+          this.isLoadingCategories = false;
+          this.serverErrMsg = '';
+        }, err => {
+          this.isLoadingProducts = false;
+          this.isLoadingCategories = false;
+          this._errorHandler(err);
+        })
       }
       else {
-        this.products = res['products'];
+        // getting products without filters
+        this.productService.getProducts(filters).subscribe((res: ProductsResponse) => {
+          if (!res['products']) {
+            this.products = [];
+          }
+          else {
+            this.products = res['products'];
+            // this.products.map(product => {
+            //   this.categories = this.categories.concat(product.sizes);
+            //   console.log('conact', this.categories)
+            // })
+          }
+          this.isLoadingProducts = false;
+          this.isLoadingCategories = false;
+          this.serverErrMsg = '';
+        }, err => {
+          this.isLoadingProducts = false;
+          this.isLoadingCategories = false;
+          this._errorHandler(err);
+        })
       }
-      this.isLoadingProducts = false;
-      this.isLoadingCategories = false;
-      this.serverErrMsg = '';
-    }, err => {
-      this.isLoadingProducts = false;
-      this.isLoadingCategories = false;
-      this._errorHandler(err);
     })
   }
 

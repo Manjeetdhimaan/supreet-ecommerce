@@ -33,6 +33,7 @@ export class ProductService {
       mrpPrice: 89,
       currentPrice: 99,
       currency: 'USD',
+      categories: [''],
       countInStock: 10,
       rating: 4,
       numReviews: 21,
@@ -64,6 +65,7 @@ export class ProductService {
       mrpPrice: 89,
       currentPrice: 99,
       currency: 'USD',
+      categories: [''],
       countInStock: 10,
       rating: 4,
       numReviews: 10,
@@ -95,6 +97,7 @@ export class ProductService {
       mrpPrice: 89,
       currentPrice: 99,
       currency: 'USD',
+      categories: [''],
       countInStock: 10,
       rating: 4,
       numReviews: 20,
@@ -126,6 +129,7 @@ export class ProductService {
       mrpPrice: 89,
       currentPrice: 99,
       currency: 'USD',
+      categories: [''],
       countInStock: 10,
       rating: 4,
       numReviews: 21,
@@ -157,6 +161,7 @@ export class ProductService {
       mrpPrice: 89,
       currentPrice: 99,
       currency: 'USD',
+      categories: [''],
       countInStock: 10,
       rating: 4,
       numReviews: 30,
@@ -188,6 +193,7 @@ export class ProductService {
       mrpPrice: 89,
       currentPrice: 99,
       currency: 'USD',
+      categories: [''],
       countInStock: 10,
       rating: 4,
       numReviews: 21,
@@ -219,6 +225,7 @@ export class ProductService {
       mrpPrice: 89,
       currentPrice: 99,
       currency: 'USD',
+      categories: [''],
       countInStock: 10,
       rating: 4,
       numReviews: 21,
@@ -250,6 +257,7 @@ export class ProductService {
       mrpPrice: 89,
       currentPrice: 99,
       currency: 'USD',
+      categories: [''],
       countInStock: 10,
       rating: 4,
       numReviews: 40,
@@ -267,17 +275,23 @@ export class ProductService {
 
   constructor(private http: HttpClient) { }
 
-  getProducts(categoriesFilter?: string, productsIds?: string[], searchStr?: string): Observable<ProductsResponse> {
+  getProducts(categoriesFilter?: string, productsIds?: string[], searchStr?: string, extraFilters?: any): Observable<ProductsResponse> {
     // let params = new HttpParams();
-    if(categoriesFilter) {
+    if (categoriesFilter) {
+      const filter = JSON.stringify(categoriesFilter);
       // params = params.append('categories', categoriesFilter.join(','))
       // or below approach //
-      return this.http.get<ProductsResponse>(`${this.productBaseUrl}/get-products?categories=${categoriesFilter}`);
+      return this.http.get<ProductsResponse>(`${this.productBaseUrl}/get-products?categories=${filter}`);
     }
-    if(productsIds) {
+    if (extraFilters) {
+      // params = params.append('categories', categoriesFilter.join(','))
+      // or below approach //
+      return this.http.get<ProductsResponse>(`${this.productBaseUrl}/get-products?sizes=${extraFilters}`);
+    }
+    if (productsIds) {
       return this.http.get<ProductsResponse>(`${this.productBaseUrl}/get-products?productsIds=${productsIds}`);
     }
-    if(searchStr) {
+    if (searchStr) {
       return this.http.get<ProductsResponse>(`${this.productBaseUrl}/get-products?search=${searchStr}`);
     }
     // return this.http.get<ProductsResponse>(`${this.productBaseUrl}/get-products`, {params: params});

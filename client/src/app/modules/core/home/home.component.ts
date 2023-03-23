@@ -1,6 +1,5 @@
 import { HttpErrorResponse } from '@angular/common/http';
-import { Component } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o/public_api';
 
 import { Product } from 'src/app/shared/models/product.model';
@@ -12,7 +11,7 @@ import { ProductService } from 'src/app/shared/services/product.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
   customOptionshome: OwlOptions = {
     loop: true,
@@ -82,54 +81,29 @@ export class HomeComponent {
   isCategoryPage = false;
   serverErrMsg: string;
 
-  constructor( private productService: ProductService, private activatedRoute: ActivatedRoute ) {
+  constructor(private productService: ProductService) { }
+
+  ngOnInit(): void {
     this._getProducts();
   }
 
-  private _getProducts(categoriesFilter?: any) {
+  private _getProducts() {
     this.isLoadingProducts = true;
-    this.activatedRoute.queryParams.subscribe((queryParams: Params) => {
-      if(queryParams['categories']) {
-        categoriesFilter = queryParams['categories'];
-        // getting products with filters
-        this.productService.getProducts(categoriesFilter).subscribe((res: ProductsResponse) => {
-          // marking filter value as checked when after refreshing or loading page
-          // this.categories.map(category => {
-          //     category.checked = (categoriesFilter.indexOf(category._id) > -1);
-          // })
-          if (!res['products']) {
-            this.products = [];
-          }
-          else {
-            this.products = res['products'];
-          }
-          this.isLoadingProducts = false;
-          this.isLoadingCategories = false;
-          this.serverErrMsg = '';
-        }, err => {
-          this.isLoadingProducts = false;
-          this.isLoadingCategories = false;
-          this._errorHandler(err);
-        })
+    this.productService.getProducts().subscribe((res: ProductsResponse) => {
+      if (!res['products']) {
+        this.products = [];
       }
       else {
-        // getting products without filters
-        this.productService.getProducts(categoriesFilter).subscribe((res: ProductsResponse) => {
-          if (!res['products']) {
-            this.products = [];
-          }
-          else {
-            this.products = res['products'];
-          }
-          this.isLoadingProducts = false;
-          this.isLoadingCategories = false;
-          this.serverErrMsg = '';
-        }, err => {
-          this.isLoadingProducts = false;
-          this.isLoadingCategories = false;
-          this._errorHandler(err);
-        })
+        this.products = res['products'];
+        console.log(this.products)
       }
+      this.isLoadingProducts = false;
+      this.isLoadingCategories = false;
+      this.serverErrMsg = '';
+    }, err => {
+      this.isLoadingProducts = false;
+      this.isLoadingCategories = false;
+      this._errorHandler(err);
     })
   }
 

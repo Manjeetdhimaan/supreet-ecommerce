@@ -12,6 +12,7 @@ import { ProductGalleryComponent } from './components/ui-components/product-gall
 import { SnackbarComponent } from './components/ui-components/snackbar/snackbar.component';
 import { AnimateDirective } from './directives/animate.directive';
 import { FeaturedProductsComponent } from './components/reusuable-components/featured-products/featured-products.component';
+import { SearchComponent } from './components/ui-components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FeaturedProductsComponent } from './components/reusuable-components/fea
     ProductGalleryComponent,
     SnackbarComponent,
     AnimateDirective,
-    FeaturedProductsComponent
+    FeaturedProductsComponent,
+    SearchComponent
   ],
   imports: [
     CommonModule,
