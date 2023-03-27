@@ -25,7 +25,14 @@ export class CartComponent {
 
   constructor(private productService: ProductService, private cartService: CartService) { }
   ngOnInit(): void {
+    this.scrollTop();
     this._getLocalStorageCart();
+  }
+
+  scrollTop() {
+    window.scrollTo({
+      top: 0
+    })
   }
 
   private _getLocalStorageCart() {

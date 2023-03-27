@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Product } from 'src/app/shared/models/product.model';
-import { ProductResponse } from 'src/app/shared/models/responses.model';
+import { ProductResponse, ProductsResponse } from 'src/app/shared/models/responses.model';
 
 import { CartService } from 'src/app/shared/services/cart.service';
 import { ProductService } from 'src/app/shared/services/product.service';
@@ -27,7 +27,9 @@ export class ProductDetailsComponent implements OnInit {
   isSnackbarShown = false;
   isLoading = false;
   isLoadingCart = false;
+  isLoadingProducts = false;
   serverErrMsg: string;
+  relatedProdCategory: string = 'men';
   customOptionsRelated: OwlOptions = {
     items: 4,
     nav: false,
@@ -57,8 +59,14 @@ export class ProductDetailsComponent implements OnInit {
     this.activatedRoute.params.subscribe((params: Params) => {
       if (params['id']) {
         this._getProduct(params['id']);
-        this.products = this.productService.products;
       }
+    })
+    this.scrollTop();
+  }
+
+  scrollTop() {
+    window.scrollTo({
+      top: 0
     })
   }
 
@@ -66,6 +74,7 @@ export class ProductDetailsComponent implements OnInit {
     this.serverErrMsg = '';
     this.productService.getProduct(id).subscribe((res: ProductResponse) => {
       this.product = res['product'];
+      this.relatedProdCategory = this.product.categories[0];
       this.imageData.push({
         srcUrl: this.product.image,
         previewUrl: this.product.image
@@ -78,10 +87,28 @@ export class ProductDetailsComponent implements OnInit {
       })
       this.serverErrMsg = '';
       this.isLoading = false;
+      this._getRelatedProducts(this.relatedProdCategory);
     }, err => {
       this.isLoading = false;
       this._errorHandler(err);
     });
+  }
+
+  private _getRelatedProducts(filters: any) {
+    this.isLoadingProducts = true;
+    this.productService.getProducts(filters).subscribe((res: ProductsResponse) => {
+      if (!res['products']) {
+        this.products = [];
+      }
+      else {
+        this.products = res['products'];
+      }
+      this.isLoadingProducts = false;
+      this.serverErrMsg = '';
+    }, err => {
+      this.isLoadingProducts = false;
+      this._errorHandler(err);
+    })
   }
 
   private _errorHandler(err: HttpErrorResponse) {

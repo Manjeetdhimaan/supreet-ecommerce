@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./not-found.component.css']
 })
 export class NotFoundComponent {
+  constructor() {
+    this.scrollTop();
+  }
 
+  scrollTop() {
+    window.scrollTo({
+      top: 0
+    })
+  }
 }

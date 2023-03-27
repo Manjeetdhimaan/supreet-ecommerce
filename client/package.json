@@ -11,6 +11,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^15.2.0",
+    "@angular/cdk": "^15.2.4",
     "@angular/common": "^15.2.0",
     "@angular/compiler": "^15.2.0",
     "@angular/core": "^15.2.0",
@@ -20,6 +21,7 @@
     "@angular/router": "^15.2.0",
     "animate.css": "^4.1.1",
     "ng-gallery": "^8.0.2",
+    "ngx-checkbox": "^1.0.1",
     "ngx-owl-carousel-o": "^15.0.0",
     "ngx-skeleton-loader": "^7.0.0",
     "rxjs": "~7.8.0",

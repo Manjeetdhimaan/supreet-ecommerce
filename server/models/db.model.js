@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const devEnv = require('../dev-env/dev-env');
 require('./product.model');
 require('./category.model');
+require('./contact-details.model');
 
 mongoose.set('strictQuery', true);
 mongoose.connect(process.env.MONGO_URI || devEnv.MONGO_URI, {

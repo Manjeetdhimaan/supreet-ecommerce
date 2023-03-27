@@ -8,6 +8,7 @@ require('./models/db.model');
 const devEnv = require('./dev-env/dev-env');
 const productRoutes = require('./routes/product.routes');
 const categoryRoutes = require('./routes/category.routes');
+const contactDetailRoutes = require('./routes/contact-detail.routes');
 
 const port = process.env.PORT || devEnv.PORT;
 const api = process.env.API_URL || devEnv.API_URL;
@@ -23,6 +24,7 @@ app.use("/public/uploads", express.static(path.join(__dirname, "public/uploads")
 // Routes
 app.use(`${api}/products`, productRoutes);
 app.use(`${api}/categories`, categoryRoutes);
+app.use(`${api}/contact`, contactDetailRoutes);
 
 // Error handler
 app.use((err, req, res, next) => {

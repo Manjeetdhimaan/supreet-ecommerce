@@ -1,85 +1,84 @@
 <footer class="footer appear-animate">
   <div class="container">
-      <div class="footer-middle">
+    <div class="footer-middle">
+      <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <div class="widget widget-about">
+            <a routerLink="/" class="logo-footer mb-4">
+              <img src="assets/images/logo/supreet-logo-png.png" alt="logo-footer" width="150" height="43" />
+            </a>
+            <div class="widget-body">
+              <p class="ls-s">Fringilla urna porttitor rhoncus dolor purus<br />
+                luctus venenatis lectus magna fringilla diam<br />
+                maecenas ultricies mi eget mauris.</p>
+              <a *ngFor="let email of emails" [href]="'mailto:' + email"><span class="__cf_email__">{{ email }}</span></a>
+            </div>
+          </div>
+          <!-- End of Widget -->
+        </div>
+        <div class="col-lg-8">
           <div class="row">
-              <div class="col-lg-4 col-sm-6">
-                  <div class="widget widget-about">
-                      <a href="demo2.html" class="logo-footer mb-4">
-                          <img src="images/demos/demo2/logo-footer.png" alt="logo-footer" width="150"
-                              height="43" />
-                      </a>
-                      <div class="widget-body">
-                          <p class="ls-s">Fringilla urna porttitor rhoncus dolor purus<br />
-                              luctus venenatis lectus magna fringilla diam<br />
-                              maecenas ultricies mi eget mauris.</p>
-                          <a href="https://d-themes.com/cdn-cgi/l/email-protection#563b373f3a16243f3932337835393b"><span class="__cf_email__" data-cfemail="6c3e050308092c09140d011c0009420f0301">[email&#160;protected]</span></a>
-                      </div>
+            <div class="col-lg-4 col-sm-4">
+              <div class="widget">
+                <h4 class="widget-title">Ouick Links</h4>
+                <ul class="widget-body">
+                  <li><a routerLink="/products/collections/men">Men</a></li>
+                  <li><a routerLink="/products/collections/boxer">Boxers</a></li>
+                  <li><a routerLink="/products/collections/vest">Vests</a></li>
+                  <li><a routerLink="/products/collections/socks">Socks</a></li>
+                </ul>
+              </div>
+              <!-- End of Widget -->
+            </div>
+            <div class="col-lg-4 col-sm-4">
+              <div class="widget">
+                <h4 class="widget-title">Customer Support</h4>
+                <ul class="widget-body">
+                  <li><a routerLink="/about">About Us</a></li>
+                  <li *ngFor="let email of emails"><a [href]="'mailto:' + email">Get Support</a></li>
+                  <li *ngFor="let phone of phones"><a [href]="'tel:' + phone">Call Us</a></li>
+                  <li *ngFor="let phone of phones"><a [href]="'https://wa.me/'+ phone" target="_blank">Whatsapp</a></li>
+                </ul>
+              </div>
+              <!-- End of Widget -->
+            </div>
+            <div class="col-lg-4 col-sm-4">
+              <div class="widget">
+                <h4 class="widget-title">My Account</h4>
+                <ul class="widget-body">
+                  <li><a routerLink="/cart">View Cart</a></li>
+                  <li><a href="mailto:mani@mani.com">Help</a></li>
+                  <div class="social-links">
+                    <a [href]="socialMediaLinks?.facebook" title="social-link" class="social-link social-facebook fab fa-facebook-f"></a>
+                    <a [href]="socialMediaLinks?.twitter" class="social-link social-twitter fab fa-twitter"></a>
+                    <a [href]="socialMediaLinks?.instagram" title="social-link" class="social-link social-instagram fab fa-instagram"></a>
                   </div>
-                  <!-- End of Widget -->
+                </ul>
               </div>
-              <div class="col-lg-8">
-                  <div class="row">
-                      <div class="col-lg-4 col-sm-4">
-                          <div class="widget">
-                              <h4 class="widget-title">About Us</h4>
-                              <ul class="widget-body">
-                                  <li><a href="about-us.html">About Us</a></li>
-                                  <li><a href="#">Order History</a></li>
-                                  <li><a href="#">Returns</a></li>
-                                  <li><a href="#">Custom Service</a></li>
-                                  <li><a href="#">Terms &amp; Condition</a></li>
-                              </ul>
-                          </div>
-                          <!-- End of Widget -->
-                      </div>
-                      <div class="col-lg-4 col-sm-4">
-                          <div class="widget">
-                              <h4 class="widget-title">Customer Service</h4>
-                              <ul class="widget-body">
-                                  <li><a href="#">Payment Methods</a></li>
-                                  <li><a href="#">Money-back Guarantee!</a></li>
-                                  <li><a href="#">Returns</a></li>
-                                  <li><a href="#">Shipping</a></li>
-                                  <li><a href="#">Terms and Conditions</a></li>
-                              </ul>
-                          </div>
-                          <!-- End of Widget -->
-                      </div>
-                      <div class="col-lg-4 col-sm-4">
-                          <div class="widget">
-                              <h4 class="widget-title">My Account</h4>
-                              <ul class="widget-body">
-                                  <li><a href="#">Sign In</a></li>
-                                  <li><a routerLink="/cart">View Cart</a></li>
-                                  <li><a href="wishlist.html">My Wishlist</a></li>
-                                  <li><a href="#">Track My Order</a></li>
-                                  <li><a href="#">Help</a></li>
-                              </ul>
-                          </div>
-                          <!-- End of Widget -->
-                      </div>
-                  </div>
-              </div>
+              <!-- End of Widget -->
+            </div>
           </div>
+        </div>
       </div>
-      <!-- End of FooterMiddle -->
-      <div class="footer-bottom">
-          <div class="footer-left">
-              <figure class="payment">
-                  <img src="images/payment.png" alt="payment" width="159" height="29" />
-              </figure>
-          </div>
-          <div class="footer-center">
-              <p class="copyright">SIG eCommerce &copy; 2022. All Rights Reserved</p>
-          </div>
-          <div class="footer-right">
-              <div class="social-links">
-                  <a href="#" title="social-link" class="social-link social-facebook fab fa-facebook-f"></a>
-                  <a href="#" title="social-link" class="social-link social-twitter fab fa-twitter"></a>
-                  <a href="#" title="social-link" class="social-link social-linkedin fab fa-linkedin-in"></a>
-              </div>
-          </div>
+    </div>
+    <!-- End of FooterMiddle -->
+    <div class="footer-bottom">
+      <div class="footer-left">
+        <figure class="payment">
+          <img src="assets/images/payment.png" alt="payment" width="159" height="29" />
+        </figure>
       </div>
-      <!-- End of FooterBottom -->
+      <div class="footer-center">
+        <p class="copyright">SIG eCommerce &copy; {{getCurrentYear()}}. All Rights Reserved</p>
+      </div>
+      <div class="footer-right" style="visibility: hidden;">
+        <div class="social-links">
+          <a [href]="socialMediaLinks?.facebook" title="social-link" class="social-link social-facebook fab fa-facebook-f"></a>
+          <a [href]="socialMediaLinks?.twitter" class="social-link social-twitter fab fa-twitter"></a>
+          <a [href]="socialMediaLinks?.instagram" title="social-link" class="social-link social-instagram fab fa-instagram"></a>
+        </div>
+      </div>
+    </div>
+    <!-- End of FooterBottom -->
   </div>
 </footer>

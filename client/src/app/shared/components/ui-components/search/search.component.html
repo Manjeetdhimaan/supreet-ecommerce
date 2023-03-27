@@ -1,1 +1,18 @@
-<p>search works!</p>
+<form class="input-wrapper">
+  <input type="text" [(ngModel)]="searchText" (keyup)="onSearchProducts($event)" class="form-control" name="search" autocomplete="off" placeholder="Search..." required />
+  <button class="btn btn-search" type="submit" title="submit-button">
+    <i class="d-icon-search"></i>
+  </button>
+</form>
+<div class="products-search-list" *ngIf="products.length > 0">
+  <ul [@list2]>
+    <li class="products-search-item" *ngFor="let product of products">
+      <a [routerLink]="'/products/'+product._id" (click)="onSearchProducts($event, true)"><img class="products-search-item-image" [src]="product.image" [alt]="product.name" width="50"> <span>{{ product.name }}</span></a>
+    </li>
+  </ul>
+</div>
+<div class="products-search-list" *ngIf="products.length <= 0 && isNotFound">
+  <p class="products-search-item">No Results found</p>
+</div>
+<div class="products-search-backdrop" (click)="onSearchProducts($event, true)" [@fadeIn] *ngIf="products.length > 0">
+</div>

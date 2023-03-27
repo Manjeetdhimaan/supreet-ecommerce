@@ -19,64 +19,62 @@ export class CollectionComponent implements OnInit {
   isCategoryPage = false;
   serverErrMsg: string;
   collectionName: string;
-  categories: any[] = [
-    {
-      value: 'extra large',
-      checked: false
-    },
-    {
-      value: 'large',
-      checked: false
-    },
-    {
-      value: 'medium',
-      checked: false
-    },
-    {
-      value: 'small',
-      checked: false
-    },
-  ];
+  sizes: any[] = [];
 
 
   constructor(private productService: ProductService, private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    this.sizes = this.productService.sizes;
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+    this.scrollTop();
     this.activatedRoute.params.subscribe((params: Params) => {
       if (params['name']) {
-        this.collectionName = params['name']
-        this._getProducts(params['name']);
+        const updatedName = params['name'].split('-').join(' ');
+        this.collectionName = updatedName;
+        this._getProducts(updatedName);
       }
     })
   }
 
-  sizeFilter(sizeFilter: string) {
-    this.isLoadingCategories = true;
-    const selectedCategories = this.categories.filter(category => category.checked).map(category => category.value);
-    this.router.navigate([`/products/collections/${this.collectionName}`], {
-      queryParams: { sizes: selectedCategories, colors: '#F15212' }
-    });
+  scrollTop() {
+    window.scrollTo({
+      top: 0
+    })
+  }
 
-    // this.isLoadingCategories = true;
-    // // const selectedCategories = this.categories.filter(category => category.checked).map(category => category._id);
-    // const selectedCategories = filter;
-    // this.router.navigate([`/products/collections/${this.collectionName}`], {queryParams: {sizes: selectedCategories}});
-    // // this._getProducts();
+  sizeFilter(filterType: string, value: any) {
+    this.isLoadingCategories = true;
+    const selectedSizes = this.sizes.filter(size => size.checked).map(size => size.value);
+    const updatedName = this.collectionName.split('-').join(' ');
+    const queryParams: any = {};
+    if (filterType === 'sizes' && selectedSizes.length > 0) {
+      queryParams.sizes = selectedSizes.join(':')
+    }
+    if (filterType === 'weight') {
+      queryParams.weight = value
+    }
+    if (selectedSizes.length <= 0) {
+      this.router.navigate([`/products/collections/${updatedName}`]);
+      // this.ngOnInit();
+      return;
+    }
+    this.router.navigate([`/products/collections/${updatedName}`], {
+      queryParams: queryParams, queryParamsHandling: 'merge'
+    });
   }
 
   private _getProducts(filters?: any) {
     this.isLoadingProducts = true;
     this.activatedRoute.queryParams.subscribe((queryParams: Params) => {
-      if (queryParams['sizes'] || queryParams['colors']) {
-        console.log(queryParams)
-        filters = Object.assign({}, { categories: filters, sizes: queryParams['sizes'], colors: queryParams['colors'] })
+      if (queryParams) {
+        filters = Object.assign({}, { categories: filters, sizes: queryParams['sizes'], weight: queryParams['weight'], price: queryParams['price'] })
         // getting products with filters
         this.productService.getProducts(filters).subscribe((res: ProductsResponse) => {
           // marking filter value as checked when after refreshing or loading page
-          // this.products.map(product => {
-          //   this.categories = this.categories.concat(product.sizes);
-          // })
+          this.sizes.map(size => {
+            size.checked = (queryParams['sizes']?.split(':').includes(size.value));
+          })
           if (!res['products']) {
             this.products = [];
           }
@@ -100,10 +98,6 @@ export class CollectionComponent implements OnInit {
           }
           else {
             this.products = res['products'];
-            // this.products.map(product => {
-            //   this.categories = this.categories.concat(product.sizes);
-            //   console.log('conact', this.categories)
-            // })
           }
           this.isLoadingProducts = false;
           this.isLoadingCategories = false;
@@ -115,6 +109,11 @@ export class CollectionComponent implements OnInit {
         })
       }
     })
+  }
+
+  onClearFilters() {
+    const updatedName = this.collectionName.split(' ').join('-')
+    this.router.navigate([`/products/collections/${updatedName}`])
   }
 
   private _errorHandler(err: HttpErrorResponse) {

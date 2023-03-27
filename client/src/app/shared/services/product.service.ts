@@ -273,9 +273,28 @@ export class ProductService {
     },
   ];
 
+  sizes: any[] = [
+    {
+      value: 'extra large',
+      checked: false
+    },
+    {
+      value: 'large',
+      checked: false
+    },
+    {
+      value: 'medium',
+      checked: false
+    },
+    {
+      value: 'small',
+      checked: false
+    },
+  ];
+
   constructor(private http: HttpClient) { }
 
-  getProducts(categoriesFilter?: string, productsIds?: string[], searchStr?: string, extraFilters?: any): Observable<ProductsResponse> {
+  getProducts(categoriesFilter?: string, productsIds?: string[], searchStr?: string, extraFilters?: any, newArrivals?: boolean): Observable<ProductsResponse> {
     // let params = new HttpParams();
     if (categoriesFilter) {
       const filter = JSON.stringify(categoriesFilter);
@@ -293,6 +312,9 @@ export class ProductService {
     }
     if (searchStr) {
       return this.http.get<ProductsResponse>(`${this.productBaseUrl}/get-products?search=${searchStr}`);
+    }
+    if (newArrivals) {
+      return this.http.get<ProductsResponse>(`${this.productBaseUrl}/get-products/?new=${newArrivals}`);
     }
     // return this.http.get<ProductsResponse>(`${this.productBaseUrl}/get-products`, {params: params});
     return this.http.get<ProductsResponse>(`${this.productBaseUrl}/get-products`);

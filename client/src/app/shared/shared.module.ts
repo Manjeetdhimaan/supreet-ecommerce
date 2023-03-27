@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { LightboxModule } from 'ng-gallery/lightbox';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -32,7 +33,8 @@ import { SearchComponent } from './components/ui-components/search/search.compon
       thumbView: 'contain',
     }),
     LightboxModule,
-    CarouselModule
+    CarouselModule,
+    FormsModule
   ],
   exports: [
     ProductComponent,
@@ -41,7 +43,8 @@ import { SearchComponent } from './components/ui-components/search/search.compon
     ProductGalleryComponent,
     SnackbarComponent,
     AnimateDirective,
-    FeaturedProductsComponent
+    FeaturedProductsComponent,
+    SearchComponent
   ]
 })
 export class SharedModule { }

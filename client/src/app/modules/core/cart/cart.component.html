@@ -17,7 +17,7 @@
               </tr>
             </thead>
             <tbody *ngIf="cartItems && cartItems.length > 0">
-              <tr *ngFor="let cartItem of cartItems; let i = index" class="animate__animated animate__bounceIn snackbar">
+              <tr *ngFor="let cartItem of cartItems; let i = index" class="animate__animated animate__fadeIn snackbar">
                 <td class="product-thumbnail">
                   <figure>
                     <a [routerLink]="'/products/' + cartItem.product._id">

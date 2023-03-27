@@ -45,17 +45,17 @@ const productSchema = new mongoose.Schema({
     sizes: [{
         type: String
     }],
-    subcategory:[{
-        subcategoryName:String,
-        model:[{
-            modelName:String,
-            color:[{
-                name:String,
-                image:String
+    subcategory: [{
+        subcategoryName: String,
+        model: [{
+            modelName: String,
+            color: [{
+                name: String,
+                image: String
             }],
-            size:[{
-                val:Number,
-                price:Number
+            size: [{
+                val: Number,
+                price: Number
             }]
         }]
     }],
@@ -85,9 +85,12 @@ const productSchema = new mongoose.Schema({
 });
 
 // productSchema.index({'$**': 'text'});
-productSchema.index({name: 'text', 'category.name': 'text'});
+productSchema.index({
+    name: 'text',
+    'category.name': 'text'
+});
 
-productSchema.virtual('id').get(function() {
+productSchema.virtual('id').get(function () {
     return this._id.toHexString();
 });
 

@@ -9,36 +9,33 @@
             <div class="filter-actions mb-4">
               <a class="sidebar-toggle-btn toggle-remain btn btn-outline btn-primary btn-icon-right btn-rounded"
                 (click)="onCloseFilterSideBar()">Filter<i class="d-icon-arrow-left"></i></a>
-              <a class="filter-clean">Clean All</a>
+              <a class="filter-clean" (click)="onClearFilters()">Clean All</a>
             </div>
             <div class="widget widget-collapsible">
               <h3 class="widget-title">Size</h3>
               <!-- <ul class="widget-body filter-items">
-                <li *ngFor="let category of categories" (click)="sizeFilter(category.value)"><a>{{ category.value }}</a></li>
+                <li *ngFor="let size of sizes" [value]="size.checked" (click)="sizeFilter('sizes', size.value)"><a>{{ size.value }}</a></li>
               </ul> -->
-              <div class="widget-body filter-items" *ngFor="let category of categories">
-                <input type="checkbox" [(ngModel)]="category.checked" [id]="category.value" (ngModelChange)="sizeFilter(category.value)">
-                <label [for]="category.value" style="text-transform: capitalize;">{{category.value}}</label>
+              <div class="widget-body filter-items" *ngFor="let size of sizes">
+                <input type="checkbox" [(ngModel)]="size.checked" [id]="size.value" (change)="sizeFilter('sizes', size.value)" >
+                <label [for]="size.value" style="text-transform: capitalize;">{{size.value}}</label>
               </div>
             </div>
             <div class="widget widget-collapsible">
-              <h3 class="widget-title">Color</h3>
-              <ul class="widget-body filter-items">
-                <li><a>Black</a></li>
-                <li><a>Blue</a></li>
-                <li><a>Green</a></li>
-                <li><a>White</a></li>
-              </ul>
-            </div>
-            <div class="widget widget-collapsible">
-              <h3 class="widget-title">Brands</h3>
-              <ul class="widget-body filter-items">
-                <li><a>Cinderella</a></li>
-                <li><a>Comedy</a></li>
-                <li><a>Rightcheck</a></li>
-                <li><a>SkillStar</a></li>
-                <li><a>SLS</a></li>
-              </ul>
+              <h3 class="widget-title">Filter by Price</h3>
+              <div class="widget-body mt-3">
+                <form action="#">
+                  <div class="filter-price-slider"></div>
+
+                  <div class="filter-actions">
+                    <div class="filter-price-text mb-4">Price:
+                      <span class="filter-price-range"></span>
+                    </div>
+                    <button type="submit"
+                      class="btn btn-dark btn-filter btn-rounded">Filter</button>
+                  </div>
+                </form><!-- End Filter Price Form -->
+              </div>
             </div>
           </div>
         </div>
@@ -48,7 +45,7 @@
           <div class="toolbox-left">
             <a class="toolbox-item btn btn-sm btn-outline btn-primary btn-rounded btn-icon-right d-lg-none"
               (click)="onOpenFilterSidebar()">Filter<i class="d-icon-arrow-right"></i></a>
-            <div class="toolbox-item toolbox-sort select-box text-dark">
+            <div class="toolbox-item toolbox-sort select-box" style="visibility: hidden;">
               <label>Sort By :</label>
               <select name="orderby" class="form-control">
                 <option value="default">Default</option>
@@ -67,7 +64,8 @@
             <ngx-skeleton-loader count="1" appearance="circle" [theme]="{
               width: '100%',
               height: '320px',
-              'border-radius': 0
+              'border-radius': 0,
+              'background-color': 'black'
             }">
             </ngx-skeleton-loader>
           </div>

@@ -6,7 +6,8 @@
           <ngx-skeleton-loader count="1" appearance="circle" [theme]="{
           width: '100%',
           height: '320px',
-          'border-radius': 0
+          'border-radius': 0,
+          'background-color': 'black'
         }">
           </ngx-skeleton-loader>
         </div>
@@ -14,13 +15,14 @@
           <ngx-skeleton-loader count="1" appearance="circle" [theme]="{
           width: '100%',
           height: '320px',
-          'border-radius': 0
+          'border-radius': 0,
+          'background-color': 'black'
         }">
           </ngx-skeleton-loader>
         </div>
       </div>
       <app-snackbar *ngIf="product" [name]="product.name" [isShown]="isSnackbarShown"></app-snackbar>
-      <div class="product product-single row mb-2 animate__animated animate__bounceInDown">
+      <div class="product product-single row mb-2 animate__animated animate__fadeIn">
         <div class="col-md-6" style="margin: auto;">
           <app-product-gallery *ngIf="product" [imageData]="imageData"></app-product-gallery>
         </div>
@@ -56,12 +58,12 @@
               </ul> -->
             </div>
 
-            <h1 class="product-name">{{ product.name }}</h1>
+            <h1 class="product-name">{{ product?.name }}</h1>
             <div class="product-meta">
               SKU: <span class="product-sku">12345670</span>
-              BRAND: <span class="product-brand">{{ product.brand }}</span>
+              BRAND: <span class="product-brand">{{ product?.brand }}</span>
             </div>
-            <div class="product-price mb-2">{{ product.currentPrice | currency: product.currency }}</div>
+            <div class="product-price mb-2">{{ product?.currentPrice | currency: product?.currency }}</div>
             <!-- <div class="ratings-container">
               <div class="ratings-full">
                 <span class="ratings" style="width:80%"></span>
@@ -69,7 +71,7 @@
               </div>
               <a href="#product-tab-reviews" class="link-to-tab rating-reviews">( 6 reviews )</a>
             </div> -->
-            <p class="product-short-desc">{{ product.description }}</p>
+            <p class="product-short-desc" *ngIf="product">{{ product.description }}</p>
 
             <hr class="product-divider">
 
@@ -108,7 +110,7 @@
               <div class="col-md-6">
                 <h5 class="description-title mb-4 font-weight-semi-bold ls-m">Features</h5>
                 <ul class="mb-8">
-                  <li *ngFor="let feature of product.features" [innerHTML]="feature"></li>
+                  <li *ngFor="let feature of product?.features" [innerHTML]="feature"></li>
                 </ul>
               </div>
               <div class="col-md-6 pl-md-6 pt-4 pt-md-0">
@@ -118,9 +120,8 @@
                       <i class="d-icon-lock"></i>
                     </div>
                     <div class="icon-box-content">
-                      <h4 class="icon-box-title lh-1 pt-1 ls-s text-normal">2 year
-                        warranty</h4>
-                      <p>Guarantee with no doubt</p>
+                      <h4 class="icon-box-title lh-1 pt-1 ls-s text-normal">100% Genuine</h4>
+                      <p>Quality with no doubt</p>
                     </div>
                   </div>
                   <div class="divider d-xl-show mr-10"></div>
@@ -131,7 +132,7 @@
                     <div class="icon-box-content">
                       <h4 class="icon-box-title lh-1 pt-1 ls-s text-normal">Paid shipping
                       </h4>
-                      <p>On orders over $50.00</p>
+                      <p>at your door</p>
                     </div>
                   </div>
                 </div>
@@ -140,9 +141,9 @@
           </div>
           <div class="tab-pane" id="product-tab-additional">
             <ul class="list-none">
-              <li><label>Available color<span *ngIf="product.colors.length>0">s</span>:</label>
+              <li><label>Available color<span *ngIf="product && product.colors.length>0">s</span>:</label>
                 <p>
-                  <span *ngFor="let color of product.colors; let i = index">
+                  <span *ngFor="let color of product?.colors; let i = index">
                     <div
                       [style]="'background-color:' +color +'; width: 30px; height: 30px; display: inline-block; margin-right: 3px'">
                     </div>
@@ -152,7 +153,7 @@
               </li>
               <li><label>Size:</label>
                 <p>
-                  <span *ngFor="let size of product.sizes;
+                  <span *ngFor="let size of product?.sizes;
                     let i = index" style="margin-right: 3px;" style="text-transform: capitalize">{{ size }}<span
                       *ngIf="i < product.sizes.length - 1">,
                     </span>
@@ -163,12 +164,7 @@
           </div>
           <div class="tab-pane " id="product-tab-shipping-returns">
             <h6 class="mb-2">Washing Instructions</h6>
-            <p class="mb-0">We deliver to over 100 countries around the world. For full details of
-              the delivery options we offer, please view our <a href="#" class="text-primary">Delivery
-                information</a> We hope you’ll love every
-              purchase, but if you ever need to return an item you can do so within a month of
-              receipt. For full details of how to make a return, please view our <a href="#"
-                class="text-primary">Returns information</a></p>
+            <p class="mb-0">Gentle Wash</p>
           </div>
 
         </div>

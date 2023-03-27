@@ -55,14 +55,14 @@
           <div class="col-md-6 mb-4">
             <div class="banner banner-fixed overlay-zoom intro-banner intro-banner1 content-middle">
               <figure>
-                <img src="assets/images/demos/demo2/banners/1.jpg" animation="fadeInUp" delay="100" duration="500" offset="110" triggerOnce="false" width="580" height="249" alt="banner"
-                  style="background-color: #eca5a9;" />
+                <img src="assets/images/supreet/make-a-move-new-banner-desktop.jpg" animation="fadeInUp" delay="100" duration="500" offset="110" triggerOnce="false" width="580" height="249" alt="banner"
+                  style="background-color: #222;" />
               </figure>
               <div class="banner-content">
                 <h4 class="banner-subtitle ls-normal text-white text-uppercase font-weight-normal lh-1">
                   New Arrivals</h4>
                 <h3 class="banner-title text-white font-weight-bold ls-md">
-                  Women's Sale
+                  Men's Sale
                 </h3>
                 <a href="demo2-shop.html" class="btn btn-white btn-link btn-underline font-weight-semi-bold">Shop
                   Now<i class="d-icon-arrow-right"></i></a>
@@ -73,26 +73,26 @@
           <div class="col-md-6 mb-4">
             <div class="banner banner-fixed overlay-zoom intro-banner intro-banner2 content-middle">
               <figure>
-                <img src="assets/images/demos/demo2/banners/2.jpg" width="580" height="249" alt="banner"
-                  style="background-color: #494442;" />
+                <img src="assets/images/supreet/hero-banner-3-new.jpg" width="580" height="249" alt="banner"
+                  style="background-color: #222;" />
               </figure>
-              <div class="banner-content">
+              <!-- <div class="banner-content">
                 <h4 class="banner-subtitle ls-normal text-white text-uppercase font-weight-normal lh-1">
                   Trending</h4>
                 <h3 class="banner-title text-white font-weight-bold ls-md">
                   New Sneaker
                 </h3>
-                <a href="demo2-shop.html"
+                <a routerLink="/men"
                   class="btn btn-white btn-link btn-underline btn-white font-weight-semi-bold">Shop
                   Now<i class="d-icon-arrow-right"></i></a>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
       </section>
 
       <section class="mt-10 pt-3 mb-6">
-        <h2 class="title title-simple title-center ls-m">Best Selling</h2>
+        <h2 class="title title-simple title-center ls-m">New Arrivals</h2>
         <div class="product-wrapper row">
           <div class="col-lg-3 col-md-4 col-6 mb-4" *ngFor="let product of products">
             <app-product [product]="product"></app-product>
@@ -103,48 +103,29 @@
       <section class="pt-md-2 pb-md-6 category-section">
         <h2 class="title title-simple ls-m">Top Categories</h2>
         <div class="row grid">
-          <div class="grid-item col-md-6 height-x2">
-            <div class="banner banner-fixed content-middle content-center overlay-dark">
-              <a href="demo2-shop.html">
-                <figure>
-                  <img src="images/demos/demo2/category/1.jpg" alt="category" width="585" height="397"
-                    style="background-color: #eef0f1;" />
-                </figure>
-              </a>
-              <div class="banner-content text-center w-100 h-100 d-flex flex-column">
-                <h3 class="banner-title text-uppercase ls-s mb-0">Padded Clothes</h3>
-                <h4 class="banner-subtitle flex-1 font-weight-normal text-capitalize text-body ls-md lh-1 mb-0">
-                  Collection</h4>
-                <div class="btn-group">
-                  <a href="demo2-shop.html" class="btn btn-white btn-rounded font-weight-semi-bold">Women’s</a>
-                  <a href="demo2-shop.html" class="btn btn-white btn-rounded font-weight-semi-bold">Men's</a>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="grid-item col-sm-6 height-x1">
             <div class="category category-light category-absolute overlay-dark">
-              <a href="demo2-shop.html">
+              <a (click)="scrollTop()" routerLink="/products/collections/men">
                 <figure class="category-media">
-                  <img src="images/demos/demo2/category/2.jpg" alt="category" width="585" height="205"
+                  <img src="assets/images/demos/demo2/category/2.jpg" alt="category" width="585" height="205"
                     style="background-color: #c8ced4;" />
                 </figure>
               </a>
               <div class="category-content">
-                <h4 class="category-name"><a href="demo2-shop.html">Women’s T-Shirt</a></h4>
+                <h4 class="category-name"><a (click)="scrollTop()" routerLink="/products/collections/men">Men’s Innerwears</a></h4>
               </div>
             </div>
           </div>
           <div class="grid-item col-sm-6 height-x1">
             <div class="category category-light category-absolute overlay-dark">
-              <a href="demo2-shop.html">
+              <a (click)="scrollTop()" routerLink="/products/collections/boxer">
                 <figure class="category-media">
-                  <img src="images/demos/demo2/category/3.jpg" alt="category" width="585" height="397"
+                  <img src="assets/images/demos/demo2/category/3.jpg" alt="category" width="585" height="397"
                     style="background-color: #ebedef;" />
                 </figure>
               </a>
               <div class="category-content">
-                <h4 class="category-name"><a href="demo2-shop.html">Sports & Outdoors</a></h4>
+                <h4 class="category-name"><a (click)="scrollTop()" routerLink="/products/collections/boxer">Boxers</a></h4>
               </div>
             </div>
           </div>
@@ -175,8 +156,7 @@
             <ng-template carouselSlide>
               <div class="icon-box">
                 <div class="icon-box-content">
-                  <h3 class="icon-box-title font-weight-bold text-capitalize ls-normal mb-0">Free
-                    delivery</h3>
+                  <h3 class="icon-box-title font-weight-bold text-capitalize ls-normal mb-0">Delivery at your door</h3>
                   <p class="text-primary">When You Spend $80 or More</p>
                 </div>
               </div>

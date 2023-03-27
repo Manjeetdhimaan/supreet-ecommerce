@@ -1,24 +1,19 @@
 <h1 class="d-none">SIG</h1>
-<header class="header"  [ngClass]="isSticky ? 'fixed': ''">
+<header class="header" >
 
-  <div class="header-middle sticky-header fix-top sticky-content">
+  <div class="header-middle sticky-header fix-top sticky-content" [class]="isSticky ? 'fixed static': ''">
     <div class="container">
       <div class="header-left">
         <a class="mobile-menu-toggle">
           <i class="d-icon-bars2"></i>
         </a>
         <a routerLink="/" class="logo">
-          <img src="images/demos/demo2/logo.png" alt="logo" width="153" height="44" />
+          <img src="assets/images/logo/supreet-logo-png.png" alt="logo" width="123" height="64" />
         </a>
         <!-- End Logo -->
 
         <div class="header-search hs-simple">
-          <form action="#" class="input-wrapper">
-            <input type="text" class="form-control" name="search" autocomplete="off" placeholder="Search..." required />
-            <button class="btn btn-search" type="submit" title="submit-button">
-              <i class="d-icon-search"></i>
-            </button>
-          </form>
+          <app-search></app-search>
         </div>
         <!-- End Header Search -->
       </div>
@@ -32,7 +27,6 @@
             <p>0(800) 123-456</p>
           </div>
         </a>
-        <span class="divider"></span>
         <div class="dropdown wishlist wishlist-dropdown off-canvas">
           <div class="canvas-overlay"></div>
         </div>
@@ -78,162 +72,14 @@
             <li routerLinkActive="active">
               <a routerLink="/products/collections/inner-wear">InnerWear</a>
             </li>
-            <li>
-              <a href="#">Pages</a>
-              <ul>
-                <li><a routerLink="/about">About</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-                <li><a href="account.html">My Account</a></li>
-                <li><a href="wishlist.html">Wishlist</a></li>
-                <li><a href="faq.html">FAQs</a></li>
-                <li><a href="error-404.html">Error 404</a>
-                  <ul>
-                    <li><a href="error-404.html">Error 404-1</a></li>
-                    <li><a href="error-404-1.html">Error 404-2</a></li>
-                    <li><a href="error-404-2.html">Error 404-3</a></li>
-                    <li><a href="error-404-3.html">Error 404-4</a></li>
-                  </ul>
-                </li>
-                <li><a href="coming-soon.html">Coming Soon</a></li>
-              </ul>
+            <li routerLinkActive="active">
+              <a routerLink="/products/collections/boxer">Boxers</a>
             </li>
-            <li class="d-xl-show">
-              <a href="element.html">Elements</a>
-              <div class="megamenu">
-                <div class="row">
-                  <div class="col-md-3">
-                    <h4 class="menu-title">Elements 1</h4>
-                    <ul>
-                      <li><a href="element-accordions.html">Accordions</a></li>
-                      <li><a href="element-alerts.html">Alert &amp; Notification</a></li>
-
-                      <li><a href="element-banner-effect.html">Banner Effect
-
-                        </a></li>
-                      <li><a href="element-banner.html">Banner
-                        </a></li>
-                      <li><a href="element-blog-posts.html">Blog Posts</a></li>
-                      <li><a href="element-breadcrumb.html">Breadcrumb
-                        </a></li>
-                      <li><a href="element-buttons.html">Buttons</a></li>
-                      <li><a href="element-cta.html">Call to Action</a></li>
-                      <li><a href="element-countdown.html">Countdown
-                        </a></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-3">
-                    <h4 class="menu-title">Elements 2</h4>
-                    <ul>
-                      <li><a href="element-counter.html">Counter </a></li>
-                      <li><a href="element-creative-grid.html">Creative Grid
-
-                        </a></li>
-                      <li><a href="element-animation.html">Entrance Effect
-
-                        </a></li>
-                      <li><a href="element-floating.html">Floating
-
-                        </a></li>
-                      <li><a href="element-hotspot.html">Hotspot
-
-                        </a></li>
-                      <li><a href="element-icon-boxes.html">Icon Boxes</a></li>
-                      <li><a href="element-icons.html">Icons</a></li>
-                      <li><a href="element-image-box.html">Image box
-
-                        </a></li>
-                      <li><a href="element-instagrams.html">Instagrams</a></li>
-
-                    </ul>
-                  </div>
-                  <div class="col-md-3">
-                    <h4 class="menu-title">Elements 3</h4>
-                    <ul>
-
-                      <li><a href="element-categories.html">Product Category</a></li>
-                      <li><a href="element-products.html">Products</a></li>
-                      <li><a href="element-product-banner.html">Products + Banner
-
-                        </a></li>
-                      <li><a href="element-product-grid.html">Products + Grid
-
-                        </a></li>
-                      <li><a href="element-product-single.html">Product Single
-
-                        </a>
-                      </li>
-                      <li><a href="element-product-tab.html">Products + Tab
-
-                        </a></li>
-                      <li><a href="element-single-product.html">Single Product
-
-                        </a></li>
-                      <li><a href="element-slider.html">Slider
-
-                        </a></li>
-                      <li><a href="element-social-link.html">Social Icons </a></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-3">
-                    <h4 class="menu-title">Elements 4</h4>
-                    <ul>
-                      <li><a href="element-subcategory.html">Subcategory
-
-                        </a></li>
-                      <li><a href="element-svg-floating.html">Svg Floating
-
-                        </a></li>
-                      <li><a href="element-tabs.html">Tabs</a></li>
-                      <li><a href="element-testimonials.html">Testimonials
-                        </a></li>
-                      <li><a href="element-titles.html">Title</a></li>
-                      <li><a href="element-typography.html">Typography</a></li>
-                      <li><a href="element-vendor.html">Vendor
-
-                        </a></li>
-                      <li><a href="element-video.html">Video
-
-                        </a></li>
-                    </ul>
-                  </div>
-                </div>
-
-              </div>
+            <li class="d-xl-show" routerLinkActive="active">
+              <a routerLink="/products/collections/socks">Socks</a>
             </li>
-            <li>
-              <a href="blog-classic.html">Blog</a>
-              <ul>
-                <li><a href="blog-classic.html">Classic</a></li>
-                <li><a href="blog-listing.html">Listing</a></li>
-                <li>
-                  <a href="#">Grid</a>
-                  <ul>
-                    <li><a href="blog-grid-2col.html">Grid 2 columns</a></li>
-                    <li><a href="blog-grid-3col.html">Grid 3 columns</a></li>
-                    <li><a href="blog-grid-4col.html">Grid 4 columns</a></li>
-                    <li><a href="blog-grid-sidebar.html">Grid sidebar</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Masonry</a>
-                  <ul>
-                    <li><a href="blog-masonry-2col.html">Masonry 2 columns</a></li>
-                    <li><a href="blog-masonry-3col.html">Masonry 3 columns</a></li>
-                    <li><a href="blog-masonry-4col.html">Masonry 4 columns</a></li>
-                    <li><a href="blog-masonry-sidebar.html">Masonry sidebar</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Mask</a>
-                  <ul>
-                    <li><a href="blog-mask-grid.html">Blog mask grid</a></li>
-                    <li><a href="blog-mask-masonry.html">Blog mask masonry</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="post-single.html">Single Post</a>
-                </li>
-              </ul>
+            <li routerLinkActive="active">
+              <a routerLink="/products/collections/vest">Vests</a>
             </li>
             <li routerLinkActive="active">
               <a routerLink="/about">About Us</a>

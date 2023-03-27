@@ -5,55 +5,27 @@ const Category = mongoose.model('Category');
 
 module.exports.getProducts = (req, res, next) => {
     try {
-        // const filters = req.query;
-        // const filteredUsers = data.filter(user => {
-        //     let isValid = true;
-        //     for (key in filters) {
-        //       console.log(key, user[key], filters[key]);
-        //       isValid = isValid && user[key] == filters[key];
-        //     }
-        //     return isValid;
-        //   });
         let filter = {};
-        if (req.query.sizes) {
-            filter = {
-                "sizes" : { $regex : new RegExp(req.query.sizes, "i") }
-            }
-        }
         if (req.query.categories) {
-            console.log(req.query.categories)
             const parsedQuery = JSON.parse(req.query.categories);
+            // filter = {sizes: parsedQuery.sizes.split(':')}
+            // filter = {"sizes" : {"$in" : parsedQuery.sizes.split(':')}}
             filter = {
-                "$and": [{
-                    categories: {
-                            $regex: new RegExp(parsedQuery.categories ? parsedQuery.categories : parsedQuery, "i")
-                        }
-                    },
-                    {
-                        sizes: {
-                            $regex: new RegExp(parsedQuery.sizes, "i")
-                        }
-                    },
-                    {
-                        colors: {
-                            $regex: new RegExp(parsedQuery.colors, "i")
-                        }
-                    }
-                ]
-            }
-        }
-        if (req.query.colors) {
-            filter = {
-                "colors" : { $regex : new RegExp(req.query.colors, "i") }
-            }
-        }
-        if (req.query.productsIds) {
-            filter = {
-                "_id": {
-                    "$in": req.query.productsIds.split(',')
+                categories: {
+                    $regex: new RegExp(parsedQuery.categories ? parsedQuery.categories : parsedQuery, "i")
                 }
             }
+            if(parsedQuery.sizes) {
+                filter.sizes = {"$in" : parsedQuery.sizes.split(':')}
+            }
+            if(parsedQuery.price) {
+                filter.currentPrice = {
+                            $gte: 100,
+                            $lte: 106,
+                        }
+            }
         }
+
         if (req.query.search) {
             filter = {
                 "$or": [{
@@ -71,15 +43,27 @@ module.exports.getProducts = (req, res, next) => {
                             $regex: new RegExp(req.query.search, "i")
                         }
                     },
+                    {
+                        'sizes': {
+                            $regex: new RegExp(req.query.search, "i")
+                        }
+                    },
                 ]
             }
             // filter = {$text: {
             //     $search: req.query.search
             // }}
         }
+        let limit = 30;
+        if (req.query.new) {
+            limit = 8;
+        }
+        if (req.query.new) {
+            limit = 8;
+        }
         Product.find(filter).select('name price image currency categories currentPrice mrpPrice sizes colors').sort({
             _id: -1
-        }).limit(30).then(products => {
+        }).limit(limit).then(products => {
             if (!products || products.length < 1) {
                 return res.status(203).json({
                     success: false,
@@ -376,7 +360,7 @@ module.exports.getFeaturedProducts = (req, res, next) => {
         const count = req.params.count ? +req.params.count : 10;
         Product.find({
             isFeatured: true
-        }).select('name price image currency').sort({
+        }).select('name price image currency categories currentPrice mrpPrice sizes colors').sort({
             _id: sort
         }).limit(count).then(featuredProducts => {
             if (!featuredProducts || featuredProducts.length < 1) {

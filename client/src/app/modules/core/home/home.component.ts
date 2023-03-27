@@ -84,18 +84,18 @@ export class HomeComponent implements OnInit {
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
+    this.scrollTop();
     this._getProducts();
   }
 
   private _getProducts() {
     this.isLoadingProducts = true;
-    this.productService.getProducts().subscribe((res: ProductsResponse) => {
+    this.productService.getProducts(undefined, undefined, undefined, undefined, true).subscribe((res: ProductsResponse) => {
       if (!res['products']) {
         this.products = [];
       }
       else {
         this.products = res['products'];
-        console.log(this.products)
       }
       this.isLoadingProducts = false;
       this.isLoadingCategories = false;
@@ -104,6 +104,12 @@ export class HomeComponent implements OnInit {
       this.isLoadingProducts = false;
       this.isLoadingCategories = false;
       this._errorHandler(err);
+    })
+  }
+
+  scrollTop() {
+    window.scrollTo({
+      top: 0
     })
   }
 
