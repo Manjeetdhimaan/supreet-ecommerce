@@ -23,21 +23,27 @@
       </div>
       <app-snackbar *ngIf="product" [name]="product.name" [isShown]="isSnackbarShown"></app-snackbar>
       <div class="product product-single row mb-2 animate__animated animate__fadeIn">
-        <div class="col-md-6" style="margin: auto;">
+        <!-- <div class="col-md-6" style="margin: auto;">
           <app-product-gallery *ngIf="product" [imageData]="imageData"></app-product-gallery>
+        </div> -->
+
+        <!-- <div class="product-gallery pg-vertical product-gallery-sticky"> -->
+        <div class="col-md-6" style="margin: auto;">
+          <gallery id="basic-test" imageSize="contain" fluid [items]="items"></gallery>
         </div>
+
         <div class="col-md-4" style="margin: auto;">
           <div class="product-details">
             <div class="product-navigation">
               <ul class="breadcrumb breadcrumb-lg">
                 <li><a href="demo2.html"><i class="d-icon-home"></i></a></li>
-                <li><a href="#" class="active">Products</a></li>
+                <li><a class="active">Products</a></li>
                 <li>Detail</li>
               </ul>
 
               <!-- <ul class="product-nav">
                 <li class="product-nav-prev">
-                  <a href="#">
+                  <a >
                     <i class="d-icon-arrow-left"></i> Prev
                     <span class="product-nav-popup">
                       <img [src]="product.imageSrc" alt="product thumbnail" width="110" height="123">
@@ -46,7 +52,7 @@
                   </a>
                 </li>
                 <li class="product-nav-next">
-                  <a href="#">
+                  <a >
                     Next <i class="d-icon-arrow-right"></i>
                     <span class="product-nav-popup">
                       <img src="assets/images/product/product-thumb-next.jpg" alt="product thumbnail" width="110"
@@ -60,7 +66,7 @@
 
             <h1 class="product-name">{{ product?.name }}</h1>
             <div class="product-meta">
-              SKU: <span class="product-sku">12345670</span>
+              STYLE: <span class="product-sku">{{ product?.style }}</span>
               BRAND: <span class="product-brand">{{ product?.brand }}</span>
             </div>
             <div class="product-price mb-2">{{ product?.currentPrice | currency: product?.currency }}</div>
@@ -72,7 +78,32 @@
               <a href="#product-tab-reviews" class="link-to-tab rating-reviews">( 6 reviews )</a>
             </div> -->
             <p class="product-short-desc" *ngIf="product">{{ product.description }}</p>
-
+            <p style="margin-bottom: -1px;">Selected Color: <span style="color: white;"> <strong>{{ selectedColor }}</strong> </span></p>
+            <div class="product-form product-color">
+              <label>Color:</label>
+              <div class="product-variations" style="background-color: #333;">
+                <a class="color" *ngFor="let color of product?.colors" [style]="'background-color:' + color.code"
+                  (click)="onChangeColor(color.name)">
+                </a>
+              </div>
+            </div>
+            <p style="margin-bottom: -1px;">Selected Size: <span style="color: white;text-transform: capitalize;"> <strong>{{ selectedSize }}</strong> </span></p>
+            <div class="product-form product-size">
+              <label>Size:</label>
+              <div class="product-form-group">
+                <div class="product-variations">
+                  <a class="size" *ngFor="let size of product?.sizes" (click)="onSelectSize(size)">
+                    <span *ngIf="size.toLowerCase() === 'extra large'">XL</span>
+                    <span *ngIf="size.toLowerCase() === 'large'">L</span>
+                    <span *ngIf="size.toLowerCase() === 'medium'">M</span>
+                    <span *ngIf="size.toLowerCase() === 'small'">S</span>
+                  </a>
+                  <h6 style="color: red" *ngIf="!selectedSize && isSubmitted">Please select a size</h6>
+                </div>
+                <a class="product-variation-clean" style="display: none;">Clean
+                  All</a>
+              </div>
+            </div>
             <hr class="product-divider">
 
             <div class="product-form product-qty">

@@ -9,6 +9,8 @@ import { NgxCheckboxModule } from 'ngx-checkbox';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CollectionComponent } from './collection/collection.component';
+import { GalleryModule } from 'ng-gallery';
+import { LightboxModule } from 'ng-gallery/lightbox';
 
 const routes: Routes = [
   {
@@ -31,7 +33,11 @@ const routes: Routes = [
     CarouselModule,
     NgxSkeletonLoaderModule.forRoot({ animation: 'progress' }),
     FormsModule,
-    NgxCheckboxModule
+    NgxCheckboxModule,
+    GalleryModule.withConfig({
+      thumbView: 'contain',
+    }),
+    LightboxModule
   ]
 })
 export class ProductModule { }

@@ -1,5 +1,5 @@
 
-<div class="product animate__animated animate__fadeInDown" *ngIf="product">
+<div class="product animate__animated animate__fadeIn" *ngIf="product">
   <figure class="product-media" animation="fadeInUp" delay="0" duration="500" offset="100" triggerOnce="false">
     <a [routerLink]="'/products/' + product._id" (click)="scrollTop()">
       <img [src]="product.image" alt="Blue Pinafore Denim Dress" width="280" height="315"
@@ -18,7 +18,7 @@
           class="d-icon-heart"></i></a> -->
     </div>
     <div class="product-action">
-      <a class="btn-product " title="Add to Cart" (click)="onAddtoCart(product._id)">Add to Cart</a>
+      <a class="btn-product " title="View Product" [routerLink]="'/products/'+product._id">View Product</a>
     </div>
   </figure>
   <div class="product-details">

@@ -48,6 +48,11 @@ module.exports.getProducts = (req, res, next) => {
                             $regex: new RegExp(req.query.search, "i")
                         }
                     },
+                    {
+                        'style': {
+                            $regex: new RegExp(req.query.search, "i")
+                        }
+                    },
                 ]
             }
             // filter = {$text: {
@@ -116,11 +121,10 @@ module.exports.postProduct = async (req, res, next) => {
         //     })
         // };
         const file = req.file;
-        if (!file) res.status(400).send({
-            success: false,
-            message: 'Product image is required'
-        });
-
+        // if (!file) res.status(400).send({
+        //     success: false,
+        //     message: 'Product image is required'
+        // });
 
         let imagePaths = [];
         const basePath = `${req.protocol}://${req.get('host')}/public/uploads/`;
@@ -130,16 +134,17 @@ module.exports.postProduct = async (req, res, next) => {
             });
         }
 
-        const fileName = req.file.filename;
+        const fileName = req.file ? req.file.filename: '';
         const product = new Product({
             name: req.body.name,
             description: req.body.description,
             richDescription: req.body.richDescription,
-            image: basePath + fileName,
+            image: file ? basePath + fileName : req.body.image,
             images: req.body.images,
             brand: req.body.brand,
             currentPrice: req.body.currentPrice,
             mrpPrice: req.body.mrpPrice,
+            style: req.body.style,
             currency: req.body.currency,
             categories: req.body.categories,
             countInStock: req.body.countInStock,
@@ -214,14 +219,20 @@ module.exports.updateProduct = async (req, res, next) => {
                 if (imagePath) {
                     founededProduct.image = imagePath;
                 }
-                // if (req.body.images) {
-                //     founededProduct.images = req.body.images;
-                // }
+                if (req.body.image) {
+                    founededProduct.image = req.body.image;
+                }
+                if (req.body.images) {
+                    founededProduct.images = req.body.images;
+                }
                 if (req.body.brand) {
                     founededProduct.brand = req.body.brand;
                 }
                 if (req.body.price) {
                     founededProduct.price = req.body.price;
+                }
+                if (req.body.style) {
+                    founededProduct.style = req.body.style;
                 }
                 if (req.body.currency) {
                     founededProduct.currency = req.body.currency;
@@ -286,7 +297,12 @@ module.exports.updateProductGallery = async (req, res, next) => {
                     });
                 }
                 // founededProduct.images = imagePaths;
-                founededProduct.images = founededProduct.images.concat(imagePaths);
+                if(req.body.images) {
+                    founededProduct.images = req.body.images
+                }
+                else {
+                    founededProduct.images = founededProduct.images.concat(imagePaths);
+                }
             };
             founededProduct.save().then((savedProduct) => {
                 if (!savedProduct) {

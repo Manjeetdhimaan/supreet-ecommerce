@@ -16,8 +16,16 @@ const productSchema = new mongoose.Schema({
         type: String,
         required: [true, 'Product image is required']
     },
-    images: [{
+    style: {
         type: String
+    },
+    images: [{
+        color: String,
+        imageUrls : Array
+    }],
+    colors: [{
+        name: String,
+        code: String
     }],
     brand: {
         type: String,
@@ -34,9 +42,6 @@ const productSchema = new mongoose.Schema({
         default: "USD"
     },
     categories: [{
-        type: String
-    }],
-    colors: [{
         type: String
     }],
     weight: {
@@ -87,7 +92,12 @@ const productSchema = new mongoose.Schema({
 // productSchema.index({'$**': 'text'});
 productSchema.index({
     name: 'text',
-    'category.name': 'text'
+    category: 'text',
+    description: 'text',
+    features: 'text',
+    brand: 'text',
+    colors: 'text',
+    sizes: 'text'
 });
 
 productSchema.virtual('id').get(function () {

@@ -10,7 +10,10 @@ import { ProductService } from 'src/app/shared/services/product.service';
 
 interface PurchaseItems {
   name: string;
+  productId: any;
   quantity: number;
+  size: any;
+  color: any;
 }
 
 @Component({
@@ -39,17 +42,13 @@ export class CartComponent {
     this.cartService.cart$.pipe(take(1)).subscribe(respCart => {
       if (respCart && respCart.items.length > 0) {
         respCart.items.forEach(cartItem => {
-          // const product = this.productService.getLocalProduct(cartItem.productId);
-          // if (product) {
-          //   this.cartItems.push({
-          //     product: product,
-          //     quantity: cartItem['quantity']
-          //   });
-          // }
           this.productService.getProduct(cartItem.productId).subscribe(res => {
             this.cartItems.push({
               product: res['product'],
-              quantity: cartItem['quantity']
+              quantity: cartItem['quantity'],
+              size: cartItem.size,
+              color: cartItem.color,
+              productId: res['product']._id
             });
           }, err => {
             this._errorHandler(err);
@@ -86,18 +85,21 @@ export class CartComponent {
   }
 
   onCheckOut() {
-    let checkoutMsg = 'Hi, I want to purchase ';
+    let checkoutMsg = 'Hi, I want to purchase Products - ';
     const purchasableItems: PurchaseItems[] = []
     this.cartItems.map(cartItem => {
       purchasableItems.push({
         name: cartItem.product.name,
-        quantity: cartItem.quantity
+        quantity: cartItem.quantity,
+        size: cartItem.size,
+        color: cartItem.color,
+        productId: cartItem.productId
       })
     });
     purchasableItems.map(item => {
-      checkoutMsg += 'sku ' + '"' + item.name + '"' + '(' + item.quantity + '), '
+      checkoutMsg +=  '(Name: "' + item.name + '", ' + 'quantity: ' + item.quantity + ', ' + 'size: ' + item.size + ', ' + 'color: ' + item.color + ', ' + 'Product ID: ' + item.productId + '),,,, '
     });
-    checkoutMsg = checkoutMsg.trim().slice(0, -1);
+    checkoutMsg = checkoutMsg.trim().slice(0, -1) + '---------------Total Price - $'+this.subTotal();
     location.href = "https://api.whatsapp.com/send?phone=9878627074&text=" + checkoutMsg;
   }
 

@@ -1,6 +1,8 @@
 import { HttpErrorResponse } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
+import { Gallery, GalleryItem, ImageItem, ImageSize, ThumbnailsPosition } from 'ng-gallery';
+import { Lightbox } from 'ng-gallery/lightbox';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Product } from 'src/app/shared/models/product.model';
 import { ProductResponse, ProductsResponse } from 'src/app/shared/models/responses.model';
@@ -19,7 +21,8 @@ export interface GalleryImageData {
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
-  imageData: GalleryImageData[] = [];
+  @Input() imageData: any[] = [];
+  items: GalleryItem[];
   product: Product;
   products: Product[];
   quantity: number = 1;
@@ -30,6 +33,9 @@ export class ProductDetailsComponent implements OnInit {
   isLoadingProducts = false;
   serverErrMsg: string;
   relatedProdCategory: string = 'men';
+  selectedColor: string;
+  selectedSize: string;
+  isSubmitted = false;
   customOptionsRelated: OwlOptions = {
     items: 4,
     nav: false,
@@ -51,7 +57,7 @@ export class ProductDetailsComponent implements OnInit {
     }
   }
 
-  constructor(private activatedRoute: ActivatedRoute, private productService: ProductService, private cartService: CartService, private router: Router) { }
+  constructor(private activatedRoute: ActivatedRoute, private productService: ProductService, private cartService: CartService, private router: Router, public gallery: Gallery, public lightbox: Lightbox) { }
 
   ngOnInit() {
     this.isLoading = true;
@@ -62,6 +68,8 @@ export class ProductDetailsComponent implements OnInit {
       }
     })
     this.scrollTop();
+
+
   }
 
   scrollTop() {
@@ -74,17 +82,18 @@ export class ProductDetailsComponent implements OnInit {
     this.serverErrMsg = '';
     this.productService.getProduct(id).subscribe((res: ProductResponse) => {
       this.product = res['product'];
-      this.relatedProdCategory = this.product.categories[0];
-      this.imageData.push({
-        srcUrl: this.product.image,
-        previewUrl: this.product.image
-      })
-      this.product.images.map((imageUrl: string) => {
+      this.relatedProdCategory = this.product.categories[1] ? this.product.categories[1] : this.product.categories[0];
+
+      this.product.images[0].imageUrls.map((imageUrl: string) => {
         this.imageData.push({
           srcUrl: imageUrl,
           previewUrl: imageUrl
         })
-      })
+      });
+      this.selectedColor = this.product.colors[0].name;
+
+      this._onSetGalleryImages();
+
       this.serverErrMsg = '';
       this.isLoading = false;
       this._getRelatedProducts(this.relatedProdCategory);
@@ -92,6 +101,39 @@ export class ProductDetailsComponent implements OnInit {
       this.isLoading = false;
       this._errorHandler(err);
     });
+  }
+
+  private _onSetGalleryImages() {
+    this.items = this.imageData.map(item => new ImageItem({ src: item.srcUrl, thumb: item.previewUrl }));
+    // Get a lightbox gallery ref
+    const lightboxRef = this.gallery.ref('lightbox');
+    // Add custom gallery config to the lightbox (optional)
+    lightboxRef.setConfig({
+      imageSize: ImageSize.Cover,
+      thumbPosition: ThumbnailsPosition.Top
+    });
+    // Load items into the lightbox gallery ref
+    lightboxRef.load(this.items);
+  }
+
+  onChangeColor(colorName: string) {
+    this.product.images.map(image => {
+      if (image.color === colorName) {
+        this.selectedColor = colorName;
+        this.imageData = [];
+        image.imageUrls.map(imageUrl => {
+          this.imageData.push({
+            srcUrl: imageUrl,
+            previewUrl: imageUrl
+          })
+        });
+        this.items = this.imageData.map(item => new ImageItem({ src: item.srcUrl, thumb: item.previewUrl }));
+      }
+    })
+  }
+
+  onSelectSize(size: string) {
+    this.selectedSize = size;
   }
 
   private _getRelatedProducts(filters: any) {
@@ -120,9 +162,15 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   onAddtoCart(productId: string) {
+    this.isSubmitted = true;
+    if(!this.selectedSize) {
+      return;
+    }
     const cartItem = {
       productId: productId,
-      quantity: this.quantity
+      quantity: this.quantity,
+      color: this.selectedColor,
+      size: this.selectedSize
     }
     this.isSnackbarShown = true;
     this.cartService.setCartToLocalStorage(cartItem);
