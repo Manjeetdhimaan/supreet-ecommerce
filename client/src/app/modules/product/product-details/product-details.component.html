@@ -78,7 +78,8 @@
               <a href="#product-tab-reviews" class="link-to-tab rating-reviews">( 6 reviews )</a>
             </div> -->
             <p class="product-short-desc" *ngIf="product">{{ product.description }}</p>
-            <p style="margin-bottom: -1px;">Selected Color: <span style="color: white;"> <strong>{{ selectedColor }}</strong> </span></p>
+            <p style="margin-bottom: -1px;">Selected Color: <span style="color: white;"> <strong>{{ selectedColor
+                  }}</strong> </span></p>
             <div class="product-form product-color">
               <label>Color:</label>
               <div class="product-variations" style="background-color: #333;">
@@ -87,7 +88,8 @@
                 </a>
               </div>
             </div>
-            <p style="margin-bottom: -1px;">Selected Size: <span style="color: white;text-transform: capitalize;"> <strong>{{ selectedSize }}</strong> </span></p>
+            <p style="margin-bottom: -1px;">Selected Size: <span style="color: white;text-transform: capitalize;">
+                <strong>{{ selectedSize }}</strong> </span></p>
             <div class="product-form product-size">
               <label>Size:</label>
               <div class="product-form-group">
@@ -206,7 +208,7 @@
 
         <owl-carousel-o [options]="customOptionsRelated" class="owl-theme row owl-nav-full ">
           <ng-container>
-            <ng-template carouselSlide *ngFor="let product of products">
+            <ng-template carouselSlide *ngFor="let product of products" class="col-lg-3 col-md-4 col-6 mb-4">
               <app-product [product]="product" [isToAddSnackbar]="false"></app-product>
             </ng-template>
           </ng-container>

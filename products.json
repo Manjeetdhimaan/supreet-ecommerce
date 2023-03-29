@@ -1,6 +1,7 @@
 [
     {
-        "name": "Men's Super Combed Cotton Rib Square Neckline Gym Vest",
+        "id": "p1",
+        "name": "Men's Super Combed Cotton Rib Square Neckline Gym Vest - us26",
         "description": "Super Combed Cotton - Fibre yarns used to make this Jockey product undergo additional processing to make it softer and smoother than regular cotton.",
         "features": [
             "Fabric Details : Cotton",
@@ -93,7 +94,8 @@
         "isFeatured": true
     },
     {
-        "name": "Men's Super Combed Cotton Rib Square Neckline Gym Vest - #US26",
+        "id": "p2",
+        "name": "Men's Super Combed Cotton Rib Square Neckline Gym Vest - US26",
         "description": "Super Combed Cotton - Fibre yarns used to make this Jockey product undergo additional processing to make it softer and smoother than regular cotton.",
         "features": [
             "Fabric Details : Cotton",
@@ -215,6 +217,727 @@
             "extra large"
         ],
         "countInStock": 110,
+        "isFeatured": true
+    },
+    {
+        "id": "p3",
+        "name": "Men's Super Combed Cotton Rib Racer Back Styling Round Neck Gym Vest - US33",
+        "description": "Super Combed Cotton - Fibre yarns used to make this Jockey product undergo additional processing to make it softer and smoother than regular cotton.",
+        "features": [
+            "100% Super Combed Cotton Rib fabric",
+            "Modern fit with wider armholes",
+            "Label free for all day comfort",
+            "Contoured armholes free for all day comfort",
+            "To be worn as loungewear, innerwear and sportswear - for all purpose use"
+        ],
+        "image": "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5905/originalimages/white-racer-back-shirt-9922-16.jpg",
+        "style": "#US 33",
+        "images": [{
+                "color": "white",
+                "imageUrls": ["https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5772/originalimages/white-square-neck-vest-us26-20.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5905/originalimages/white-racer-back-shirt-9922-15.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5905/originalimages/white-racer-back-shirt-9922-14.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5905/originalimages/white-racer-back-shirt-9922-13.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5905/originalimages/white-racer-back-shirt-9922-12.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5905/originalimages/white-racer-back-shirt-9922-11.jpg"
+                ]
+            },
+            {
+                "color": "Mid Grey",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5900/originalimages/grey-melange-racer-back-shirt-9922-22.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5900/originalimages/grey-melange-racer-back-shirt-9922-21.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5900/originalimages/grey-melange-racer-back-shirt-9922-20.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5900/originalimages/grey-melange-racer-back-shirt-9922-19.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5900/originalimages/grey-melange-racer-back-shirt-9922-18.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5900/originalimages/grey-melange-racer-back-shirt-9922-17.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5900/originalimages/grey-melange-racer-back-shirt-9922-16.jpg"
+                ]
+            }
+        ],
+        "colors": [{
+                "name": "white",
+                "code": "white"
+            },
+            {
+                "name": "Mid Grey",
+                "code": "#6A6C6E"
+            }
+        ],
+        "brand": "Jocky",
+        "currentPrice": 5.60,
+        "mrpPrice": "",
+        "categories": [
+            "men",
+            "vests"
+        ],
+        "weight": "",
+        "sizes": [
+            "small",
+            "medium",
+            "large",
+            "extra large"
+        ],
+        "countInStock": 10,
+        "isFeatured": true
+    },
+    {
+        "id": "p4",
+        "name": "Men's Super Combed Cotton Elastane Stretch Solid Brief with Ultrasoft Waistband - US07",
+        "description": "UltraSoft Waistband - This Jockey underwear has UltraSoft waistband for comfort all day long. Elastane stretch fabric - Spandex/ Lycra fibre is added to this Jockey product, for extra stretch to support your lifestyle.",
+        "features": [
+            "Super Combed Cotton Elastane stretch fabric",
+            "Durable and Ultra Soft waistband",
+            "Label free for all day comfort"
+        ],
+        "image": "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-12.jpg",
+        "style": "#US 07",
+        "images": [{
+                "color": "white",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-11.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-10.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-9.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-8.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-7.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-6.jpg"
+                ]
+            },
+            {
+                "color": "black",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10846/originalimages/black-bikini-brief-us07-18.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10846/originalimages/black-bikini-brief-us07-17.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10846/originalimages/black-bikini-brief-us07-16.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10846/originalimages/black-bikini-brief-us07-16.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10846/originalimages/black-bikini-brief-us07-14.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10846/originalimages/black-bikini-brief-us07-13.jpg"
+                ]
+            },
+            {
+                "color": "navy",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10847/originalimages/navy-bikini-brief-us07-24.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10847/originalimages/navy-bikini-brief-us07-23.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10847/originalimages/navy-bikini-brief-us07-22.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10847/originalimages/navy-bikini-brief-us07-21.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10847/originalimages/navy-bikini-brief-us07-20.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10847/originalimages/navy-bikini-brief-us07-20.jpg"
+                ]
+            },
+            {
+                "color": "Charcoal Melange",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5707/originalimages/charcoal-melange-bikini-brief-us07-16.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5707/originalimages/charcoal-melange-bikini-brief-us07-15.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5707/originalimages/charcoal-melange-bikini-brief-us07-14.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5707/originalimages/charcoal-melange-bikini-brief-us07-13.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5707/originalimages/charcoal-melange-bikini-brief-us07-12.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5707/originalimages/charcoal-melange-bikini-brief-us07-11.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5707/originalimages/charcoal-melange-bikini-brief-us07-10.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5707/originalimages/charcoal-melange-bikini-brief-us07-10.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5707/originalimages/charcoal-melange-bikini-brief-us07-8.jpg"
+                ]
+            },
+            {
+                "color": "Mid Grey Melange",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10905/originalimages/mid-grey-melange-bikini-brief-us07-22.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10905/originalimages/mid-grey-melange-bikini-brief-us07-22.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10905/originalimages/mid-grey-melange-bikini-brief-us07-22.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10905/originalimages/mid-grey-melange-bikini-brief-us07-19.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10905/originalimages/mid-grey-melange-bikini-brief-us07-18.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10905/originalimages/mid-grey-melange-bikini-brief-us07-17.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10905/originalimages/mid-grey-melange-bikini-brief-us07-15.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10905/originalimages/mid-grey-melange-bikini-brief-us07-14.jpg"
+                ]
+            }
+        ],
+        "colors": [{
+                "name": "white",
+                "code": "white"
+            },
+            {
+                "name": "black",
+                "code": "black"
+            },
+            {
+                "name": "navy",
+                "code": "#003060"
+            },
+            {
+                "name": "Charcoal Melange",
+                "code": "#8CA2B0"
+            },
+            {
+                "name": "Mid Grey Melange",
+                "code": "#6A6C6E"
+            }
+        ],
+        "brand": "Jocky",
+        "currentPrice": 4.45,
+        "mrpPrice": "",
+        "categories": [
+            "men",
+            "inner wear",
+            "innerwear",
+            "briefs"
+        ],
+        "weight": "",
+        "sizes": [
+            "small",
+            "medium",
+            "large",
+            "extra large"
+        ],
+        "countInStock": 10,
+        "isFeatured": true
+    },
+    {
+        "id": "p5",
+        "name": "Men's Super Combed Cotton Solid Brief with Ultrasoft Waistband - US14",
+        "description": "Super Combed Cotton - Fibre yarns used to make this Jockey product undergo additional processing to make it softer and smoother than regular cotton.",
+        "features": [
+            "100% Super Combed Cotton fabric",
+            "Durable and Ultra Soft waistband",
+            "Label free for all day comfort"
+        ],
+        "image": "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5724/originalimages/black-bold-brief-pack-of-2-us14-26.jpg",
+        "style": "#US 14",
+        "images": [
+            {
+                "color": "black",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5724/originalimages/black-bold-brief-pack-of-2-us14-25.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5724/originalimages/black-bold-brief-pack-of-2-us14-24.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5717/originalimages/black-bold-brief-us14-23.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5717/originalimages/black-bold-brief-us14-22.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5717/originalimages/black-bold-brief-us14-21.jpg"
+                ]
+            },
+            {
+                "color": "navy",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5720/originalimages/navy-bold-brief-pack-of-2-us14-21.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5720/originalimages/navy-bold-brief-pack-of-2-us14-20.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5720/originalimages/navy-bold-brief-pack-of-2-us14-25.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5720/originalimages/navy-bold-brief-pack-of-2-us14-24.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5720/originalimages/navy-bold-brief-pack-of-2-us14-23.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5720/originalimages/navy-bold-brief-pack-of-2-us14-22.jpg"
+                ]
+            },
+            {
+                "color": "Charcoal Melange",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5722/originalimages/charcoal-melange-bold-brief-pack-of-2-us14-23.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5722/originalimages/charcoal-melange-bold-brief-pack-of-2-us14-22.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5722/originalimages/charcoal-melange-bold-brief-pack-of-2-us14-21.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5722/originalimages/charcoal-melange-bold-brief-pack-of-2-us14-19.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5722/originalimages/charcoal-melange-bold-brief-pack-of-2-us14-18.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5722/originalimages/charcoal-melange-bold-brief-pack-of-2-us14-18.jpg"
+                ]
+            },
+            {
+                "color": "Grey Melange",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10657/originalimages/mid-grey-melange-bold-brief-pack-of-2-us14-26.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10657/originalimages/mid-grey-melange-bold-brief-pack-of-2-us14-25.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10656/originalimages/mid-grey-melange-bold-brief-us14-23.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10656/originalimages/mid-grey-melange-bold-brief-us14-22.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10656/originalimages/mid-grey-melange-bold-brief-us14-21.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10656/originalimages/mid-grey-melange-bold-brief-us14-26.jpg"
+                ]
+            },
+            {
+                "color": "Ink Blue Melange",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/6604/originalimages/ink-blue-melange-bold-brief-pack-of-2-us14-9.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/6604/originalimages/ink-blue-melange-bold-brief-pack-of-2-us14-8.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/6604/originalimages/ink-blue-melange-bold-brief-pack-of-2-us14-7.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/6604/originalimages/ink-blue-melange-bold-brief-pack-of-2-us14-6.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/6604/originalimages/ink-blue-melange-bold-brief-pack-of-2-us14-5.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/6604/originalimages/ink-blue-melange-bold-brief-pack-of-2-us14-4.jpg"
+                ]
+            },
+            {
+                "color": "white",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-11.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-11.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-11.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-8.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-7.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-7.jpg"
+                ]
+            },
+            {
+                "color": "Graphite",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/6603/originalimages/graphite-bold-brief-pack-of-2-us14-19.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/6603/originalimages/graphite-bold-brief-pack-of-2-us14-18.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/6603/originalimages/graphite-bold-brief-pack-of-2-us14-16.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/6603/originalimages/graphite-bold-brief-pack-of-2-us14-15.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/6603/originalimages/graphite-bold-brief-pack-of-2-us14-14.jpg"
+                ]
+            }
+        ],
+        "colors": [
+            {
+                "name": "black",
+                "code": "black"
+            },
+            {
+                "name": "navy",
+                "code": "#003060"
+            },
+            {
+                "name": "Charcoal Melange",
+                "code": "#8CA2B0"
+            },
+            {
+                "name": "Grey Melange",
+                "code": "#6A6C6E"
+            },
+            {
+                "name": "white",
+                "code": "white"
+            },
+            {
+                "name": "Graphite",
+                "code": "#383428"
+            },
+            {
+                "name": "Ink Blue Melange",
+                "code": "#010b5b"
+            }
+        ],
+        "brand": "Jocky",
+        "currentPrice": 7.24,
+        "mrpPrice": "",
+        "categories": [
+            "men",
+            "inner wear",
+            "innerwear",
+            "briefs"
+        ],
+        "weight": "",
+        "sizes": [
+            "small",
+            "medium",
+            "large",
+            "extra large"
+        ],
+        "countInStock": 10,
+        "isFeatured": true
+    },
+    {
+        "id": "p6",
+        "name": "Men's Super Combed Cotton Solid Brief with Ultrasoft Waistband - US14M",
+        "description": "Super Combed Cotton - Fibre yarns used to make this Jockey product undergo additional processing to make it softer and smoother than regular cotton.",
+        "features": [
+            "100% Super Combed Cotton fabric",
+            "Double layered contoured pouch",
+            "Durable and Ultra Soft waistband",
+            "Label free for all day comfort"
+        ],
+        "image": "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10022/originalimages/light-denim-snow-melange-bold-brief-us14-12.jpg",
+        "style": "#US 14M",
+        "images": [
+            {
+                "color": "Light Denim Snow Melange",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10022/originalimages/light-denim-snow-melange-bold-brief-us14-11.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10022/originalimages/light-denim-snow-melange-bold-brief-us14-10.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10022/originalimages/light-denim-snow-melange-bold-brief-us14-9.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10022/originalimages/light-denim-snow-melange-bold-brief-us14-8.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10022/originalimages/light-denim-snow-melange-bold-brief-us14-7.jpg"
+                ]
+            }
+        ],
+        "colors": [
+            {
+                "name": "Light Denim Snow Melange",
+                "code": "#628bbd"
+            }
+        ],
+        "brand": "Jocky",
+        "currentPrice": 3.79,
+        "mrpPrice": "",
+        "categories": [
+            "men",
+            "inner wear",
+            "innerwear",
+            "briefs"
+        ],
+        "weight": "",
+        "sizes": [
+            "small",
+            "medium",
+            "large",
+            "extra large"
+        ],
+        "countInStock": 10,
+        "isFeatured": true
+    },
+    {
+        "id": "p7",
+        "name": "Men's Super Combed Cotton Solid Brief with Ultrasoft Waistband - US17",
+        "description": "Super Combed Cotton - Fibre yarns used to make this Jockey product undergo additional processing to make it softer and smoother than regular cotton.",
+        "features": [
+            "100% Super Combed Cotton fabric",
+            "Durable and Ultra Soft waistband",
+            "Label free for all day comfort"
+        ],
+        "image": "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5732/originalimages/black-modern-brief-us17-28.jpg",
+        "style": "#US 17",
+        "images": [
+            {
+                "color": "black",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5732/originalimages/black-modern-brief-us17-27.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5732/originalimages/black-modern-brief-us17-26.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5732/originalimages/black-modern-brief-us17-25.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5732/originalimages/black-modern-brief-us17-24.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5732/originalimages/black-modern-brief-us17-23.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5732/originalimages/black-modern-brief-us17-22.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5732/originalimages/black-modern-brief-us17-21.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5732/originalimages/black-modern-brief-us17-20.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5732/originalimages/black-modern-brief-us17-19.jpg"
+                ]
+            },
+            {
+                "color": "navy",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5728/originalimages/navy-modern-brief-us17-23.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5728/originalimages/navy-modern-brief-us17-22.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5728/originalimages/navy-modern-brief-us17-21.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5728/originalimages/navy-modern-brief-us17-20.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5728/originalimages/navy-modern-brief-us17-19.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5728/originalimages/navy-modern-brief-us17-18.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5728/originalimages/navy-modern-brief-us17-18.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5728/originalimages/navy-modern-brief-us17-18.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5728/originalimages/navy-modern-brief-us17-18.jpg"
+                ]
+            },
+            {
+                "color": "Charcoal Melange",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5730/originalimages/charcoal-melange-modern-brief-us17-19.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5730/originalimages/charcoal-melange-modern-brief-us17-18.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5730/originalimages/charcoal-melange-modern-brief-us17-17.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5730/originalimages/charcoal-melange-modern-brief-us17-16.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5730/originalimages/charcoal-melange-modern-brief-us17-15.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5730/originalimages/charcoal-melange-modern-brief-us17-14.jpg"
+                ]
+            },
+            {
+                "color": "Graphite",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/6606/originalimages/graphite-modern-brief-us17-19.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/6606/originalimages/graphite-modern-brief-us17-18.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/6606/originalimages/graphite-modern-brief-us17-17.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/6606/originalimages/graphite-modern-brief-us17-16.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/6606/originalimages/graphite-modern-brief-us17-15.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/6606/originalimages/graphite-modern-brief-us17-14.jpg"
+                ]
+            },
+            {
+                "color": "white",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-11.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-10.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-9.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-8.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-7.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-6.jpg"
+                ]
+            },
+            {
+                "color": "Grey Melange",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10658/originalimages/mid-grey-melange-modern-brief-us17-24.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10658/originalimages/mid-grey-melange-modern-brief-us17-22.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10658/originalimages/mid-grey-melange-modern-brief-us17-20.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10658/originalimages/mid-grey-melange-modern-brief-us17-18.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10658/originalimages/mid-grey-melange-modern-brief-us17-16.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10658/originalimages/mid-grey-melange-modern-brief-us17-14.jpg"
+                ]
+            }
+        ],
+        "colors": [
+            {
+                "name": "black",
+                "code": "black"
+            },
+            {
+                "name": "navy",
+                "code": "#003060"
+            },
+            {
+                "name": "Charcoal Melange",
+                "code": "#8CA2B0"
+            },
+            {
+                "name": "Graphite",
+                "code": "#383428"
+            },
+            {
+                "name": "white",
+                "code": "white"
+            },
+            {
+                "name": "Grey Melange",
+                "code": "#6A6C6E"
+            }
+        ],
+        "brand": "Jocky",
+        "currentPrice": 3.79,
+        "mrpPrice": "",
+        "categories": [
+            "men",
+            "inner wear",
+            "innerwear",
+            "briefs"
+        ],
+        "weight": "",
+        "sizes": [
+            "small",
+            "medium",
+            "large",
+            "extra large"
+        ],
+        "countInStock": 10,
+        "isFeatured": true
+    },
+    {
+        "id": "p8",
+        "name": "Men's Super Combed Cotton Elastane Stretch Solid Trunk with Ultrasoft Waistband - US20",
+        "description": "Elastane stretch fabric - Spandex/ Lycra fibre is added to this Jockey product, for extra stretch to support your lifestyle.Super Combed Cotton - Fibre yarns used to make this Jockey product undergo additional processing to make it softer and smoother than regular cotton.",
+        "features": [
+            "Super Combed Cotton Elastane Stretch fabric",
+            "Durable and Ultra Soft waistband",
+            "Label free for all day comfort"
+        ],
+        "image": "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5760/originalimages/white-trunk-us20-28.jpg",
+        "style": "#US 20",
+        "images": [
+            {
+                "color": "white",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5760/originalimages/white-trunk-us20-27.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5760/originalimages/white-trunk-us20-26.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5760/originalimages/white-trunk-us20-23.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5760/originalimages/white-trunk-us20-25.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5760/originalimages/white-trunk-us20-24.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5760/originalimages/white-trunk-us20-22.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5760/originalimages/white-trunk-us20-21.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5760/originalimages/white-trunk-us20-20.jpg"
+                ]
+            },
+            {
+                "color": "black",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10848/originalimages/black1-trunk-us20-18.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10848/originalimages/black1-trunk-us20-17.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10848/originalimages/black1-trunk-us20-16.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10848/originalimages/black1-trunk-us20-15.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10848/originalimages/black1-trunk-us20-14.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10848/originalimages/black1-trunk-us20-13.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10848/originalimages/black1-trunk-us20-12.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10848/originalimages/black1-trunk-us20-11.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10848/originalimages/black1-trunk-us20-10.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10848/originalimages/black1-trunk-us20-10.jpg"
+                ]
+            },
+            {
+                "color": "navy",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10849/originalimages/navy1-trunk-us20-30.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10849/originalimages/navy1-trunk-us20-29.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10849/originalimages/navy1-trunk-us20-28.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10849/originalimages/navy1-trunk-us20-27.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10849/originalimages/navy1-trunk-us20-26.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10849/originalimages/navy1-trunk-us20-25.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10849/originalimages/navy1-trunk-us20-24.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10849/originalimages/navy1-trunk-us20-20.jpg"
+                ]
+            },
+            {
+                "color": "Charcoal Melange",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5758/originalimages/charcoal-melange1-trunk-us20-22.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5758/originalimages/charcoal-melange1-trunk-us20-21.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5758/originalimages/charcoal-melange1-trunk-us20-20.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5758/originalimages/charcoal-melange1-trunk-us20-19.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5758/originalimages/charcoal-melange1-trunk-us20-18.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5758/originalimages/charcoal-melange1-trunk-us20-17.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5758/originalimages/charcoal-melange1-trunk-us20-16.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5758/originalimages/charcoal-melange1-trunk-us20-14.jpg"
+                ]
+            },
+            {
+                "color": "Mid Grey Melange",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10909/originalimages/mid-grey-melange-trunk-us20-18.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10909/originalimages/mid-grey-melange-trunk-us20-17.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10909/originalimages/mid-grey-melange-trunk-us20-16.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10909/originalimages/mid-grey-melange-trunk-us20-15.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10909/originalimages/mid-grey-melange-trunk-us20-14.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10909/originalimages/mid-grey-melange-trunk-us20-13.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10909/originalimages/mid-grey-melange-trunk-us20-12.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10909/originalimages/mid-grey-melange-trunk-us20-11.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10909/originalimages/mid-grey-melange-trunk-us20-9.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/10909/originalimages/mid-grey-melange-trunk-us20-10.jpg"
+                ]
+            }
+        ],
+        "colors": [
+            {
+                "name": "white",
+                "code": "white"
+            },
+            {
+                "name": "black",
+                "code": "black"
+            },
+            {
+                "name": "navy",
+                "code": "#003060"
+            },
+            {
+                "name": "Charcoal Melange",
+                "code": "#8CA2B0"
+            },
+            {
+                "name": "Mid Grey Melange",
+                "code": "#6A6C6E"
+            }
+        ],
+        "brand": "Jocky",
+        "currentPrice": 5.44,
+        "mrpPrice": "",
+        "categories": [
+            "men",
+            "inner wear",
+            "innerwear",
+            "trunks"
+        ],
+        "weight": "",
+        "sizes": [
+            "small",
+            "medium",
+            "large",
+            "extra large"
+        ],
+        "countInStock": 10,
+        "isFeatured": true
+    },
+    {
+        "id": "p9",
+        "name": "Men's Super Combed Cotton Elastane Stretch Solid Trunk with Ultrasoft Waistband - US21",
+        "description": "Elastane stretch fabric - Spandex/ Lycra fibre is added to this Jockey product, for extra stretch to support your lifestyle.Super Combed Cotton - Fibre yarns used to make this Jockey product undergo additional processing to make it softer and smoother than regular cotton.",
+        "features": [
+            "Super Combed Cotton Elastane Stretch fabric",
+            "Durable and Ultra Soft waistband",
+            "Label free for all day comfort"
+        ],
+        "image": "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5762/originalimages/black-fashion-trunk-us21-30.jpg",
+        "style": "#US 21",
+        "images": [
+            {
+                "color": "black",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5762/originalimages/black-fashion-trunk-us21-29.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5762/originalimages/black-fashion-trunk-us21-28.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5762/originalimages/black-fashion-trunk-us21-23.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5762/originalimages/black-fashion-trunk-us21-27.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5762/originalimages/black-fashion-trunk-us21-26.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5762/originalimages/black-fashion-trunk-us21-25.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5762/originalimages/black-fashion-trunk-us21-24.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5762/originalimages/black-fashion-trunk-us21-22.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5762/originalimages/black-fashion-trunk-us21-21.jpg"
+                ]
+            },
+            {
+                "color": "navy",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7864/originalimages/navy-fashion-trunk-us21-26.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7864/originalimages/navy-fashion-trunk-us21-25.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7864/originalimages/navy-fashion-trunk-us21-24.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7864/originalimages/navy-fashion-trunk-us21-18.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7864/originalimages/navy-fashion-trunk-us21-23.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7864/originalimages/navy-fashion-trunk-us21-22.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7864/originalimages/navy-fashion-trunk-us21-21.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7864/originalimages/navy-fashion-trunk-us21-20.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7864/originalimages/navy-fashion-trunk-us21-19.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7864/originalimages/navy-fashion-trunk-us21-17.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7864/originalimages/navy-fashion-trunk-us21-15.jpg"
+                ]
+            },
+            {
+                "color": "Charcoal Melange",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5763/originalimages/charcoal-melange-fashion-trunk-us21-22.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5763/originalimages/charcoal-melange-fashion-trunk-us21-21.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5763/originalimages/charcoal-melange-fashion-trunk-us21-20.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5763/originalimages/charcoal-melange-fashion-trunk-us21-19.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5763/originalimages/charcoal-melange-fashion-trunk-us21-18.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5763/originalimages/charcoal-melange-fashion-trunk-us21-17.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5763/originalimages/charcoal-melange-fashion-trunk-us21-16.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5763/originalimages/charcoal-melange-fashion-trunk-us21-15.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5763/originalimages/charcoal-melange-fashion-trunk-us21-14.jpg"
+                ]
+            },
+            {
+                "color": "Mid Grey Melange",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/9481/originalimages/mid-grey-melange-fashion-trunk-us21-37.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/9481/originalimages/mid-grey-melange-fashion-trunk-us21-36.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/9481/originalimages/mid-grey-melange-fashion-trunk-us21-35.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/9481/originalimages/mid-grey-melange-fashion-trunk-us21-30.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/9481/originalimages/mid-grey-melange-fashion-trunk-us21-34.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/9481/originalimages/mid-grey-melange-fashion-trunk-us21-33.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/9481/originalimages/mid-grey-melange-fashion-trunk-us21-32.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/9481/originalimages/mid-grey-melange-fashion-trunk-us21-31.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/9481/originalimages/mid-grey-melange-fashion-trunk-us21-29.jpg"
+                ]
+            }
+        ],
+        "colors": [
+            {
+                "name": "black",
+                "code": "black"
+            },
+            {
+                "name": "navy",
+                "code": "#003060"
+            },
+            {
+                "name": "Charcoal Melange",
+                "code": "#8CA2B0"
+            },
+            {
+                "name": "Mid Grey Melange",
+                "code": "#6A6C6E"
+            }
+        ],
+        "brand": "Jocky",
+        "currentPrice": 5.44,
+        "mrpPrice": "",
+        "categories": [
+            "men",
+            "inner wear",
+            "innerwear",
+            "trunks"
+        ],
+        "weight": "",
+        "sizes": [
+            "small",
+            "medium",
+            "large",
+            "extra large"
+        ],
+        "countInStock": 10,
         "isFeatured": true
     }
 ]

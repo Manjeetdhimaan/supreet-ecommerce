@@ -186,13 +186,13 @@ module.exports.updateProduct = async (req, res, next) => {
                 message: 'Invalid Product Id'
             })
         }
-        const category = await Category.findById(req.body.category);
-        if (!category) {
-            return res.status(404).json({
-                success: false,
-                message: 'Invalid category'
-            })
-        }
+        // const category = await Category.findById(req.body.category);
+        // if (!category) {
+        //     return res.status(404).json({
+        //         success: false,
+        //         message: 'Invalid category'
+        //     })
+        // }
         Product.findByIdAndUpdate(req.params.id).then((founededProduct) => {
             if (!founededProduct) {
                 return res.status(404).send({
@@ -237,14 +237,23 @@ module.exports.updateProduct = async (req, res, next) => {
                 if (req.body.currency) {
                     founededProduct.currency = req.body.currency;
                 }
-                if (req.body.category) {
-                    founededProduct.category = req.body.category;
+                if (req.body.categories) {
+                    founededProduct.categories = req.body.categories;
+                }
+                if (req.body.sizes) {
+                    founededProduct.sizes = req.body.sizes;
                 }
                 if (req.body.countInStock) {
                     founededProduct.countInStock = req.body.countInStock;
                 }
+                if (req.body.colors) {
+                    founededProduct.colors = req.body.colors;
+                }
                 if (req.body.rating) {
                     founededProduct.rating = req.body.rating;
+                }
+                if (req.body.features) {
+                    founededProduct.features = req.body.features;
                 }
                 if (req.body.dateCreated) {
                     founededProduct.dateCreated = req.body.dateCreated;

@@ -1,7 +1,7 @@
 <form class="input-wrapper">
   <input type="text" [(ngModel)]="searchText" (keyup)="onSearchProducts($event)" class="form-control" name="search" autocomplete="off" placeholder="Search..." required />
-  <button class="btn btn-search" type="submit" title="submit-button">
-    <i class="d-icon-search"></i>
+  <button class="btn btn-search" type="submit" [title]="!isLoadingProducts ? 'search': 'searching...'" style="z-index: 999;">
+    <i [class]="!isLoadingProducts ? 'd-icon-search': 'd-icon-ball2'"></i>
   </button>
 </form>
 <div class="products-search-list" *ngIf="products.length > 0">
