@@ -3,7 +3,7 @@ const router = express.Router();
 
 const ctrlContactDetails = require('../controllers/contact-details.controller');
 
-router.get('/getContactDetails', ctrlContactDetails.getContactDetails);
-router.post('/postContactDetails', ctrlContactDetails.postContactDetails);
+router.get('/get-contact-details', ctrlContactDetails.getContactDetails);
+router.post('/post-contact-details', ctrlContactDetails.postContactDetails);
 
 module.exports = router;

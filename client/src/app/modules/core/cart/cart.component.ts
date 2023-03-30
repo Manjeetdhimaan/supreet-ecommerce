@@ -25,9 +25,11 @@ export class CartComponent {
   cartItems: CartProduct[] = [];
   categories: Category[] = [];
   serverErrMsg: string;
+  isLoadingCart = false;
 
   constructor(private productService: ProductService, private cartService: CartService) { }
   ngOnInit(): void {
+    this.isLoadingCart = true;
     this.scrollTop();
     this._getLocalStorageCart();
   }
@@ -50,10 +52,15 @@ export class CartComponent {
               color: cartItem.color,
               productId: res['product']._id
             });
+            this.isLoadingCart = false;
           }, err => {
             this._errorHandler(err);
+            this.isLoadingCart = false
           });
         })
+      }
+      else {
+        this.isLoadingCart = false;
       }
     });
   }

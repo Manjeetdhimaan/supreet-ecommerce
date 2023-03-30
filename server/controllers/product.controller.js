@@ -234,6 +234,9 @@ module.exports.updateProduct = async (req, res, next) => {
                 if (req.body.style) {
                     founededProduct.style = req.body.style;
                 }
+                if (req.body.currentPrice) {
+                    founededProduct.currentPrice = req.body.currentPrice;
+                }
                 if (req.body.currency) {
                     founededProduct.currency = req.body.currency;
                 }

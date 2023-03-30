@@ -13,6 +13,6 @@ export class ContactDetailsService {
   baseUrl:string = environment.apiBaseUrl+'/contact';
 
   getContactDetails(): Observable<ContactDetails> {
-    return this.http.get<ContactDetails>(this.baseUrl + '/getContactDetails');
+    return this.http.get<ContactDetails>(this.baseUrl + '/get-contact-details');
   }
 }

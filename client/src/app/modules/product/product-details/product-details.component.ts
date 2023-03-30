@@ -83,7 +83,6 @@ export class ProductDetailsComponent implements OnInit {
     this.productService.getProduct(id).subscribe((res: ProductResponse) => {
       this.product = res['product'];
       this.relatedProdCategory = this.product.categories[1] ? this.product.categories[1] : this.product.categories[0];
-
       this.product.images[0].imageUrls.map((imageUrl: string) => {
         this.imageData.push({
           srcUrl: imageUrl,
@@ -118,7 +117,7 @@ export class ProductDetailsComponent implements OnInit {
 
   onChangeColor(colorName: string) {
     this.product.images.map(image => {
-      if (image.color === colorName) {
+      if (image.color.trim().toLowerCase() === colorName.trim().toLowerCase()) {
         this.selectedColor = colorName;
         this.imageData = [];
         image.imageUrls.map(imageUrl => {

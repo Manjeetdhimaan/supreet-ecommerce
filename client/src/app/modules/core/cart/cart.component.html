@@ -6,8 +6,8 @@
     <div class="container mt-7 mb-2">
       <div class="row">
         <div class="col-lg-8 col-md-12 pr-lg-4">
-          <table class="shop-table cart-table" *ngIf="cartItems && cartItems.length > 0">
-            <thead>
+          <table class="shop-table cart-table">
+            <thead *ngIf="cartItems && cartItems.length > 0">
               <tr>
                 <th><span>Product</span></th>
                 <th></th>
@@ -16,6 +16,76 @@
                 <th>Subtotal</th>
               </tr>
             </thead>
+            <tbody *ngIf="isLoadingCart && cartItems.length < 1">
+              <tr *ngFor="let skeleton of ['', '']">
+                <td class="product-thumbnail">
+                  <ngx-skeleton-loader count="1" appearance="circle" [theme]="{
+                    width: '100%',
+
+                    'border-radius': 0,
+                    'background-color': 'black'
+                  }">
+                  </ngx-skeleton-loader>
+                </td>
+                <td class="product-thumbnail">
+                  <figure>
+                    <ngx-skeleton-loader count="1" appearance="circle" [theme]="{
+                      width: '100%',
+
+                      'border-radius': 0,
+                      'background-color': 'black'
+                    }">
+                    </ngx-skeleton-loader>
+                  </figure>
+                </td>
+                <td class="product-name">
+                  <div class="product-name-section">
+                    <ngx-skeleton-loader count="1" appearance="circle" [theme]="{
+                      width: '100%',
+
+                      'border-radius': 0,
+                      'background-color': 'black'
+                    }">
+                    </ngx-skeleton-loader>
+                  </div>
+                </td>
+                <td class="product-subtotal">
+                  <span class="amount"><ngx-skeleton-loader count="1" appearance="circle" [theme]="{
+                    width: '100%',
+
+                    'border-radius': 0,
+                    'background-color': 'black'
+                  }">
+                  </ngx-skeleton-loader></span>
+                </td>
+                <td class="product-quantity">
+                  <ngx-skeleton-loader count="1" appearance="circle" [theme]="{
+                    width: '100%',
+
+                    'border-radius': 0,
+                    'background-color': 'black'
+                  }">
+                  </ngx-skeleton-loader>
+                </td>
+                <td class="product-price">
+                  <span class="amount"><ngx-skeleton-loader count="1" appearance="circle" [theme]="{
+                    width: '100%',
+                    'border-radius': 0,
+                    'background-color': 'black'
+                  }">
+                  </ngx-skeleton-loader></span>
+                </td>
+                <td class="product-close">
+                  <ngx-skeleton-loader count="1" appearance="circle" [theme]="{
+                    width: '100%',
+
+                    'border-radius': 0,
+                    'background-color': 'black'
+                  }">
+                  </ngx-skeleton-loader>
+                </td>
+              </tr>
+            </tbody>
             <tbody *ngIf="cartItems && cartItems.length > 0">
               <tr *ngFor="let cartItem of cartItems; let i = index" class="animate__animated animate__fadeIn snackbar">
                 <td class="product-thumbnail">
@@ -53,7 +123,8 @@
           <div class="cart-actions mb-6 pt-4">
             <a routerLink="/" class="btn btn-dark btn-md btn-rounded btn-icon-left mr-4 mb-4"><i
                 class="d-icon-arrow-left"></i>Continue Shopping</a>
-            <h3 *ngIf="!cartItems || cartItems.length <= 0" class="title title-simple title-step active"><a routerLink="/cart">No Items in cart</a></h3>
+            <h3 *ngIf="!cartItems || cartItems.length <= 0" class="title title-simple title-step active"><a
+                routerLink="/cart">No Items in cart</a></h3>
             <button *ngIf="cartItems && cartItems.length > 0" type="button"
               class="btn btn-outline btn-dark btn-md btn-rounded" (click)="onClearCart()">Clear Cart</button>
           </div>

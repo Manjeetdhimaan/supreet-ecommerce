@@ -7,6 +7,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { AboutComponent } from './about/about.component';
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 
 const routes: Routes = [
   {
@@ -31,7 +32,8 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
     CarouselModule,
-    SharedModule
+    SharedModule,
+    NgxSkeletonLoaderModule.forRoot({ animation: 'progress' })
   ]
 })
 export class CoreModule { }
