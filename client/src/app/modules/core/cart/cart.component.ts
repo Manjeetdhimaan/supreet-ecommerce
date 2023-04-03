@@ -28,6 +28,7 @@ export class CartComponent {
   isLoadingCart = false;
 
   constructor(private productService: ProductService, private cartService: CartService) { }
+
   ngOnInit(): void {
     this.isLoadingCart = true;
     this.scrollTop();
@@ -55,7 +56,7 @@ export class CartComponent {
             this.isLoadingCart = false;
           }, err => {
             this._errorHandler(err);
-            this.isLoadingCart = false
+            this.isLoadingCart = false;
           });
         })
       }
@@ -107,7 +108,7 @@ export class CartComponent {
       checkoutMsg +=  '(Name: "' + item.name + '", ' + 'quantity: ' + item.quantity + ', ' + 'size: ' + item.size + ', ' + 'color: ' + item.color + ', ' + 'Product ID: ' + item.productId + '),,,, '
     });
     checkoutMsg = checkoutMsg.trim().slice(0, -1) + '---------------Total Price - $'+this.subTotal();
-    location.href = "https://api.whatsapp.com/send?phone=9878627074&text=" + checkoutMsg;
+    location.href = "https://api.whatsapp.com/send?phone=+16475647367&text=" + checkoutMsg;
   }
 
   onClearCart() {

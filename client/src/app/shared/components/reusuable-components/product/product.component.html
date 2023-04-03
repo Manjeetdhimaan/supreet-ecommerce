@@ -17,8 +17,11 @@
       <!-- <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"><i
           class="d-icon-heart"></i></a> -->
     </div>
-    <div class="product-action">
+    <div class="product-action" *ngIf="product.countInStock > 0">
       <a class="btn-product " title="View Product" [routerLink]="'/products/'+product._id">View Product</a>
+    </div>
+    <div class="product-action"  *ngIf="product.countInStock < 1">
+      <button class="btn-product" disabled title="out of stock">Out of Stock</button>
     </div>
   </figure>
   <div class="product-details">

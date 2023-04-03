@@ -66,7 +66,7 @@ module.exports.getProducts = (req, res, next) => {
         if (req.query.new) {
             limit = 8;
         }
-        Product.find(filter).select('name price image currency categories currentPrice mrpPrice sizes colors').sort({
+        Product.find(filter).select('name price image currency categories currentPrice mrpPrice sizes colors countInStock').sort({
             _id: -1
         }).limit(limit).then(products => {
             if (!products || products.length < 1) {
@@ -246,7 +246,7 @@ module.exports.updateProduct = async (req, res, next) => {
                 if (req.body.sizes) {
                     founededProduct.sizes = req.body.sizes;
                 }
-                if (req.body.countInStock) {
+                if (req.body.countInStock || req.body.countInStock === 0) {
                     founededProduct.countInStock = req.body.countInStock;
                 }
                 if (req.body.colors) {
@@ -388,7 +388,7 @@ module.exports.getFeaturedProducts = (req, res, next) => {
         const count = req.params.count ? +req.params.count : 10;
         Product.find({
             isFeatured: true
-        }).select('name price image currency categories currentPrice mrpPrice sizes colors').sort({
+        }).select('name price image currency categories currentPrice mrpPrice sizes colors countInStock').sort({
             _id: sort
         }).limit(count).then(featuredProducts => {
             if (!featuredProducts || featuredProducts.length < 1) {

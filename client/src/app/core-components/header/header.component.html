@@ -1,5 +1,5 @@
 <h1 class="d-none">SIG</h1>
-<header class="header" >
+<header class="header">
 
   <div class="header-middle sticky-header fix-top sticky-content" [class]="isSticky ? 'fixed static': ''">
     <div class="container">
@@ -18,13 +18,13 @@
         <!-- End Header Search -->
       </div>
       <div class="header-right">
-        <a [href]="'tel:' + phones[0]" class="icon-box icon-box-side">
+        <a class="icon-box icon-box-side">
           <div class="icon-box-icon mr-0 mr-lg-2">
             <i class="d-icon-phone"></i>
           </div>
           <div class="icon-box-content d-lg-show">
-            <h4 class="icon-box-title">Call Us Now:</h4>
-            <p>{{phones[0]}}</p>
+            <h4 class="icon-box-title">Connect Us:</h4>
+            <p *ngIf="phones && phones.length> 0">{{phones[0]}}</p>
           </div>
         </a>
         <div class="dropdown wishlist wishlist-dropdown off-canvas">
@@ -63,8 +63,11 @@
       <div class="header-left">
         <nav class="main-nav" style="margin: auto;">
           <ul class="menu menu-active-underline">
-            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-              <a routerLink="/">Home</a>
+            <li routerLinkActive="active">
+              <a routerLink="/products/collections/men">Men</a>
+            </li>
+            <li routerLinkActive="active">
+              <a routerLink="/products/collections/women">Women</a>
             </li>
             <li routerLinkActive="active">
               <a routerLink="/products/collections/brief">Briefs</a>

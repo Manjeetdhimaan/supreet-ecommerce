@@ -55,11 +55,11 @@ app.use((err, req, res, next) => {
     return res.status(503).send(err);
 });
 
-// app.use(express.static(path.join(__dirname, 'www')));
+app.use(express.static(path.join(__dirname, 'www')));
 
-// app.get('*', (req, res) => {
-//     res.sendFile(path.join(__dirname, 'www/index.html'));
-// });
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'www/index.html'));
+});
 
 app.listen(port, () => {
     console.log('Server is listening on port ' + port)

@@ -50,7 +50,7 @@
                   <li><a href="mailto:mani@mani.com">Help</a></li>
                   <div class="social-links">
                     <a [href]="socialMediaLinks?.facebook" title="social-link" target="_blank" class="social-link social-facebook fab fa-facebook-f"></a>
-                    <a *ngIf="socialMediaLinks.twitter" [href]="socialMediaLinks.twitter" target="_blank" class="social-link social-twitter fab fa-twitter"></a>
+                    <a *ngIf="socialMediaLinks && socialMediaLinks.twitter" [href]="socialMediaLinks.twitter" target="_blank" class="social-link social-twitter fab fa-twitter"></a>
                     <a [href]="socialMediaLinks?.instagram" title="social-link" target="_blank" class="social-link social-instagram fab fa-instagram"></a>
                   </div>
                 </ul>
@@ -74,7 +74,7 @@
       <div class="footer-right" style="visibility: hidden;">
         <div class="social-links">
           <a [href]="socialMediaLinks?.facebook" title="social-link" class="social-link social-facebook fab fa-facebook-f"></a>
-          <a *ngIf="socialMediaLinks.twitter" [href]="socialMediaLinks.twitter" class="social-link social-twitter fab fa-twitter"></a>
+          <a *ngIf="socialMediaLinks && socialMediaLinks.twitter" [href]="socialMediaLinks.twitter" class="social-link social-twitter fab fa-twitter"></a>
           <a [href]="socialMediaLinks?.instagram" title="social-link" class="social-link social-instagram fab fa-instagram"></a>
         </div>
       </div>

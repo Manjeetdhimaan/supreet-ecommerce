@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { map, Observable } from 'rxjs';
 
 import { environment } from 'src/environments/environment';
-import { Product } from '../models/product.model';
 import { ProductResponse, ProductsResponse, ServerResponse } from '../models/responses.model';
 
 @Injectable({
@@ -31,6 +30,10 @@ export class ProductService {
       value: 'small',
       checked: false
     },
+    {
+      value: 'free size',
+      checked: false
+    }
   ];
 
   constructor(private http: HttpClient) { }

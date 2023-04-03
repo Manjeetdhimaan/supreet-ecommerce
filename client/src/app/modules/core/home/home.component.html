@@ -11,7 +11,7 @@
                     <div class="banner banner-fixed intro-slide1 content-center content-middle"
                       style="background-color: #222;">
                       <figure>
-                        <img src="assets/images/supreet/hero-banner-3-new.jpg" class="animate__animated animate__pulse"
+                        <img src="assets/images/supreet/hero-banner-3-new.jpg" class="animate__animated animate__fadeInUpBig"
                           alt="intro-banner" width="1180" height="600" style="background-color: transparent;" />
                       </figure>
                       <!-- <div class="banner-content">
@@ -101,14 +101,7 @@
         </div>
       </section>
 
-      <section class="mt-10 pt-3 mb-6">
-        <h2 class="title title-simple title-center ls-m">New Arrivals</h2>
-        <div class="product-wrapper row">
-          <div class="col-lg-3 col-md-4 col-6 mb-4" *ngFor="let product of products">
-            <app-product [product]="product"></app-product>
-          </div>
-        </div>
-      </section>
+      <app-featured-products></app-featured-products>
 
       <section class="pt-md-2 pb-md-6 category-section">
         <h2 class="title title-simple ls-m">Top Categories</h2>
@@ -146,7 +139,7 @@
       <section class="banner banner-sale mt-10 mb-10"
         style="background-image: url(assets/images/demos/demo2/banners/3.jpg); background-color: #1f272b;">
         <div class="banner-content">
-          <h4 class="banner-subtitle text-uppercase text-white font-weight-normal lh-1 ls-m mb-0">End Of Season</h4>
+          <h4 class="banner-subtitle text-uppercase text-white font-weight-normal lh-1 ls-m mb-0" style="cursor: pointer;" routerLink="/products/collections/women">JOCKEY FOR WOMEN</h4>
           <hr class="divider mb-2">
           <h3 class="banner-title text-uppercase text-white lh-1 mb-0">Sale</h3>
           <div class="price-rotated">
@@ -158,7 +151,14 @@
         </div>
       </section>
 
-      <app-featured-products></app-featured-products>
+      <section class="mt-10 pt-3 mb-6">
+        <h2 class="title title-simple title-center ls-m">New Arrivals</h2>
+        <div class="product-wrapper row">
+          <div class="col-lg-3 col-md-4 col-6 mb-4" *ngFor="let product of products">
+            <app-product [product]="product"></app-product>
+          </div>
+        </div>
+      </section>
 
       <section class="service-list mt-10">
         <owl-carousel-o [options]="customOptionsShipping" class="owl-theme row">

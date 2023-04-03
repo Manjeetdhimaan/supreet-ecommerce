@@ -80,9 +80,14 @@ export class ProductDetailsComponent implements OnInit {
 
   private _getProduct(id: string) {
     this.serverErrMsg = '';
+    this.isLoading = true;
     this.productService.getProduct(id).subscribe((res: ProductResponse) => {
       this.product = res['product'];
       this.relatedProdCategory = this.product.categories[1] ? this.product.categories[1] : this.product.categories[0];
+      this.imageData.push({
+        srcUrl: this.product.image,
+        previewUrl: this.product.image
+      })
       this.product.images[0].imageUrls.map((imageUrl: string) => {
         this.imageData.push({
           srcUrl: imageUrl,
@@ -90,6 +95,9 @@ export class ProductDetailsComponent implements OnInit {
         })
       });
       this.selectedColor = this.product.colors[0].name;
+      if (this.product.sizes.includes('free size')) {
+        this.selectedSize = 'free size'
+      }
 
       this._onSetGalleryImages();
 

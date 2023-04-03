@@ -1,7 +1,7 @@
 [
     {
         "id": "p1",
-        "name": "Men's Super Combed Cotton Rib Square Neckline Gym Vest - us26",
+        "name": "Men's Super Combed Cotton Rib Square Neckline Gym Vest - us27",
         "description": "Super Combed Cotton - Fibre yarns used to make this Jockey product undergo additional processing to make it softer and smoother than regular cotton.",
         "features": [
             "Fabric Details : Cotton",
@@ -13,7 +13,8 @@
         ],
         "image": "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/13232/originalimages/assorted-fashion-vest-pack-of-2-us27-11.jpg",
         "style": "#US 27",
-        "images": [{
+        "images": [
+            {
                 "color": "Black",
                 "imageUrls": ["https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5774/originalimages/us27_black__grey_mel_1.jpg",
                     "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5774/originalimages/us27_black__grey_mel_2.jpg",
@@ -58,7 +59,8 @@
                 ]
             }
         ],
-        "colors": [{
+        "colors": [
+            {
                 "name": "Black",
                 "code": "black"
             },
@@ -76,7 +78,7 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 5.62,
+        "currentPrice": 6.99,
         "mrpPrice": "",
         "categories": [
             "men",
@@ -91,7 +93,7 @@
             "extra large"
         ],
         "countInStock": 110,
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "p2",
@@ -106,7 +108,7 @@
             "To be worn as loungewear, innerwear and sportswear - for all purpose use"
         ],
         "image": "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5772/originalimages/white-square-neck-vest-us26-21.jpg",
-        "style": "#US 27",
+        "style": "#US 26",
         "images": [{
                 "color": "white",
                 "imageUrls": ["https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5772/originalimages/white-square-neck-vest-us26-20.jpg",
@@ -176,7 +178,8 @@
                 ]
             }
         ],
-        "colors": [{
+        "colors": [
+            {
                 "name": "white",
                 "code": "white"
             },
@@ -202,7 +205,7 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 5.64,
+        "currentPrice": 6.99,
         "mrpPrice": "",
         "categories": [
             "men",
@@ -232,7 +235,8 @@
         ],
         "image": "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5905/originalimages/white-racer-back-shirt-9922-16.jpg",
         "style": "#US 33",
-        "images": [{
+        "images": [
+            {
                 "color": "white",
                 "imageUrls": ["https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5772/originalimages/white-square-neck-vest-us26-20.jpg",
                     "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5905/originalimages/white-racer-back-shirt-9922-15.jpg",
@@ -255,7 +259,8 @@
                 ]
             }
         ],
-        "colors": [{
+        "colors": [
+            {
                 "name": "white",
                 "code": "white"
             },
@@ -265,7 +270,7 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 5.60,
+        "currentPrice": 6.99,
         "mrpPrice": "",
         "categories": [
             "men",
@@ -279,7 +284,7 @@
             "extra large"
         ],
         "countInStock": 10,
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "p4",
@@ -292,7 +297,8 @@
         ],
         "image": "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-12.jpg",
         "style": "#US 07",
-        "images": [{
+        "images": [
+            {
                 "color": "white",
                 "imageUrls": [
                     "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5709/originalimages/white-bikini-brief-us07-11.jpg",
@@ -353,7 +359,8 @@
                 ]
             }
         ],
-        "colors": [{
+        "colors": [
+            {
                 "name": "white",
                 "code": "white"
             },
@@ -375,7 +382,7 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 4.45,
+        "currentPrice": 5.99,
         "mrpPrice": "",
         "categories": [
             "men",
@@ -391,7 +398,7 @@
             "extra large"
         ],
         "countInStock": 10,
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "p5",
@@ -512,7 +519,7 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 7.24,
+        "currentPrice": 5.99,
         "mrpPrice": "",
         "categories": [
             "men",
@@ -528,7 +535,7 @@
             "extra large"
         ],
         "countInStock": 10,
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "p6",
@@ -561,7 +568,7 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 3.79,
+        "currentPrice": 6.99,
         "mrpPrice": "",
         "categories": [
             "men",
@@ -577,7 +584,7 @@
             "extra large"
         ],
         "countInStock": 10,
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "p7",
@@ -691,7 +698,7 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 3.79,
+        "currentPrice": 5.99,
         "mrpPrice": "",
         "categories": [
             "men",
@@ -707,7 +714,7 @@
             "extra large"
         ],
         "countInStock": 10,
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "p8",
@@ -814,7 +821,7 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 5.44,
+        "currentPrice": 6.99,
         "mrpPrice": "",
         "categories": [
             "men",
@@ -922,7 +929,7 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 5.44,
+        "currentPrice": 6.99,
         "mrpPrice": "",
         "categories": [
             "men",
@@ -938,7 +945,7 @@
             "extra large"
         ],
         "countInStock": 10,
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "p10",
@@ -1030,7 +1037,7 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 6.09,
+        "currentPrice": 6.99,
         "mrpPrice": "",
         "categories": [
             "men",
@@ -1048,7 +1055,7 @@
             "extra large"
         ],
         "countInStock": 10,
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "p11",
@@ -1145,7 +1152,7 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 5.76,
+        "currentPrice": 6.99,
         "mrpPrice": "",
         "categories": [
             "men",
@@ -1161,7 +1168,7 @@
             "extra large"
         ],
         "countInStock": 10,
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "p12",
@@ -1252,7 +1259,7 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 3.94,
+        "currentPrice": 4.99,
         "mrpPrice": "",
         "categories": [
             "men",
@@ -1268,7 +1275,7 @@
             "extra large"
         ],
         "countInStock": 10,
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "p13",
@@ -1375,7 +1382,7 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 4.27,
+        "currentPrice": 4.99,
         "mrpPrice": "",
         "categories": [
             "men",
@@ -1391,7 +1398,7 @@
             "extra large"
         ],
         "countInStock": 10,
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "p14",
@@ -1489,7 +1496,7 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 5.26,
+        "currentPrice": 6.99,
         "mrpPrice": "",
         "categories": [
             "men",
@@ -1505,7 +1512,7 @@
             "extra large"
         ],
         "countInStock": 10,
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "p15",
@@ -1540,7 +1547,7 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 5.26,
+        "currentPrice": 6.99,
         "mrpPrice": "",
         "categories": [
             "men",
@@ -1556,7 +1563,7 @@
             "extra large"
         ],
         "countInStock": 10,
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "p16",
@@ -1664,7 +1671,7 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 5.09,
+        "currentPrice": 5.99,
         "mrpPrice": "",
         "categories": [
             "men",
@@ -1680,7 +1687,7 @@
             "extra large"
         ],
         "countInStock": 10,
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "p17",
@@ -1760,7 +1767,7 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 6.24,
+        "currentPrice": 6.99,
         "mrpPrice": "",
         "categories": [
             "men",
@@ -1776,7 +1783,7 @@
             "extra large"
         ],
         "countInStock": 10,
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "p18",
@@ -1855,7 +1862,7 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 4.27,
+        "currentPrice": 6.99,
         "mrpPrice": "",
         "categories": [
             "men",
@@ -1871,7 +1878,7 @@
             "extra large"
         ],
         "countInStock": 10,
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "p19",
@@ -1965,8 +1972,8 @@
             "large",
             "extra large"
         ],
-        "countInStock": 10,
-        "isFeatured": true
+        "countInStock": 0,
+        "isFeatured": false
     },
     {
         "id": "p20",
@@ -2073,7 +2080,7 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 6.24,
+        "currentPrice": 6.99,
         "mrpPrice": "",
         "categories": [
             "men",
@@ -2090,7 +2097,7 @@
             "extra large"
         ],
         "countInStock": 10,
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "p21",
@@ -2200,7 +2207,7 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 7.07,
+        "currentPrice": 7.99,
         "mrpPrice": "",
         "categories": [
             "men",
@@ -2217,7 +2224,7 @@
             "extra large"
         ],
         "countInStock": 10,
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "p22",
@@ -2326,17 +2333,257 @@
             }
         ],
         "brand": "Jocky",
-        "currentPrice": 7.89,
+        "currentPrice": 8.99,
         "mrpPrice": "",
         "categories": [
             "men",
-            "vests",
             "inner wear",
+            "boxers",
             "innerwear",
             "boxer brief",
             "boxerbrief",
-            "boxers briefs",
-            "boxers"
+            "boxers briefs"
+        ],
+        "weight": "",
+        "sizes": [
+            "small",
+            "medium",
+            "large",
+            "extra large"
+        ],
+        "countInStock": 10,
+        "isFeatured": false
+    },
+    {
+        "id": "p23",
+        "name": "Men's Compact Cotton Terry Ankle Length Socks With Stay Fresh Treatment (Pack of 3) - 7036",
+        "description": "",
+        "features": [
+            "Super soft, smooth and comfortable",
+            "Durable and Ultra Soft",
+            "Authentic Jockey® branding label"
+        ],
+        "image": "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/12375/originalimages/black-midgrey-melange-navy-men-ankle-socks-pack-of-3-7036-38.jpg",
+        "style": "#7036",
+        "images": [
+            {
+                "color": "Black/Midgrey Melange/Navy",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/12375/originalimages/black-midgrey-melange-navy-men-ankle-socks-pack-of-3-7036-37.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/12375/originalimages/black-midgrey-melange-navy-men-ankle-socks-pack-of-3-7036-36.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/12375/originalimages/black-midgrey-melange-navy-men-ankle-socks-pack-of-3-7036-35.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/12375/originalimages/black-midgrey-melange-navy-men-ankle-socks-pack-of-3-7036-34.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/12375/originalimages/black-midgrey-melange-navy-men-ankle-socks-pack-of-3-7036-33.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/12375/originalimages/black-midgrey-melange-navy-men-ankle-socks-pack-of-3-7036-30.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/12375/originalimages/black-midgrey-melange-navy-men-ankle-socks-pack-of-3-7036-29.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/12375/originalimages/black-midgrey-melange-navy-men-ankle-socks-pack-of-3-7036-28.jpg"
+                ]
+            }
+        ],
+        "colors": [
+            {
+                "name": "Black/Midgrey Melange/Navy",
+                "code": "black"
+            }
+        ],
+        "brand": "Jocky",
+        "currentPrice": 7.99,
+        "mrpPrice": "",
+        "categories": [
+            "men",
+            "socks",
+            "ankle socks"
+        ],
+        "weight": "",
+        "sizes": [
+            "free size"
+        ],
+        "countInStock": 10,
+        "isFeatured": true
+    },
+    {
+        "id": "p24",
+        "name": "Men's Compact Cotton Terry Ankle Length Socks With Stay Fresh Treatment (Pack of 3) - 7035",
+        "description": "",
+        "features": [
+            "Super soft, smooth and comfortable",
+            "Durable and Ultra Soft",
+            "Authentic Jockey® branding label"
+        ],
+        "image": "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/12373/originalimages/black-navy-charcoal-melange-men-crew-socks-pack-of-3-7035-22.jpg",
+        "style": "#7035",
+        "images": [
+            {
+                "color": "Black/Navy/Charcoal Melange",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/12373/originalimages/black-navy-charcoal-melange-men-crew-socks-pack-of-3-7035-21.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/12373/originalimages/black-navy-charcoal-melange-men-crew-socks-pack-of-3-7035-20.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/12373/originalimages/black-navy-charcoal-melange-men-crew-socks-pack-of-3-7035-19.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/12373/originalimages/black-navy-charcoal-melange-men-crew-socks-pack-of-3-7035-18.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/12373/originalimages/black-navy-charcoal-melange-men-crew-socks-pack-of-3-7035-17.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/12373/originalimages/black-navy-charcoal-melange-men-crew-socks-pack-of-3-7035-16.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/12373/originalimages/black-navy-charcoal-melange-men-crew-socks-pack-of-3-7035-15.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/12373/originalimages/black-navy-charcoal-melange-men-crew-socks-pack-of-3-7035-14.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/12373/originalimages/black-navy-charcoal-melange-men-crew-socks-pack-of-3-7035-13.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/12373/originalimages/black-navy-charcoal-melange-men-crew-socks-pack-of-3-7035-12.jpg"
+                ]
+            }
+        ],
+        "colors": [
+            {
+                "name": "Black/Navy/Charcoal Melange",
+                "code": "black"
+            }
+        ],
+        "brand": "Jocky",
+        "currentPrice": 9.99,
+        "mrpPrice": "",
+        "categories": [
+            "men",
+            "socks",
+            "crew socks",
+            "formal socks"
+        ],
+        "weight": "",
+        "sizes": [
+            "free size"
+        ],
+        "countInStock": 10,
+        "isFeatured": true
+    },
+    {
+        "id": "p25",
+        "name": "Men's Super Combed Mercerized Cotton Woven Checked Boxer Shorts with Side Pocket - US23",
+        "description": "",
+        "features": [
+            "100% Mercerized Combed Cotton woven fabric",
+            "Durable and ultra soft inner waistband",
+            "Side pockets",
+            "Concealed button placket with front fly opening"
+        ],
+        "image": "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/9948/originalimages/assorted-checks-boxer-shorts-us23-26.jpg",
+        "style": "#US 23",
+        "images": [
+            {
+                "color": "Assorted Checks",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/9948/originalimages/assorted-checks-boxer-shorts-us23-25.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/9948/originalimages/assorted-checks-boxer-shorts-us23-24.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/9948/originalimages/assorted-checks-boxer-shorts-us23-22.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/9948/originalimages/assorted-checks-boxer-shorts-us23-21.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/9948/originalimages/assorted-checks-boxer-shorts-us23-20.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/9948/originalimages/assorted-checks-boxer-shorts-us23-23.jpg"
+                ]
+            }
+        ],
+        "colors": [
+            {
+                "name": "Assorted Checks",
+                "code": "#4b0202"
+            }
+        ],
+        "brand": "Jocky",
+        "currentPrice": 11.99,
+        "mrpPrice": "",
+        "categories": [
+            "men",
+            "boxers",
+            "boxer shorts"
+        ],
+        "weight": "",
+        "sizes": [
+            "small",
+            "medium",
+            "large",
+            "extra large"
+        ],
+        "countInStock": 10,
+        "isFeatured": true
+    },
+    {
+        "id": "p26",
+        "name": "Men's Super Combed Mercerized Cotton Woven Checked Boxer Shorts with Side Pocket - US22P",
+        "description": "",
+        "features": [
+            "100% Mercerized Combed Cotton woven fabric",
+            "Durable and ultra soft inner waistband",
+            "Side pockets",
+            "Concealed button placket with front fly opening"
+        ],
+        "image": "https://www.supreetindiangoods.com/public/uploads/jocky-us22p.jpeg",
+        "style": "#US 22P",
+        "images": [
+            {
+                "color": "Assorted Checks",
+                "imageUrls": [
+                    "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81hJpP8cuAL._UY741_.jpg",
+                    "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81AWUVX+GjL._UY741_.jpg",
+                    "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81WriL3QiRL._UY741_.jpg"
+                ]
+            }
+        ],
+        "colors": [
+            {
+                "name": "Assorted Checks",
+                "code": "#4b0202"
+            }
+        ],
+        "brand": "Jocky",
+        "currentPrice": 11.99,
+        "mrpPrice": "",
+        "categories": [
+            "men",
+            "boxers",
+            "boxer shorts"
+        ],
+        "weight": "",
+        "sizes": [
+            "small",
+            "medium",
+            "large",
+            "extra large"
+        ],
+        "countInStock": 10,
+        "isFeatured": true
+    },
+    {
+        "id": "p27",
+        "name": "Men's Super Combed Mercerized Cotton Woven Checked Boxer Shorts with Side Pocket - US23P",
+        "description": "",
+        "features": [
+            "100% Mercerized Combed Cotton woven fabric",
+            "Durable and ultra soft inner waistband",
+            "Side pockets",
+            "Concealed button placket with front fly opening"
+        ],
+        "image": "https://www.supreetindiangoods.com/public/uploads/jocky-us23p.jpeg",
+        "style": "#US 23P",
+        "images": [
+            {
+                "color": "Assorted Checks",
+                "imageUrls": [
+                    "https://images-static.nykaa.com/media/catalog/product/5/5/554b42dus23assortedprintssingles_2.jpg",
+                    "https://images-static.nykaa.com/media/catalog/product/5/5/554b42dus23assortedprintssingles_2.jpg",
+                    "https://images-static.nykaa.com/media/catalog/product/5/5/554b42dus23assortedprintssingles_5.jpg",
+                    "https://images-static.nykaa.com/media/catalog/product/5/5/554b42dus23assortedprintssingles_6.jpg",
+                    "https://images-static.nykaa.com/media/catalog/product/5/5/554b42dus23assortedprintssingles_7.jpg",
+                    "https://images-static.nykaa.com/media/catalog/product/5/5/554b42dus23assortedprintssingles_8.jpg"
+                ]
+            }
+        ],
+        "colors": [
+            {
+                "name": "Assorted Checks",
+                "code": "#4b0202"
+            }
+        ],
+        "brand": "Jocky",
+        "currentPrice": 11.99,
+        "mrpPrice": "",
+        "categories": [
+            "men",
+            "boxers",
+            "boxer shorts"
         ],
         "weight": "",
         "sizes": [

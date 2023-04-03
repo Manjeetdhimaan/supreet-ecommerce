@@ -126,14 +126,14 @@
             <h3 *ngIf="!cartItems || cartItems.length <= 0" class="title title-simple title-step active"><a
                 routerLink="/cart">No Items in cart</a></h3>
             <button *ngIf="cartItems && cartItems.length > 0" type="button"
-              class="btn btn-outline btn-dark btn-md btn-rounded" (click)="onClearCart()">Clear Cart</button>
+              class="btn btn-outline btn-md btn-rounded" title="All items will be deleted from cart" (click)="onClearCart()">Clear Cart</button>
           </div>
         </div>
         <aside class="col-lg-4 sticky-sidebar-wrapper" *ngIf="cartItems && cartItems.length > 0">
           <div class="sticky-sidebar" data-sticky-options="{'bottom': 20}">
             <div class="summary mb-4">
-              <h3 class="summary-title text-left">Cart Totals</h3>
-              <table class="shipping">
+              <h3 class="summary-title text-left">Cart Totals</h3> <small style="color: white">Product cost and shipping charges are in Canadian Dollars</small>
+              <!-- <table class="shipping">
                 <tr class="summary-subtotal">
                   <td>
                     <h4 class="summary-subtitle">Subtotal</h4>
@@ -142,36 +142,8 @@
                     <p class="summary-subtotal-price">{{ subTotal() | currency }}</p>
                   </td>
                 </tr>
-                <tr class="sumnary-shipping shipping-row-last">
-                  <td colspan="2">
-                    <h4 class="summary-subtitle">Calculate Shipping</h4>
-                    <ul>
-                      <li>
-                        <div class="custom-radio">
-                          <input type="radio" id="flat_rate" name="shipping" class="custom-control-input" checked>
-                          <label class="custom-control-label" for="flat_rate">Flat
-                            rate</label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="custom-radio">
-                          <input type="radio" id="free-shipping" name="shipping" class="custom-control-input">
-                          <label class="custom-control-label" for="free-shipping">Free
-                            shipping</label>
-                        </div>
-                      </li>
 
-                      <li>
-                        <div class="custom-radio">
-                          <input type="radio" id="local_pickup" name="shipping" class="custom-control-input">
-                          <label class="custom-control-label" for="local_pickup">Local
-                            pickup</label>
-                        </div>
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-              </table>
+              </table> -->
               <table class="total">
                 <tr class="summary-subtotal">
                   <td>
@@ -181,7 +153,28 @@
                     <p class="summary-total-price ls-s">{{ subTotal() | currency }}</p>
                   </td>
                 </tr>
+                <tr class="sumnary-shipping shipping-row-last">
+                  <td colspan="2">
+                    <h4 class="summary-subtitle">Calculate Shipping</h4>
+                    <ul>
+                      <li>
+                        <div class="custom-radio">
+                          <!-- <input type="radio" id="flat_rate" name="shipping" class="custom-control-input" checked> -->
+                          <label class="custom-control-label" for="flat_rate" style="color:white;">$60 for upto 1kg</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="custom-radio">
+                          <!-- <input type="radio" id="free-shipping" name="shipping" class="custom-control-input"> -->
+                          <label class="custom-control-label" for="free-shipping" style="color:white;">$120 for upto 5kg</label>
+                        </div>
+                      </li>
+
+                    </ul>
+                  </td>
+                </tr>
               </table>
+              <small style="color: white;">Shipping charges will be extra as mentioned above</small>
               <a (click)="onCheckOut()" class="btn btn-dark btn-rounded btn-checkout">Proceed to
                 checkout</a>
             </div>
