@@ -6,33 +6,47 @@
   <a class="mobile-menu-close" (click)="onCloseSideMenu()"><i class="d-icon-times"></i></a>
   <!-- End of CloseButton -->
   <div class="mobile-menu-container scrollable">
-      <!-- End of Search Form -->
-      <ul class="mobile-menu mmenu-anim" style="margin-top: 2rem;">
+    <!-- End of Search Form -->
+    <ul class="mobile-menu mmenu-anim" style="margin-top: 2rem;">
+      <li>
+        <a (click)="onCloseSideMenu()" routerLink="/">Home</a>
+      </li>
+      <li>
+        <a>Men</a>
+        <ul>
           <li>
-              <a (click)="onCloseSideMenu()" routerLink="/">Home</a>
+            <a (click)="onCloseSideMenu()" routerLink="/products/collections/trunk">Trunks</a>
           </li>
           <li>
-              <a (click)="onCloseSideMenu()" routerLink="/products/collections/women">Women</a>
+            <a (click)="onCloseSideMenu()" routerLink="/products/collections/boxer">Boxers</a>
           </li>
           <li>
-              <a (click)="onCloseSideMenu()" routerLink="/products/collections/trunk">Trunks</a>
+            <a (click)="onCloseSideMenu()" routerLink="/products/collections/brief">Briefs</a>
           </li>
           <li>
-              <a (click)="onCloseSideMenu()" routerLink="/products/collections/boxer">Boxers</a>
+            <a (click)="onCloseSideMenu()" routerLink="/products/collections/socks">Socks</a>
           </li>
           <li>
-              <a (click)="onCloseSideMenu()" routerLink="/products/collections/brief">Briefs</a>
+            <a (click)="onCloseSideMenu()" routerLink="/products/collections/vest">Vests</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a (click)="onCloseSideMenu()" routerLink="/about">About Us</a>
+      </li>
+
+      <li>
+        <a (click)="onCloseSideMenu()" routerLink="/products/collections/women">Women</a>
+        <ul>
+          <li>
+            <a (click)="onCloseSideMenu()">Bras</a>
           </li>
           <li>
-              <a (click)="onCloseSideMenu()" routerLink="/products/collections/socks">Socks</a>
+            <a (click)="onCloseSideMenu()">Tops</a>
           </li>
-          <li>
-              <a (click)="onCloseSideMenu()" routerLink="/products/collections/vest">Vests</a>
-          </li>
-          <li>
-            <a (click)="onCloseSideMenu()" routerLink="/about">About Us</a>
-          </li>
-      </ul>
-      <!-- End of MobileMenu -->
+        </ul>
+      </li>
+    </ul>
+    <!-- End of MobileMenu -->
   </div>
 </div>

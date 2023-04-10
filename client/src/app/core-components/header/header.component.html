@@ -63,29 +63,34 @@
       <div class="header-left">
         <nav class="main-nav" style="margin: auto;">
           <ul class="menu menu-active-underline">
-            <li routerLinkActive="active">
-              <a routerLink="/products/collections/men">Men</a>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+              <a routerLink="/">Home</a>
             </li>
-            <li routerLinkActive="active">
-              <a routerLink="/products/collections/women">Women</a>
-            </li>
-            <li routerLinkActive="active">
-              <a routerLink="/products/collections/brief">Briefs</a>
-            </li>
-            <li routerLinkActive="active">
-              <a routerLink="/products/collections/boxer">Boxers</a>
-            </li>
-            <li routerLinkActive="active">
-              <a routerLink="/products/collections/trunk">Trunks</a>
-            </li>
-            <li class="d-xl-show" routerLinkActive="active">
-              <a routerLink="/products/collections/socks">Socks</a>
-            </li>
-            <li routerLinkActive="active">
-              <a routerLink="/products/collections/vest">Vests</a>
+            <li>
+              <a>Men</a>
+              <ul>
+                <li routerLinkActive="active">
+                  <a routerLink="/products/collections/brief">Briefs</a>
+                </li>
+                <li routerLinkActive="active">
+                  <a routerLink="/products/collections/boxer">Boxers</a>
+                </li>
+                <li routerLinkActive="active">
+                  <a routerLink="/products/collections/trunk">Trunks</a>
+                </li>
+                <li class="d-xl-show" routerLinkActive="active">
+                  <a routerLink="/products/collections/socks">Socks</a>
+                </li>
+                <li routerLinkActive="active">
+                  <a routerLink="/products/collections/vest">Vests</a>
+                </li>
+              </ul>
             </li>
             <li routerLinkActive="active">
               <a routerLink="/about">About Us</a>
+            </li>
+            <li routerLinkActive="active">
+              <a routerLink="/products/collections/women">Women</a>
             </li>
           </ul>
         </nav>

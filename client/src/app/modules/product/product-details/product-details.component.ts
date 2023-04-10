@@ -68,8 +68,6 @@ export class ProductDetailsComponent implements OnInit {
       }
     })
     this.scrollTop();
-
-
   }
 
   scrollTop() {
