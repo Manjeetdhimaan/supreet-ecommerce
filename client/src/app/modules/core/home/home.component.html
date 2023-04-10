@@ -71,9 +71,9 @@
               <div class="banner-content" style="background-color: rgb(0, 0, 0, 0.5); padding:6px; border-radius: 6px;">
                 <h4 style="color: rgb(209,173,89)" class="banner-subtitle ls-normal text-white text-uppercase font-weight-normal lh-1">
                   New Arrivals</h4>
-                <h3 style="color: rgb(209,173,89)" class="banner-title text-white font-weight-bold ls-md">
+                <!-- <h3 style="color: rgb(209,173,89)" class="banner-title text-white font-weight-bold ls-md">
                   Men's Sale
-                </h3>
+                </h3> -->
                 <a style="color: rgb(209,173,89)" routerLink="/products/collections/men" class="btn btn-white btn-link btn-underline font-weight-semi-bold">Shop
                   Now<i class="d-icon-arrow-right"></i></a>
               </div>
@@ -141,24 +141,24 @@
         <div class="banner-content">
           <h4 class="banner-subtitle text-uppercase text-white font-weight-normal lh-1 ls-m mb-0" style="cursor: pointer;" routerLink="/products/collections/women">JOCKEY FOR WOMEN</h4>
           <hr class="divider mb-2">
-          <h3 class="banner-title text-uppercase text-white lh-1 mb-0">Sale</h3>
-          <div class="price-rotated">
+          <h3 class="banner-title text-uppercase text-white lh-1 mb-0">New</h3>
+          <!-- <div class="price-rotated">
             <div class="banner-price-info d-flex align-items-center justify-content-center skrollr">
               <h5 class="text-uppercase text-white ls-l mb-0">At Up To<br><span class="text-secondary ls-l">50%</span>
                 Off</h5>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
 
-      <!-- <section class="mt-10 pt-3 mb-6">
+      <section class="mt-10 pt-3 mb-6">
         <h2 class="title title-simple title-center ls-m">New Arrivals</h2>
         <div class="product-wrapper row">
           <div class="col-lg-3 col-md-4 col-6 mb-4" *ngFor="let product of products">
             <app-product [product]="product"></app-product>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <section class="service-list mt-10">
         <owl-carousel-o [options]="customOptionsShipping" class="owl-theme row">
@@ -185,7 +185,7 @@
                 <div class="icon-box-content">
                   <h3 class="icon-box-title font-weight-bold text-capitalize ls-normal mb-0">No
                     returns</h3>
-                  <p class="text-primary">No returns available</p>
+                  <!-- <p class="text-primary">No returns available</p> -->
                 </div>
               </div>
             </ng-template>

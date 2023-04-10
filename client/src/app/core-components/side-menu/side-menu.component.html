@@ -32,19 +32,18 @@
         </ul>
       </li>
       <li>
-        <a (click)="onCloseSideMenu()" routerLink="/about">About Us</a>
-      </li>
-
-      <li>
-        <a (click)="onCloseSideMenu()" routerLink="/products/collections/women">Women</a>
+        <a>Women</a>
         <ul>
           <li>
-            <a (click)="onCloseSideMenu()">Bras</a>
+            <a (click)="onCloseSideMenu()" routerLink="/products/collections/panties">Panties</a>
           </li>
           <li>
-            <a (click)="onCloseSideMenu()">Tops</a>
+            <a (click)="onCloseSideMenu()" routerLink="/products/collections/pants">Pants</a>
           </li>
         </ul>
+      </li>
+      <li>
+        <a (click)="onCloseSideMenu()" routerLink="/about">About Us</a>
       </li>
     </ul>
     <!-- End of MobileMenu -->

@@ -10,5 +10,4 @@ export class SideMenuComponent {
   onCloseSideMenu () {
     document.body.classList.remove('mmenu-active');
   }
-
 }
