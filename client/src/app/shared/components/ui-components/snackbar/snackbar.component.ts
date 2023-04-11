@@ -6,12 +6,12 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./snackbar.component.css']
 })
 export class SnackbarComponent {
-@Input() name: string;
-@Input() isShown = false;
+  @Input() name: string;
+  @Input() isShown = false;
 
-scrollTop() {
-  window.scrollTo({
-    top: 0
-  })
-}
+  scrollTop() {
+    window.scrollTo({
+      top: 0
+    })
+  }
 }

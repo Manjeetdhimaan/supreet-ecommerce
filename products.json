@@ -2512,18 +2512,46 @@
         "style": "#US 22P",
         "images": [
             {
-                "color": "Assorted Checks",
+                "color": "Assorted Checks - white",
                 "imageUrls": [
-                    "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81hJpP8cuAL._UY741_.jpg",
-                    "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81AWUVX+GjL._UY741_.jpg",
+                    "https://www.supreetindiangoods.com/public/uploads/jocky-us22p.jpeg"
+                ]
+            },
+            {
+                "color": "Assorted Checks - zone red",
+                "imageUrls": [
+                    "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81hJpP8cuAL._UY741_.jpg"
+                ]
+            },
+            {
+                "color": "Assorted Checks - black",
+                "imageUrls": [
+                    "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81AWUVX+GjL._UY741_.jpg"
+                ]
+            },
+            {
+                "color": "Assorted Checks - navy",
+                "imageUrls": [
                     "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81WriL3QiRL._UY741_.jpg"
                 ]
             }
         ],
         "colors": [
             {
-                "name": "Assorted Checks",
+                "name": "Assorted Checks - white",
+                "code": "#fff"
+            },
+            {
+                "name": "Assorted Checks - zone red",
                 "code": "#4b0202"
+            },
+            {
+                "name": "Assorted Checks - black",
+                "code": "black"
+            },
+            {
+                "name": "Assorted Checks - navy",
+                "code": "rgb(1 15 28)"
             }
         ],
         "brand": "Jocky",
@@ -2558,21 +2586,48 @@
         "style": "#US 23P",
         "images": [
             {
-                "color": "Assorted Checks",
+                "color": "Assorted Checks - white and green",
+                "imageUrls": [
+                    "https://www.supreetindiangoods.com/public/uploads/jocky-us23p.jpeg"
+                ]
+            },
+            {
+                "color": "Assorted Checks - black",
                 "imageUrls": [
                     "https://images-static.nykaa.com/media/catalog/product/5/5/554b42dus23assortedprintssingles_2.jpg",
-                    "https://images-static.nykaa.com/media/catalog/product/5/5/554b42dus23assortedprintssingles_2.jpg",
-                    "https://images-static.nykaa.com/media/catalog/product/5/5/554b42dus23assortedprintssingles_5.jpg",
-                    "https://images-static.nykaa.com/media/catalog/product/5/5/554b42dus23assortedprintssingles_6.jpg",
-                    "https://images-static.nykaa.com/media/catalog/product/5/5/554b42dus23assortedprintssingles_7.jpg",
-                    "https://images-static.nykaa.com/media/catalog/product/5/5/554b42dus23assortedprintssingles_8.jpg"
+                    "https://images-static.nykaa.com/media/catalog/product/5/5/554b42dus23assortedprintssingles_8.jpg",
+                    "https://images-static.nykaa.com/media/catalog/product/5/5/554b42dus23assortedprintssingles_7.jpg"
+                ]
+            },
+            {
+                "color": "Assorted Checks - grey",
+                "imageUrls": [
+                    "https://images-static.nykaa.com/media/catalog/product/5/5/554b42dus23assortedprintssingles_5.jpg"
+                ]
+            },
+            {
+                "color": "Assorted Checks - navy and white",
+                "imageUrls": [
+                    "https://images-static.nykaa.com/media/catalog/product/5/5/554b42dus23assortedprintssingles_6.jpg"
                 ]
             }
         ],
         "colors": [
             {
-                "name": "Assorted Checks",
-                "code": "#4b0202"
+                "name": "Assorted Checks - white and green",
+                "code": "rgb(200 228 244)"
+            },
+            {
+                "name": "Assorted Checks - black",
+                "code": "#333"
+            },
+            {
+                "name": "Assorted Checks - grey",
+                "code": "#8CA2B0"
+            },
+            {
+                "name": "Assorted Checks - navy and white",
+                "code": "#fff"
             }
         ],
         "brand": "Jocky",
@@ -2592,5 +2647,295 @@
         ],
         "countInStock": 10,
         "isFeatured": true
+    },
+    {
+        "id": "p28",
+        "name": "Women's Medium Coverage Super Combed Cotton Mid Waist Bikini With Concealed Waistband(Pack of 3) - 1410",
+        "description": "Super Combed Cotton - Fibre yarns used to make this Jockey product undergo additional processing to make it softer and smoother than regular cotton.",
+        "features": [
+            "100% Mercerized Combed Cotton woven fabric",
+            "Super combed cotton fabric",
+            "Bikini fits fabulously below the waistline",
+            "Added front and back coverage",
+            "Soft & smooth inner waistband leaves no marks on your skin"
+        ],
+        "image": "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5488/originalimages/light-assorted-bikini-pack-of-3-1410-20.jpg",
+        "style": "#1410",
+        "images": [
+            {
+                "color": "Light Assorted",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5488/originalimages/light-assorted-bikini-pack-of-3-1410-19.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5488/originalimages/light-assorted-bikini-pack-of-3-1410-18.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5488/originalimages/light-assorted-bikini-pack-of-3-1410-17.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5488/originalimages/light-assorted-bikini-pack-of-3-1410-16.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5488/originalimages/light-assorted-bikini-pack-of-3-1410-15.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5488/originalimages/light-assorted-bikini-pack-of-3-1410-14.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5488/originalimages/light-assorted-bikini-pack-of-3-1410-12.jpg"
+                ]
+            },
+            {
+                "color": "Light Prints",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5052/originalimages/light-prints-bikini-pack-of-3-1410-128.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5052/originalimages/light-prints-bikini-pack-of-3-1410-127.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5052/originalimages/light-prints-bikini-pack-of-3-1410-126.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5052/originalimages/light-prints-bikini-pack-of-3-1410-125.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5052/originalimages/light-prints-bikini-pack-of-3-1410-124.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5052/originalimages/light-prints-bikini-pack-of-3-1410-123.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5052/originalimages/light-prints-bikini-pack-of-3-1410-122.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5052/originalimages/light-prints-bikini-pack-of-3-1410-121.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5052/originalimages/light-prints-bikini-pack-of-3-1410-120.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5052/originalimages/light-prints-bikini-pack-of-3-1410-118.jpg"
+                ]
+            },
+            {
+                "color": "Multi Color",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/8500/originalimages/1410_13.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/8500/originalimages/1410_12.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/8500/originalimages/1410_11.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/8500/originalimages/1410_10.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/8500/originalimages/1410_9.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/8500/originalimages/1410_8.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/8500/originalimages/1410_7.jpg"
+                ]
+            },
+            {
+                "color": "Dark Prints",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5051/originalimages/dark-prints-bikini-pack-of-3-1410-31.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5051/originalimages/dark-prints-bikini-pack-of-3-1410-16.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5051/originalimages/dark-prints-bikini-pack-of-3-1410-30.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5051/originalimages/dark-prints-bikini-pack-of-3-1410-29.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5051/originalimages/dark-prints-bikini-pack-of-3-1410-28.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5051/originalimages/dark-prints-bikini-pack-of-3-1410-27.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5051/originalimages/dark-prints-bikini-pack-of-3-1410-26.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5051/originalimages/dark-prints-bikini-pack-of-3-1410-25.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5051/originalimages/dark-prints-bikini-pack-of-3-1410-24.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5051/originalimages/dark-prints-bikini-pack-of-3-1410-23.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5051/originalimages/dark-prints-bikini-pack-of-3-1410-22.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5051/originalimages/dark-prints-bikini-pack-of-3-1410-21.jpg"
+                ]
+            }
+        ],
+        "colors": [
+            {
+                "name": "Light Assorted",
+                "code": "#bec9ff"
+            },
+            {
+                "name": "Light Prints",
+                "code": "#20babf"
+            },
+            {
+                "name": "Multi Color",
+                "code": "#b60000"
+            },
+            {
+                "name": "Dark Prints",
+                "code": "#03959e"
+            }
+        ],
+        "brand": "Jocky",
+        "currentPrice": 9.99,
+        "mrpPrice": "",
+        "categories": [
+            "women",
+            "panties",
+            "biknis"
+        ],
+        "weight": "",
+        "sizes": [
+            "small",
+            "medium",
+            "large",
+            "extra large"
+        ],
+        "countInStock": 10,
+        "isFeatured": false
+    },
+    {
+        "id": "p29",
+        "name": "Women's Super Combed Cotton Elastane Stretch Slim Fit Trackpants With Side Pockets - 1301",
+        "description": "Super Combed Cotton - Fibre yarns used to make this Jockey product undergo additional processing to make it softer and smoother than regular cotton.",
+        "features": [
+            "100% Mercerized Combed Cotton woven fabric",
+            "Super combed cotton elastane stretch fabric",
+            "Slim Fit",
+            "Soft elasticized waistband with flat drawstring",
+            "label free for all day comfort",
+            "Authentic Jockey logo embroidery",
+            "To be worn as lounge wear, leisurewear and active wear - for all purpose use"
+        ],
+        "image": "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7825/originalimages/ibis-rose-melange-track-pant-1301-7.jpg",
+        "style": "#1301",
+        "images": [
+            {
+                "color": "Ibis Rose Melange",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7825/originalimages/ibis-rose-melange-track-pant-1301-6.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7825/originalimages/ibis-rose-melange-track-pant-1301-5.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7825/originalimages/ibis-rose-melange-track-pant-1301-4.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7825/originalimages/ibis-rose-melange-track-pant-1301-3.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7825/originalimages/ibis-rose-melange-track-pant-1301-2.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7825/originalimages/ibis-rose-melange-track-pant-1301-1.jpg"
+                ]
+            },
+            {
+                "color": "Ibis Rose Melange",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7825/originalimages/ibis-rose-melange-track-pant-1301-6.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7825/originalimages/ibis-rose-melange-track-pant-1301-5.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7825/originalimages/ibis-rose-melange-track-pant-1301-4.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7825/originalimages/ibis-rose-melange-track-pant-1301-3.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7825/originalimages/ibis-rose-melange-track-pant-1301-2.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/7825/originalimages/ibis-rose-melange-track-pant-1301-1.jpg"
+                ]
+            },
+            {
+                "color": "Imperial blue",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/4971/originalimages/vintage-denim-melange-track-pant-1301-16.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/4971/originalimages/vintage-denim-melange-track-pant-1301-15.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/4971/originalimages/vintage-denim-melange-track-pant-1301-14.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/4971/originalimages/vintage-denim-melange-track-pant-1301-12.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/4971/originalimages/vintage-denim-melange-track-pant-1301-11.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/4971/originalimages/vintage-denim-melange-track-pant-1301-10.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/4971/originalimages/vintage-denim-melange-track-pant-1301-9.jpg"
+                ]
+            }
+        ],
+        "colors": [
+            {
+                "name": "Ibis Rose Melange",
+                "code": "#e071a1"
+            },
+            {
+                "name": "Imperial blue",
+                "code": "#2c486a"
+            }
+        ],
+        "brand": "Jocky",
+        "currentPrice": 15.99,
+        "mrpPrice": "",
+        "categories": [
+            "women",
+            "APPAREL BOTTOMS",
+            "PANTS",
+            "TRACK PANTS",
+            "YOGA PANTS"
+        ],
+        "weight": "",
+        "sizes": [
+            "small",
+            "medium",
+            "large",
+            "extra large"
+        ],
+        "countInStock": 10,
+        "isFeatured": false
+    },
+    {
+        "id": "p20",
+        "name": "Women's High Coverage Super Combed Cotton Mid Waist Hipster With Concealed Waistband and StayFresh Treatment(Pack of 3) - 1406",
+        "description": "Super Combed Cotton - Fibre yarns used to make this Jockey product undergo additional processing to make it softer and smoother than regular cotton.",
+        "features": [
+            "Super combed cotton fabric",
+            "Hipster fits fabulously just above the waistline",
+            "Styled to provide added front & back coverage",
+            "Soft & smooth inner waistband leaves no marks on your skin"
+        ],
+        "image": "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5482/originalimages/dark-assorted-hipster-pack-of-3-1406-23.jpg",
+        "style": "#1406",
+        "images": [
+            {
+                "color": "Dark Assorted",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5482/originalimages/dark-assorted-hipster-pack-of-3-1406-12.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5482/originalimages/dark-assorted-hipster-pack-of-3-1406-11.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5482/originalimages/dark-assorted-hipster-pack-of-3-1406-10.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5482/originalimages/dark-assorted-hipster-pack-of-3-1406-9.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5482/originalimages/dark-assorted-hipster-pack-of-3-1406-13.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5482/originalimages/dark-assorted-hipster-pack-of-3-1406-21.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5482/originalimages/dark-assorted-hipster-pack-of-3-1406-19.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5482/originalimages/dark-assorted-hipster-pack-of-3-1406-17.jpg"
+                ]
+            },
+            {
+                "color": "Light Prints",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5050/originalimages/light-prints-hipster-pack-of-3-1406-30.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5050/originalimages/light-prints-hipster-pack-of-3-1406-29.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5050/originalimages/light-prints-hipster-pack-of-3-1406-28.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5050/originalimages/light-prints-hipster-pack-of-3-1406-27.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5050/originalimages/light-prints-hipster-pack-of-3-1406-26.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5050/originalimages/light-prints-hipster-pack-of-3-1406-25.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5050/originalimages/light-prints-hipster-pack-of-3-1406-24.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5050/originalimages/light-prints-hipster-pack-of-3-1406-20.jpg"
+                ]
+            },
+            {
+                "color": "Dark Prints",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5049/originalimages/dark-prints-hipster-pack-of-3-1406-20.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5049/originalimages/dark-prints-hipster-pack-of-3-1406-8.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5049/originalimages/dark-prints-hipster-pack-of-3-1406-19.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5049/originalimages/dark-prints-hipster-pack-of-3-1406-18.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5049/originalimages/dark-prints-hipster-pack-of-3-1406-17.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5049/originalimages/dark-prints-hipster-pack-of-3-1406-16.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5049/originalimages/dark-prints-hipster-pack-of-3-1406-15.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5049/originalimages/dark-prints-hipster-pack-of-3-1406-14.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5049/originalimages/dark-prints-hipster-pack-of-3-1406-10.jpg"
+                ]
+            },
+            {
+                "color": "Light Assorted",
+                "imageUrls": [
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5483/originalimages/light-assorted-hipster-pack-of-3-1406-31.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5483/originalimages/light-assorted-hipster-pack-of-3-1406-19.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5483/originalimages/light-assorted-hipster-pack-of-3-1406-21.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5483/originalimages/light-assorted-hipster-pack-of-3-1406-29.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5483/originalimages/light-assorted-hipster-pack-of-3-1406-27.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5483/originalimages/light-assorted-hipster-pack-of-3-1406-25.jpg",
+                    "https://static05.jockey.in/c_scale,h_639,w_480/jockey/uploads/dealimages/5483/originalimages/light-assorted-hipster-pack-of-3-1406-23.jpg"
+                ]
+            }
+        ],
+        "colors": [
+            {
+                "name": "Dark Assorted",
+                "code": "#810101"
+            },
+            {
+                "name": "Light Prints",
+                "code": "#eab5db"
+            },
+            {
+                "name": "Dark Prints",
+                "code": "#b75e65"
+            },
+            {
+                "name": "Light Assorted",
+                "code": "#ececec"
+            }
+        ],
+        "brand": "Jocky",
+        "currentPrice": 9.99,
+        "mrpPrice": "",
+        "categories": [
+            "women",
+            "panties",
+            "hipsters"
+        ],
+        "weight": "",
+        "sizes": [
+            "small",
+            "medium",
+            "large",
+            "extra large"
+        ],
+        "countInStock": 10,
+        "isFeatured": false
     }
 ]
